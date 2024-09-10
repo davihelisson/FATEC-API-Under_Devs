@@ -1,5 +1,6 @@
-# FATEC-API-Equipe1
-Repositório destinado aos projetos desenvolvidos pelos membros da equipe 1 (nome a ser alterado futuramente) ao longo dos semestres.
+# FATEC - API - UNDER_DEVS
+
+Repositório destinado aos projetos desenvolvidos pelos membros da Under_Devs ao longo dos semestres.
 
 ## 👨‍💻 Membros da Equipe
 |      Nome      |    Função       |                            Github                             |                           Linkedin                           |
@@ -13,6 +14,8 @@ Repositório destinado aos projetos desenvolvidos pelos membros da equipe 1 (nom
 | João Álvaro | Desenvolvedor | <a href="https://github.com/JoaoAlv4ro"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a> | <a href=""></a> |
 | Mateus Vinicius | Desenvolvedor | <a href="https://github.com/RockRural"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a> | <a href=""></a> |
 | Wesley Xavier | Desenvolvedor | <a href="https://github.com/xvierdev"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a> | <a href="https://br.linkedin.com/in/xvierbr"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a> |
+
+## TAKS A DESENVOLVER
 
 ## TECNOLOGIAS EMPREGADAS
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)

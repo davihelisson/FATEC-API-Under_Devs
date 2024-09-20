@@ -24,7 +24,7 @@ Repositório destinado ao projeto de curso preparatório para as práticas da me
 | Wesley Xavier   | Desenvolvedor  | <a href="https://github.com/xvierdev"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a> | <a href="https://br.linkedin.com/in/xvierbr"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a> | Backend, Conteúdo |
 
 ## 📖 TASKS E PLANEJAMENTO DE PROJETO
-<a href="https://projeto01-api-fatc.atlassian.net/jira/software/projects/AF0/boards/2/timeline?shared=&atlOrigin=eyJpIjoiZWFjMjAxNGY1YTNlNDg3OTk0NWRlNTcxZmM0OTdmMjYiLCJwIjoiaiJ9"><img src="https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=Jira&logoColor=white"></a>
+<a href="https://projeto01-api-fatec.atlassian.net/jira/software/projects/AF0/boards/2/timeline?shared=&atlOrigin=eyJpIjoiMzIwNzc2ZmMxNTIyNDA1NmIzNDM5ZjQ4MjgzYTdiYjgiLCJwIjoiaiJ9"><img src="https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=Jira&logoColor=white"></a>
 <a href="https://www.figma.com/design/UcGuZAffRlBHQrcopBdduK/Untitled?node-id=0-1&node-type=&t=3qDyE4opH8avjwFO-0"><img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white"></a>
 <a href="https://www.notion.so/Conte-dos-API-SCRUM-Course-107b60cf341880178769f2137125aa11?pvs=4"><img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white"></a>
 

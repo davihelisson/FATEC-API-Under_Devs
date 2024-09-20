@@ -2,6 +2,13 @@
 
 Repositório destinado ao projeto de curso preparatório para as práticas da metodologia ágil SCRUM
 
+## 📑 ÍNDICE
+- [Critérios de Permanência](https://github.com/davihelisson/FATEC-API-Under_Devs/blob/main/Documenta%C3%A7%C3%A3o/1.%20CriteriosDePermanencia.md)
+- [Guia](https://github.com/davihelisson/FATEC-API-Under_Devs/blob/main/Documenta%C3%A7%C3%A3o/2.%20Guia.md)
+- [Requisitos](https://github.com/davihelisson/FATEC-API-Under_Devs/blob/main/Documenta%C3%A7%C3%A3o/3.%20Requisitos.md)
+- [Backlog](https://github.com/davihelisson/FATEC-API-Under_Devs/blob/main/Documenta%C3%A7%C3%A3o/4.%20Backlog.md)
+
+
 ## 👨‍💻 MEMBROS DA EQUIPE
 |      Nome      |    Função       |                            Github                             |                           Linkedin                           |
 | :--------------: | :-----------: | :----------------------------------------------------------: | :----------------------------------------------------------: |

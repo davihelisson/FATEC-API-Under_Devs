@@ -1,4 +1,4 @@
-# FATEC - API - UNDER_DEVS - SCRUM Course
+# SCRUM Course - UNDER_DEVS Team
 
 Repositório destinado ao projeto de curso preparatório para as práticas da metodologia ágil SCRUM
 

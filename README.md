@@ -9,6 +9,13 @@ Repositório destinado ao projeto de curso preparatório para as práticas da me
 - [Requisitos](https://github.com/davihelisson/FATEC-API-Under_Devs/blob/main/Documenta%C3%A7%C3%A3o/3.%20Requisitos.md)
 - [Backlog](https://github.com/davihelisson/FATEC-API-Under_Devs/blob/main/Documenta%C3%A7%C3%A3o/4.%20Backlog.md)
 
+## 📖 TASKS E PLANEJAMENTO DE PROJETO
+<a href="https://projeto01-api-fatec.atlassian.net/jira/software/projects/AF0/boards/2/timeline?shared=&atlOrigin=eyJpIjoiMzIwNzc2ZmMxNTIyNDA1NmIzNDM5ZjQ4MjgzYTdiYjgiLCJwIjoiaiJ9"><img src="https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=Jira&logoColor=white"></a>
+<a href="https://www.figma.com/design/UcGuZAffRlBHQrcopBdduK/Untitled?node-id=0-1&node-type=&t=3qDyE4opH8avjwFO-0"><img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white"></a>
+<a href="https://www.notion.so/Conte-dos-API-SCRUM-Course-107b60cf341880178769f2137125aa11?pvs=4"><img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white"></a>
+
+## 💻 TECNOLOGIAS EMPREGADAS
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white) ![Jira](https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=Jira&logoColor=white) ![Notion](https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white) ![FIGMA](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
 
 ## 👨‍💻 MEMBROS DA EQUIPE
 |      Nome      |    Função       |                            Github                             |                           Linkedin                           | Atribuição       |
@@ -22,11 +29,3 @@ Repositório destinado ao projeto de curso preparatório para as práticas da me
 | João Álvaro     | Desenvolvedor  | <a href="https://github.com/JoaoAlv4ro"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a> | <a href="https://www.linkedin.com/in/joão-álvaro-oliveira-silva-921b29223/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a> | Frontend          |
 | Mateus Vinicius | Desenvolvedor  | <a href="https://github.com/RockRural"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a> | <a href="https://www.linkedin.com/in/mateus-toledo-1486ba291/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a> |               Backend     |
 | Wesley Xavier   | Desenvolvedor  | <a href="https://github.com/xvierdev"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a> | <a href="https://br.linkedin.com/in/xvierbr"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a> | Backend, Conteúdo |
-
-## 📖 TASKS E PLANEJAMENTO DE PROJETO
-<a href="https://projeto01-api-fatec.atlassian.net/jira/software/projects/AF0/boards/2/timeline?shared=&atlOrigin=eyJpIjoiMzIwNzc2ZmMxNTIyNDA1NmIzNDM5ZjQ4MjgzYTdiYjgiLCJwIjoiaiJ9"><img src="https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=Jira&logoColor=white"></a>
-<a href="https://www.figma.com/design/UcGuZAffRlBHQrcopBdduK/Untitled?node-id=0-1&node-type=&t=3qDyE4opH8avjwFO-0"><img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white"></a>
-<a href="https://www.notion.so/Conte-dos-API-SCRUM-Course-107b60cf341880178769f2137125aa11?pvs=4"><img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white"></a>
-
-## 💻 TECNOLOGIAS EMPREGADAS
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white) ![Jira](https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=Jira&logoColor=white) ![Notion](https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white) ![FIGMA](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)

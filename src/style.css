@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
-    font-family: arial;
+    font-family: "Inter", sans-serif;
 }
 
 header {
@@ -15,14 +17,21 @@ header {
 }
 
 .introducao{
-    display: flex;
-    padding: 20px 70px;
+    display: grid;
+    grid-template-columns: 800px 625px;
+    gap: 20px;
+    padding: 28px 70px;
     background-color: rgb(207, 206, 206);
     
 }
 
-.introducao > div{
-    width: 900px;
+.introducao > div > h1{
+    margin-bottom: 20px;
+}
+
+.introducao > div p{
+    font-size: 28px;
+    margin-bottom: 20px;
 }
 
 footer {
@@ -30,11 +39,11 @@ footer {
     justify-content: space-between;
     align-items: center;
     background-color: lightblue;
+    padding: 20px;
 }
 
 footer > div {
     align-items: center;
-    gap: 20px;
 }
 
 footer h1 {
@@ -46,17 +55,32 @@ footer p {
     font-size: 12px;
 }
 
-.btn{
-    margin: 10px;
-    width: 20%;
-    height: 20%;
-    display: flex;
+.main-container {
+    margin: 0 auto;
+    max-width: 1240px;
+    width: 100%;
     align-items: center;
-    justify-content: space-around;
-    border-radius: 10px;
+    padding: 20px;
 }
 
-.btn a{
+.main-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 222px);
+    justify-content: space-between;
+}
+
+.cards {
+    display: block;
+    height: 144px;
+    padding: 20px;
+    align-items: normal;
+}
+
+.cards:hover {
+    cursor: pointer;
+}
+
+.cards a {
     color: black;
-    position: ;
-} 
+    margin-bottom: 20px;
+}

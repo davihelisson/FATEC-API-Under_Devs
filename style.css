@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: arial;
+}
+
+header {
+    padding: 16px 51px;
+    background-color: rgb(0, 255, 255);
+}
+
+.logo{
+    display: flex;
+    font-size: 32px;
+}
+
+.introducao{
+    display: flex;
+    padding: 20px 70px;
+    background-color: rgb(207, 206, 206);
+    
+}
+
+.introducao > div{
+    width: 900px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightblue;
+}
+
+footer > div {
+    align-items: center;
+    gap: 20px;
+}
+
+footer h1 {
+    margin-bottom: 10px; 
+}
+
+footer p {
+    font-style: italic;
+    font-size: 12px;
+}
+
+.btn{
+    margin: 10px;
+    width: 20%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+.btn a{
+    color: black;
+    position: ;
+} 

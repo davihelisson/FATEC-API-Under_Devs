@@ -4,11 +4,13 @@
     padding: 0;
     margin: 0;
     font-family: "Inter", sans-serif;
+    box-sizing: border-box;
 }
 
 header {
-    padding: 16px 51px;
-    background-color: rgb(0, 255, 255);
+    padding: 16px 50px;
+    background-color: rgb(3, 81, 81);
+    color: white;
 }
 
 .logo{
@@ -18,8 +20,8 @@ header {
 
 .introducao{
     display: grid;
-    grid-template-columns: 800px 625px;
-    gap: 20px;
+    grid-template-columns: 60% 40%;
+    gap: 25px;
     padding: 28px 70px;
     background-color: rgb(207, 206, 206);
     
@@ -32,6 +34,14 @@ header {
 .introducao > div p{
     font-size: 28px;
     margin-bottom: 20px;
+    text-align: justify;
+}
+
+.introducao img {
+    max-width: 100%;  
+    height: auto; 
+    border-radius: 10px; 
+    align-self: center;
 }
 
 footer {
@@ -39,7 +49,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     background-color: lightblue;
-    padding: 20px;
+    padding: 20px 50px;
 }
 
 footer > div {
@@ -60,7 +70,7 @@ footer p {
     max-width: 1240px;
     width: 100%;
     align-items: center;
-    padding: 20px;
+    padding: 20px 60px;
 }
 
 .main-cards {
@@ -70,10 +80,12 @@ footer p {
 }
 
 .cards {
-    display: block;
-    height: 144px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
     padding: 20px;
-    align-items: normal;
+    position: relative;
 }
 
 .cards:hover {
@@ -83,4 +95,16 @@ footer p {
 .cards a {
     color: black;
     margin-bottom: 20px;
+    font-weight: 900;
+}
+
+.cards p {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.cards div { 
+    margin-top: auto;
+    display: flex; 
+    align-self: flex-end;
 }

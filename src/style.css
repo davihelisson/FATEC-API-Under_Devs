@@ -59,6 +59,9 @@ footer {
     align-items: center;
     background-color: lightblue;
     padding: 20px 50px;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
 }
 
 footer > div {
@@ -129,5 +132,11 @@ footer p {
 .scrum-contents p {
     padding: 0px 0px 10px 0px;
     text-align: justify;
+    font-size: 20px;
+}
+.list ul{
+    text-align: justify;
+    padding: 20px 0px 20px 0px;
+    font-size: 20px;
 }
 

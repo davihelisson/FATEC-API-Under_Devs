@@ -7,6 +7,12 @@
     box-sizing: border-box;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 /* HEADER */
 header {
     padding: 16px 50px;
@@ -59,9 +65,7 @@ footer {
     align-items: center;
     background-color: lightblue;
     padding: 20px 50px;
-    bottom: 0;
-    position: fixed;
-    width: 100%;
+    margin-top: auto;
 }
 
 footer > div {

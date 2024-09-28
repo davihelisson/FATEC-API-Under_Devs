@@ -7,10 +7,12 @@
     box-sizing: border-box;
 }
 
+/* HEADER */
 header {
     padding: 16px 50px;
     background-color: rgb(3, 81, 81);
     color: white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
 .logo{
@@ -18,6 +20,12 @@ header {
     font-size: 32px;
 }
 
+.logo a{
+    text-decoration: none;
+    color: white;
+}
+
+/* HOME */
 .introducao{
     display: grid;
     grid-template-columns: 60% 40%;
@@ -44,6 +52,7 @@ header {
     align-self: center;
 }
 
+/* FOOTER */
 footer {
     display: flex;
     justify-content: space-between;
@@ -65,6 +74,7 @@ footer p {
     font-size: 12px;
 }
 
+/* CARDS DE MÓDULOS */
 .main-container {
     margin: 0 auto;
     max-width: 1240px;
@@ -108,3 +118,20 @@ footer p {
     display: flex; 
     align-self: flex-end;
 }
+
+/* MÓDULOS */
+.scrum-contents {
+    width: 100%;
+    padding: 20px 60px;
+}
+
+.scrum-contents h1 {
+    padding: 0px 0px 20px 0px;
+    margin-top: 10px;
+}
+
+.scrum-contents p {
+    padding: 0px 0px 10px 0px;
+    text-align: justify;
+}
+

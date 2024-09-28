@@ -98,10 +98,6 @@ footer p {
     position: relative;
 }
 
-.cards:hover {
-    cursor: pointer;
-}
-
 .cards a {
     color: black;
     margin-bottom: 20px;
@@ -126,7 +122,7 @@ footer p {
 }
 
 .scrum-contents h1 {
-    padding: 0px 0px 20px 0px;
+    padding: 0px 0px 15px 0px;
     margin-top: 10px;
 }
 

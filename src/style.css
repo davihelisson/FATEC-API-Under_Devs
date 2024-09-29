@@ -19,6 +19,7 @@ header {
     background-color: rgb(3, 81, 81);
     color: white;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
 
 .logo{
@@ -138,9 +139,11 @@ footer p {
     text-align: justify;
     font-size: 20px;
 }
-.list ul{
+
+ul, ol{
     text-align: justify;
-    padding: 20px 0px 20px 0px;
+    padding: 20px 0px;
     font-size: 20px;
+    list-style-position: inside;
 }
 

@@ -140,10 +140,23 @@ footer p {
     font-size: 20px;
 }
 
-ul, ol{
+.scrum-contents ul, .scrum-contents ol{
     text-align: justify;
     padding: 20px 0px;
     font-size: 20px;
     list-style-position: inside;
+}
+
+.scrum-contents button {
+    color: white;
+    background-color: rgb(3, 81, 81);
+    border: solid 1px black;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.scrum-contents button:hover {
+    background-color: rgb(6, 112, 112);
 }
 

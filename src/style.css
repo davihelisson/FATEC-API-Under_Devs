@@ -34,12 +34,14 @@ header {
 
 /* HOME */
 .introducao{
+    width: 100%;
+    color: white;
     display: grid;
-    grid-template-columns: 60% 40%;
-    gap: 25px;
     padding: 28px 70px;
-    background-color: rgb(207, 206, 206);
-    
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url(https://zinenegocios.com.br/site/wp-content/uploads/2021/11/Design-sem-nome-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .introducao > div > h1{
@@ -50,13 +52,6 @@ header {
     font-size: 28px;
     margin-bottom: 20px;
     text-align: justify;
-}
-
-.introducao img {
-    max-width: 100%;  
-    height: auto; 
-    border-radius: 10px; 
-    align-self: center;
 }
 
 /* FOOTER */
@@ -129,7 +124,7 @@ footer p {
     padding: 20px 60px;
 }
 
-.scrum-contents h1 {
+.scrum-contents h1, .scrum-contents h2 {
     padding: 0px 0px 15px 0px;
     margin-top: 10px;
 }
@@ -142,7 +137,6 @@ footer p {
 
 .scrum-contents ul, .scrum-contents ol{
     text-align: justify;
-    padding: 20px 0px;
     font-size: 20px;
     list-style-position: inside;
 }

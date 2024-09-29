@@ -9,6 +9,7 @@ Repositório destinado ao projeto de curso preparatório para as práticas da me
 - [Requisitos do Cliente](https://github.com/davihelisson/FATEC-API-Under_Devs/blob/main/Documenta%C3%A7%C3%A3o/3.%20Requisitos.md)
 - [User Stories](https://github.com/davihelisson/FATEC-API-Under_Devs/blob/main/Documenta%C3%A7%C3%A3o/4.%20User%20Stories.md)
 - [Conteúdo SCRUM](https://github.com/davihelisson/FATEC-API-Under_Devs/blob/main/Documenta%C3%A7%C3%A3o/5.%20Conteudo%20SCRUM.md)
+- [Backlog do Produto](https://github.com/davihelisson/FATEC-API-Under_Devs/blob/main/Documentação/6.%20Backlog.pdf)
 
 ## 📖 TASKS E PLANEJAMENTO DE PROJETO
 <a href="https://projeto01-api-fatec.atlassian.net/jira/software/projects/AF0/boards/2/timeline?shared=&atlOrigin=eyJpIjoiMzIwNzc2ZmMxNTIyNDA1NmIzNDM5ZjQ4MjgzYTdiYjgiLCJwIjoiaiJ9"><img src="https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=Jira&logoColor=white"></a>

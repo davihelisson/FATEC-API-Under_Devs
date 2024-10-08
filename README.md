@@ -1,6 +1,6 @@
 # SCRUM 360 - UNDER_DEVS Team
 
-Repositório destinado ao projeto de curso preparatório para as práticas da metodologia ágil SCRUM
+Repositório destinado ao projeto Scrum360 desenvolvido pelos membros da equipe UnderDevs.
 
 ## 📑 ÍNDICE
 - [Critérios de Permanência](https://github.com/davihelisson/FATEC-API-Under_Devs/blob/main/Documenta%C3%A7%C3%A3o/1.%20Criterios%20De%20Permanencia.md)

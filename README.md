@@ -1,4 +1,4 @@
-# SCRUM Course - UNDER_DEVS Team
+# SCRUM 360 - UNDER_DEVS Team
 
 Repositório destinado ao projeto de curso preparatório para as práticas da metodologia ágil SCRUM
 
@@ -11,13 +11,20 @@ Repositório destinado ao projeto de curso preparatório para as práticas da me
 - [Conteúdo SCRUM](https://github.com/davihelisson/FATEC-API-Under_Devs/blob/main/Documenta%C3%A7%C3%A3o/5.%20Conteudo%20SCRUM.md)
 - [Backlog do Produto](https://github.com/davihelisson/FATEC-API-Under_Devs/blob/main/Documentação/6.%20Backlog.pdf)
 
+## 🎯 OBJETIVOS DO PROJETO
+O Scrum360 tem como objetivo apresentar a metodologia Scrum, visando:
+* Ensinar o que são metodologias ágeis;
+* Organizar e estruturar as informações sobre Scrum;
+* Avaliar o conhecimento da metodologia Scrum;
+* Desenvolver habilidades técnicas.
+
 ## 📖 TASKS E PLANEJAMENTO DE PROJETO
 <a href="https://projeto01-api-fatec.atlassian.net/jira/software/projects/AF0/boards/2/timeline?shared=&atlOrigin=eyJpIjoiMzIwNzc2ZmMxNTIyNDA1NmIzNDM5ZjQ4MjgzYTdiYjgiLCJwIjoiaiJ9"><img src="https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=Jira&logoColor=white"></a>
 <a href="https://www.figma.com/design/UcGuZAffRlBHQrcopBdduK/Untitled?node-id=0-1&node-type=&t=3qDyE4opH8avjwFO-0"><img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white"></a>
 <a href="https://www.notion.so/Conte-dos-API-SCRUM-Course-107b60cf341880178769f2137125aa11?pvs=4"><img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white"></a>
 
 ## 💻 TECNOLOGIAS EMPREGADAS
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white) ![Jira](https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=Jira&logoColor=white) ![Notion](https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white) ![FIGMA](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![Tailwind](https://img.shields.io/badge/Tailwind-0F172A?style=for-the-badge&logo=tailwind-css&logoColor=38B2AC)
 
 ## 👨‍💻 MEMBROS DA EQUIPE
 |      Nome      |    Função       |                            Github                             |                           Linkedin                           | Atribuição       |

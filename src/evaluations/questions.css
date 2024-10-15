@@ -1,0 +1,30 @@
+/* Precisa ser validade pelo time CSS. */
+.frm-title{
+    margin: 20px;
+}
+
+form{
+    margin: 5%;
+}
+
+p{
+    margin: 10px;
+}
+
+.qtitle{
+    font-size: large;
+    font-weight: 600;
+}
+
+.question{
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="submit"],
+input[type="reset"]
+{
+    margin-top: 10px;
+    padding:5px;
+}

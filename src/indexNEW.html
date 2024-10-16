@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="./output.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+<body class="flex flex-col min-w-full box-border h-full">
+    <!-- Cabeçalho da página -->
+    <nav class="bg-slate-100 w-screen sticky z-20 top-0 start-0 text-slate-900 shadow-xl border-b border-slate-400">
+        <div class="flex py-4 px-7 items-center justify-between grow-0 shrink-0">
+            <div class="flex-auto flex justify-evenly">
+                <a href="" class="text-2xl font-Archivo font-bold">Scrum360</a>
+                <div class="h-30 w-0.5 bg-slate-900"></div>
+            </div>
+            <div class="flex-auto">
+                <ul class="flex flex-row gap-4 justify-around">
+                    <a href="#">
+                        <li class="h-14 w-20 px-2 flex items-center justify-center hover:bg-slate-900 hover:text-white">
+                            Home
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="h-14 w-20 px-2 flex items-center justify-center hover:bg-slate-900 hover:text-white">
+                            Sobre
+                        </li>
+                    </a>
+                    
+                    <li class="px-2 flex flex-row hover:bg-slate-900 hover:text-white ">
+                        <button id="dropdownDelayButton" data-dropdown-toggle="dropdownDelay" data-dropdown-delay="200" data-dropdown-trigger="hover" class="flex items-center " type="button">
+                            <p>Módulos</p>
+                            <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                            </svg>
+                        </button>
+                            
+                    <!-- Dropdown menu -->
+                        <div id="dropdownDelay" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDelayButton">
+                              <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:text-gray-700 dark:hover:bg-gray-600 dark:hover:text-white">Scrum</a>
+                              </li>
+                              <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:text-gray-700 dark:hover:bg-gray-600 dark:hover:text-white">Product Owner</a>
+                              </li>
+                              <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:text-gray-700 dark:hover:bg-gray-600 dark:hover:text-white">Scrum Master</a>
+                              </li>
+                              <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:text-gray-700 dark:hover:bg-gray-600 dark:hover:text-white">Dev Team</a>
+                              </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex-1 flex items-center justify-center">
+                <a href="" class="flex justify-center px-4 py-2 rounded-lg text-white bg-slate-900">
+                    Conheça o Time
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+    </main>
+
+    <!-- Rodapé da página -->
+    <footer>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+</body>
+</html>

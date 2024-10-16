@@ -1,8 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: [
+    "./src/**/*.{html,js}"
+  ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        Archivo: ["Roboto", "serif"],
+        roboto: ["Roboto", "sans-serif"]
+      }
+    },
   },
   plugins: [],
 }

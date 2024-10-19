@@ -885,6 +885,9 @@ video {
 .bg-\[linear-gradient\(to_top_right\2c rgba\(0\2c 0\2c 0\2c 1\)\2c rgba\(0\2c 0\2c 0\2c 0\.2\)\)\2c url\(\'\/src\/assets\/imgs\/home-hero\.jpg\'\)\]{
   background-image: linear-gradient(to top right,rgba(0,0,0,1),rgba(0,0,0,0.2)),url('/src/assets/imgs/home-hero.jpg');
 }
+.bg-\[linear-gradient\(to_top_right\2c rgba\(0\2c 0\2c 0\2c 1\)\2c rgba\(0\2c 0\2c 0\2c 0\.2\)\)\2c url\(\'\/src\/assets\/imgs\/devteamimg\.jpg\'\)\]{
+  background-image: linear-gradient(to top right,rgba(0,0,0,1),rgba(0,0,0,0.2)),url('/src/assets/imgs/devteamimg.jpg');
+}
 
 .bg-gradient-to-r{
   background-image: linear-gradient(to right, var(--tw-gradient-stops));

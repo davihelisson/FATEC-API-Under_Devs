@@ -12,6 +12,12 @@
     box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, b {
     font-family: "Archivo", sans-serif;
+}
+
+.text-gradient {
+    background: linear-gradient(to right, #5545F0, #658AF0, #7AD0EF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

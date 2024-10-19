@@ -7,9 +7,9 @@
     <link href="./output.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
 </head>
-<body class="flex flex-col min-w-full min-h-screen box-border h-full">
+<body class="flex flex-col min-w-fit min-h-screen box-border max-w-screen-xl w-screen">
 <!-- Cabeçalho da página -->
-    <nav class="bg-slate-100 w-screen sticky z-20 top-0 start-0 text-slate-900 shadow-xl border-b border-slate-400">
+    <nav class="flex-auto bg-slate-100 w-screen sticky z-20 top-0 start-0 text-slate-900 shadow-xl border-b border-slate-400">
         <div class="flex py-4 px-7 items-center justify-between">
             <div class="flex-auto flex justify-evenly">
                 <a href="" class="text-2xl font-Archivo font-bold">Scrum360</a>
@@ -63,6 +63,26 @@
             </div>
         </div>
     </nav>
+
+<!-- Hero -->
+    <section class="flex-none flex items-center justify-center bg-no-repeat bg-cover bg-center h-[45rem] bg-[linear-gradient(to_top_right,rgba(0,0,0,1),rgba(0,0,0,0.2)),url('/src/assets/imgs/home-hero.jpg')]">
+        <div class="flex flex-col items-center justify-center w-[60vw] text-white text-center">
+            <h1 class="text-8xl font-bold">
+                Tenha <b class="text-gradient font-bold">Dominio</b> na Metódologia <b class="text-gradient font-bold">Scrum</b>
+            </h1>
+            <p class="mt-4 text-lg font-light text-gray-200">Tudo o que você precisa saber sobre Scrum para gerenciar projetos com agilidade.</p>
+            <div class="flex flex-row justify-evenly w-full pt-8 mx-6 lg:justify-center lg:gap-6">
+                <a href="" class="px-4 py-2 rounded-lg font-medium text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br">Comece Aqui</a>
+                <a href="" class="px-4 py-2 rounded-lg text-white border flex gap-2 items-center">
+                    Saiba Mais
+                    <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>    
+    </section>
+
 <!-- Contéudo principal -->
     <main class="flex-auto flex items-center justify-center p-8">
         <p>MAIN</p>
@@ -70,33 +90,33 @@
 
 <!-- Rodapé da página -->
     <footer class="flex-none flex flex-col px-28 py-7 mt-auto w-full bg-slate-300">
-    <div class="w-full flex justify-between px-10 gap-32">
-        <div class="flex-1 flex flex-col">
-            <a href="" class="mb-2 text-2xl font-Archivo font-bold">Scrum360</a>
-            <p class="text-justify text-sm">O Scrum360 é uma plataforma educacional interativa, idealizada para estudantes e profissionais que desejam dominar a metodologia Scrum.</p>
-        </div>
-        <div class="flex-auto grid grid-cols-4 gap-6">
-            <div class="flex flex-col">
-                <h2 class="mb-6 text-sm font-semibold text-slate-900 uppercase">Informações</h2>
-                <ul class="text-gray-500 font-medium">
-                    <li class="mb-4">
-                        <a href="" class="hover:underline">Ínicio</a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="" class="hover:underline">Sobre nós</a>
-                    </li>
-                    <li>
-                        <a href="" class="hover:underline">Desenvolvedores</a>
-                    </li>
-                </ul>
+        <div class="w-full flex justify-between px-10 gap-32">
+            <div class="flex-1 flex flex-col">
+                <a href="" class="mb-2 text-2xl font-Archivo font-bold">Scrum360</a>
+                <p class="text-justify text-sm">O Scrum360 é uma plataforma educacional interativa, idealizada para estudantes e profissionais que desejam dominar a metodologia Scrum.</p>
             </div>
-            <div>
-                <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Recursos</h2>
-                <ul class="text-gray-500 font-medium">
-                    <li class="mb-4">
-                        <a href="" class="hover:underline"> Comece Aqui</a>
-                    </li>
-                    <li class="mb-4">
+            <div class="flex-auto grid grid-cols-4 gap-6">
+                <div class="flex flex-col">
+                    <h2 class="mb-6 text-sm font-semibold text-slate-900 uppercase">Informações</h2>
+                    <ul class="text-gray-500 font-medium">
+                        <li class="mb-4">
+                            <a href="" class="hover:underline">Ínicio</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="" class="hover:underline">Sobre nós</a>
+                        </li>
+                        <li>
+                            <a href="" class="hover:underline">Desenvolvedores</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Recursos</h2>
+                    <ul class="text-gray-500 font-medium">
+                        <li class="mb-4">
+                            <a href="" class="hover:underline"> Comece Aqui</a>
+                        </li>
+                        <li class="mb-4">
                             <a href="" class="hover:underline">Módulos</a>
                         </li>
                         <li>

@@ -7,7 +7,7 @@
     <link href="./output.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
 </head>
-<body class="flex flex-col min-w-fit min-h-screen box-border max-w-screen-xl w-screen">
+<body class="flex flex-col min-w-fit">
 <!-- Cabeçalho da página -->
     <nav class="flex-auto bg-slate-100 w-screen sticky z-20 top-0 start-0 text-slate-900 shadow-xl border-b border-slate-400">
         <div class="flex py-4 px-7 items-center justify-between">
@@ -17,7 +17,7 @@
             </div>
             <div class="flex-auto">
                 <ul class="flex flex-row gap-4 justify-around">
-                    <a href="#">
+                    <a href="./index.html">
                         <li class="h-14 w-20 px-2 flex items-center justify-center hover:bg-slate-900 hover:text-white">
                             Home
                         </li>
@@ -70,7 +70,7 @@
             <h1 class="text-8xl font-bold">
                 Tenha <b class="text-gradient font-bold">Dominio</b> na Metódologia <b class="text-gradient font-bold">Scrum</b>
             </h1>
-            <p class="mt-4 text-lg font-light text-gray-200">Tudo o que você precisa saber sobre Scrum para gerenciar projetos com agilidade.</p>
+            <p class="mt-4 text-lg font-light text-gray-200">Tudo o que você precisa saber sobre Scrum para desenvolver projetos com agilidade.</p>
             <div class="flex flex-row justify-evenly w-full pt-8 mx-6 lg:justify-center lg:gap-6">
                 <a href="" class="px-4 py-2 rounded-lg font-medium text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br">Comece Aqui</a>
                 <a href="" class="px-4 py-2 rounded-lg text-white border flex gap-2 items-center">
@@ -84,8 +84,65 @@
     </section>
 
 <!-- Contéudo principal -->
-    <main class="flex-auto flex items-center justify-center p-8">
-        <p>MAIN</p>
+    <main class="flex-auto flex flex-col items-center justify-center w-full px-24 gap-0 mb-24 lg:py-0 lg:gap-4">
+        <div class="flex-auto flex justify-between items-center w-full gap-32 px-16 lg:flex-nowrap md:flex-wrap">
+            <div class="flex-auto">
+                <h2 class="text-xl font-semibold text-blue-600">Sobre o Scrum</h2>
+                <h1 class="text-5xl text-slate-900 font-bold mb-4">O que é o metódo Scrum?</h1>
+                <p class="text-black text-xl mb-8">
+                    A metodologia Scrum é uma estrutura ágil usada para gerenciar projetos, especialmente em desenvolvimento de software, mas pode ser aplicada a diversos tipos de projetos. Ela promove colaboração, adaptação contínua e entrega incremental do produto, ajudando as equipes a serem mais flexíveis e produtivas.
+                </p>
+                <a href="" class="px-8 py-6 rounded-lg font-medium text-white bg-blue-600">
+                    Conheça mais!
+                </a>
+            </div>
+            <div class="flex-none flex items-center">                
+                <svg class="w-[30rem] h-[30rem]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                    <img src="/src/assets/imgs/Team goals-rafiki.svg" alt="" class="">
+                </svg>
+            </div>
+        </div>
+        <div class="flex-auto flex flex-col w-full justify-center items-center px-16">
+            <div class="flex-none flex flex-col justify-center mb-8">
+                <h2 class="flex-none text-xl px-0.5 font-semibold text-blue-600">Mas...</h2>
+                <h1 class="flex-none text-5xl text-slate-900 font-bold">Por que aprender?</h1>
+            </div>
+            <div class="flex-none grid grid-cols-3 gap-16 w-full">
+                <div class="inline">
+                    <h2 class="text-3xl font-semibold text-gray-900 mb-3 flex items-center justify-center w-full gap-2">
+                        <svg class="w-6 h-6 text-gray-900" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" d="M9 2a1 1 0 0 0-1 1H6a2 2 0 0 0-2 2v15a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-2a1 1 0 0 0-1-1H9Zm1 2h4v2h1a1 1 0 1 1 0 2H9a1 1 0 0 1 0-2h1V4Zm5.707 8.707a1 1 0 0 0-1.414-1.414L11 14.586l-1.293-1.293a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4Z" clip-rule="evenodd"/>
+                        </svg>  
+                        Ágil
+                    </h2>
+                    <p class="text-xl text-black text-justify">
+                        Chega de perdas e retrabalho! O Scrum divide projetos em etapas menores e coloca o foco no que importa, garantindo entregas rápidas e contínuas. Além disso, ele permite ajustes no caminho, facilitando a adaptação a mudanças sem comprometer prazos ou qualidade. Mais agilidade, menos dor de cabeça!
+                    </p>
+                </div>
+                <div class="inline">
+                    <h2 class="text-3xl font-semibold text-gray-900 mb-3 flex items-center justify-center w-full gap-2">
+                        <svg class="w-6 h-6 text-gray-900" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4.5V19a1 1 0 0 0 1 1h15M7 14l4-4 4 4 5-5m0 0h-3.207M20 9v3.207"/>
+                        </svg>
+                        Competitivo
+                    </h2>
+                    <p class="text-xl text-black text-justify">
+                        Empresas de sucesso buscam cada vez mais equipes ágeis e eficientes. Aprender essa metodologia coloca você à frente no mercado e faz toda a diferença em projetos desafiadores. Afinal, quem não quer ser reconhecido por entregar resultados e resolver problemas de forma estratégica?
+                    </p>
+                </div>
+                <div class="inline">
+                    <h2 class="text-3xl font-semibold text-slate-900 mb-3 flex items-center justify-center w-full gap-2">
+                        <svg class="w-6 h-6 text-gray-900" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/>
+                        </svg>                          
+                        Flexível
+                    </h2>
+                    <p class="text-xl text-black text-justify">
+                        O Scrum vai além do mundo corporativo: ele se adapta a diferentes setores e até à sua vida pessoal. Quer organizar melhor sua rotina, planejar projetos em equipe ou até preparar um evento especial? Essa metodologia é tão versátil que funciona em qualquer cenário, sempre trazendo mais clareza e eficiência.
+                    </p>
+                </div>
+            </div>
+        </div>
     </main>
 
 <!-- Rodapé da página -->
@@ -100,7 +157,7 @@
                     <h2 class="mb-6 text-sm font-semibold text-slate-900 uppercase">Informações</h2>
                     <ul class="text-gray-500 font-medium">
                         <li class="mb-4">
-                            <a href="" class="hover:underline">Ínicio</a>
+                            <a href="./index.html" class="hover:underline">Ínicio</a>
                         </li>
                         <li class="mb-4">
                             <a href="" class="hover:underline">Sobre nós</a>
@@ -128,14 +185,16 @@
                     <h2 class="mb-4 text-sm font-semibold text-gray-900 uppercase">Contatos</h2>
                     <div class="mb-4 p-2 rounded-md bg-slate-400">
                         <div class="flex flex-col">
-                            <h5 class="mb-2 text-sm font-bold tracking-tight text-slate-900">LinkedIn</h5>
-                            <p class="mb-3 font-normal text-sm text-gray-700"></p>
+                            <h5 class="text-sm font-bold tracking-tight text-slate-900">LinkedIn</h5>
+                            <a href="https://www.linkedin.com/in/gustavo-toneli-de-oliveira-b46756228/details/projects/?profileUrn=urn%3Ali%3Afsd_profile%3AACoAADkQV-YB4iyzzH7xb65zTJFDpduVptqhpWU" class="font-normal text-sm text-gray-900 hover:underline">
+                                Equipe Underdevs
+                            </a>
                         </div>
                     </div>
                     <div class="p-2 rounded-md bg-slate-400">
                         <div class="flex flex-col">
-                            <h5 class="mb-2 text-sm font-bold tracking-tight text-slate-900">Email/Telefone</h5>
-                            <p class="mb-3 font-normal text-sm text-gray-700"></p>
+                            <h5 class="text-sm font-bold tracking-tight text-slate-900">Email/Telefone</h5>
+                            <p class="font-normal text-sm text-gray-900">placeholder@UD.com.br</p>
                         </div>
                     </div>
                 </div>
@@ -152,7 +211,7 @@
         <hr class="my-8 border-gray-600" />
         <div class="flex justify-center">
             <span class="text-sm text-gray-500">
-                © 2024 <a href="" class="hover:underline">Underdevs</a>. All Rights Reserved.
+                © 2024 <a href="https://github.com/davihelisson/FATEC-API-Under_Devs" class="hover:underline">Underdevs</a>. All Rights Reserved.
             </span>
         </div>
     </footer>

@@ -6,7 +6,13 @@
     <title>Dev Team</title>
     <link href="./output.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+    <style>
+        html {
+          scroll-behavior: smooth;
+        }
+      </style>
 </head>
+<div id="section2"></div>
 <body class="flex flex-col min-w-fit min-h-screen box-border max-w-screen-xl w-screen">
 <!-- Cabeçalho da página -->
 <nav class="flex-auto bg-slate-100 w-screen sticky z-20 top-0 start-0 text-slate-900 shadow-xl border-b border-slate-400">
@@ -17,7 +23,7 @@
         </div>
         <div class="flex-auto">
             <ul class="flex flex-row gap-4 justify-around">
-                <a href="#">
+                <a href="/src/index.html">
                     <li class="h-14 w-20 px-2 flex items-center justify-center hover:bg-slate-900 hover:text-white">
                         Home
                     </li>
@@ -74,16 +80,54 @@
         </h1>
         <p class="mt-4 text-lg font-light text-gray-200">Um guia completo sobre o funcionamento da equipe de desenvolvimento.</p>
         <div class="flex flex-row justify-evenly w-full pt-8 mx-6 lg:justify-center lg:gap-6">
-            <a href="" class="px-4 py-2 rounded-lg font-medium text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br">Comece Aqui</a>
-            <a href="" class="px-4 py-2 rounded-lg text-white border flex gap-2 items-center">
-                Saiba Mais
-                <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+            <a href="#section1" class="px-4 py-2 rounded-lg font-medium text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br">Comece Aqui</a>
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"></path>
                 </svg>
             </a>
         </div>
     </div>    
 </section>
+
+    <!--MainContent-->
+    <div id="section1"></div>
+    <main class="flex-auto flex flex-col items-center justify-center w-full px-24 gap-0 mb-24 lg:py-0 lg:gap-4">
+        <div class="flex-auto flex justify-between items-center w-full gap-32 px-16 pt-32 lg:flex-nowrap md:flex-wrap">
+            <div class="flex-auto">
+                <h2 class="text-xl font-semibold text-blue-600">
+                    Sobre o DevTeam
+                </h2>
+                <h1 class='text-4xl text-slate-900 font-bold mb-4'>
+                    Quem são os membros de um &lt;DevTeam/&gt; ?
+                </h1>
+                <p class="text-black text-xl ">
+                    São as pessoas comprometidas em criar qualquer incremento utilizável do produto dentro da meta da Sprint. Em outras palavras, serão a mão de obra de um projeto, recebem o Product Backlog do P.O da equipe e logo após executam suas tarefas devidamente separadas e direcionadas pelo Scrum Master.
+                </p>
+                    <h3 class = 'text-black text-3xl pt-20 font-bold text-blue-600'>Developers são responsáveis por:</h3>
+             <div class="flex flex-col justify-between h-100">
+                <ul class="list-disc font-medium pt-5 text-xl space-y-5">
+                    <li>
+                        Criar um plano para a Sprint, a Sprint Backlog: Com um conjunto de atividades necessárias para desenvolver o projeto no período especificado da Sprint, ou seja, uma Sprint Backlog, os developers conseguem se organizar facilmente diante da organização e da construção do projeto
+                    </li>
+                    <li>
+                        Executar as ações definidas para o Sprint Backlog: Quando o projeto se encontra elaborado e com suas entregas visualmente definidas, as tarefas são divididas pelo time de developers, possibilitando o projeto se estruturar aos poucos.
+                    </li>
+                    <li>
+                        Introduzir qualidade baseado em uma definição de pronto: É de extrema importância que a equipe de developers se comprometa com a qualidade do produto que está sendo desenvolvido, ao se atentar com esse requisito, deve também informar aos companheiros quando sua tarefa estiver pronta, para que possam analisar assim a qualidade da mesma.
+                    </li>
+                    <li>
+                        Auxiliar os companheiros com dificuldade na realização de suas tarefas: Naturalmente, existirão aquelas tarefas que exigem mais conhecimento e técnica para serem realizadas, ocasionalmente, causará dificuldade em alguns membros. Sendo assim função de developers mais preparados auxiliar os que se encontram em obstáculos.
+                    </li>
+                    <li>
+                        Adaptar seu plano a cada dia em direção à meta da Sprint: Para que não aconteça uma dissociação de tarefa ou um atraso em relação ao projeto, é importante analisar e adaptar os planos, fazendo os mesmos ter seguimento pelo planejamento da Sprint, e pontualidade nas entregas.
+                    </li>
+                    <li>
+                        Responsabilizar-se mutuamente como profissionais: O papel de um developer é fundamental para qualquer parte do projeto, se o mesmo não obtém uma postura profissional, evidentemente o projeto há de não ter um caminho próspero.
+                    </li>
+                </ul>
+             </div>
+            </div>
+        </div>
+    </main>
 
 <!-- Rodapé da página -->
 <footer class="flex-none flex flex-col px-28 py-7 mt-auto w-full bg-slate-300">
@@ -97,7 +141,7 @@
                 <h2 class="mb-6 text-sm font-semibold text-slate-900 uppercase">Informações</h2>
                 <ul class="text-gray-500 font-medium">
                     <li class="mb-4">
-                        <a href="" class="hover:underline">Ínicio</a>
+                        <a href="#section2" class="hover:underline">Ínicio</a>
                     </li>
                     <li class="mb-4">
                         <a href="" class="hover:underline">Sobre nós</a>

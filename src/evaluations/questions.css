@@ -37,3 +37,7 @@ input[type="submit"],
 input[type="reset"] {
     background-color: rgb(6, 112, 112);
 }
+
+input[type="radio"]{
+    margin-right: 10px;
+}

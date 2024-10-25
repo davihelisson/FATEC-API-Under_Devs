@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrum</title>
+    <link href="./output.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        
+    </style> 
+</head>
+<body class= "flex flex-col min-w-fit min-h-screen box-border max-w-screen-xl w-screen">
+<!-- Cabeçalho da página -->
+ <section id="ínicio"></section>
+    <nav class="flex-auto bg-slate-100 w-screen sticky z-20 top-0 start-0 text-slate-900 shadow-xl border-b border-slate-400">
+        <div class="flex py-4 px-7 items-center justify-between">
+            <div class="flex-auto flex justify-evenly">
+                <a href="" class="text-2xl font-Archivo font-bold">Scrum360</a>
+                <div class="h-30 w-0.5 bg-slate-900"></div>
+            </div>
+            <div class="flex-auto">
+                <ul class="flex flex-row gap-4 justify-around">
+                    <a href="Frontend\src\index.html"
+                        <li class="h-14 w-20 px-2 flex items-center justify-center hover:bg-slate-900 hover:text-white">
+                            Home
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="h-14 w-20 px-2 flex items-center justify-center hover:bg-slate-900 hover:text-white">
+                            Sobre
+                        </li>
+                    </a>
+
+                    <li class="px-2 flex flex-row hover:bg-slate-900 hover:text-white ">
+                        <button id="dropdownDelayButton" data-dropdown-toggle="dropdownDelay" data-dropdown-delay="200" data-dropdown-trigger="hover" class="flex items-center " type="button">
+                            <p>Módulos</p>
+                            <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                            </svg>
+                        </button>
+
+                    <!-- Dropdown menu -->
+                        <div id="dropdownDelay" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDelayButton">
+                              <li>
+                                <a href="./ScrumTail.html" class="block px-4 py-2 hover:bg-gray-100 hover:text-gray-700 dark:hover:bg-gray-600 dark:hover:text-white">Scrum</a>
+                              </li>
+                              <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:text-gray-700 dark:hover:bg-gray-600 dark:hover:text-white">Product Owner</a>
+                              </li>
+                              <li>
+                                <a href="./ScrumMaster.html" class="block px-4 py-2 hover:bg-gray-100 hover:text-gray-700 dark:hover:bg-gray-600 dark:hover:text-white">Scrum Master</a>
+                              </li>
+                              <li>
+                                <a href="./DevTeamTail.html" class="block px-4 py-2 hover:bg-gray-100 hover:text-gray-700 dark:hover:bg-gray-600 dark:hover:text-white">Dev Team</a>
+                              </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex-1 flex items-center justify-center">
+                <a href="" class="flex justify-center px-4 py-2 rounded-lg text-white bg-slate-900">
+                    Conheça o Time
+                </a>
+            </div>
+        </div>
+    </nav>
+  
+<!-- Banner -->
+    <section class="flex-none flex items-center justify-center bg-no-repeat bg-cover bg-center h-[45rem]" style="background-image: linear-gradient(to top right, rgba(0,0,0,1), rgba(0,0,0,0.2)), url('/src/assets/imgs/devteamimg.jpg');">
+        <!-- Conteúdo -->   
+        <div class="flex flex-col items-center justify-center w-[60vw] text-white text-center">
+            <h1 class="text-8xl font-bold">
+                Como funciona o <b class="text-gradient font-bold">Scrum ?</b>
+            </h1>
+            <p class="mt-4 text-lg font-light text-gray-200">Um guia completo sobre o funcionamento da equipe de desenvolvimento.</p>
+            <div class="flex flex-row justify-evenly w-full pt-8 mx-6 lg:justify-center lg:gap-6">
+                <a href="#section1" class="px-4 py-2 rounded-lg font-medium text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br">Comece Aqui</a>
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>    
+    </section>
+
+<!-- Contéudo Principal-->
+    <div id="section1"></div>
+    <main class="flex-auto flex flex-col items-center justify-center w-full px-24 gap-0 mb-24 lg:py-0 lg:gap-4">
+        <div class="flex-auto flex justify-between items-center w-full gap-32 px-16 pt-16 lg:flex-nowrap md:flex-wrap">
+            <div class="flex-auto">
+                <h2 class="text-xl font-semibold text-blue-600">
+                    Primeiramente...
+                </h2>
+                <h1 class="text-4xl text-slate-900 font-bold mb-4">
+                    Como surgiu a metodologia Scrum ?
+                </h1>
+                <p class="text-black text-xl ">
+                    A ideia de base da metodologia Scrum, foi desenvolvida por Ken Schwaber e Jeff Sutherland, juntos escreveram o Guia Scrum, documento que contém a definição oficial da estrutura. O nome "Scrum", vem de uma analogia a uma jogada do esporte Rugby, na qual o time fica em formação coesa lutando pelos resultados.</p>
+                <h3 class="text-3xl pt-20 font-bold text-blue-600">Ok... mas o que é Scrum?</h3>
+             <div class="flex flex-col justify-between h-100">
+                <section class="pt-4">
+                    <p class='text-black text-xl'>
+                    O Scrum é uma metodologia que ajuda as empresas, organizações e times na geração de valor por meio de soluções adaptativas para problemas complexos. Scrum se baseia em experiências anteriores e na observação e também concentra-se no que é essencial. Scrum trabalha com a abordagem interativa e incremental.
+                    </p>
+                </section>
+            </div>
+            <div class="flex-auto flex flex-col w-full justify-center items-center pt-20">
+                <div class="flex-none flex flex-col justify-center mb-8">
+                    <h1 class="flex-none text-5xl text-blue-900 font-bold">Valores Scrum</h1>
+                </div>
+            </div>
+            <div class="flex space-x-3 rounded-lg overflow-hidden shadow-lg bg-white p-6 min-h-[200px]">
+            <div class="max-w-sm rounded-lg overflow-hidden shadow-lg bg-white p-6">
+                <h2 class="font-bold text-xl mb-2 text-blue-700">Transparência</h2>
+                <p class="text-gray-700 text-base">
+                    O processo e o trabalho devem ser visíveis a todos, entre os que executam o trabalho e os que recebem. Sem a transparência, decisões que aumentam o risco e diminuem o valor, podem ser tomadas.
+                </p>
+            </div>
+            <div class="max-w-sm rounded-lg overflow-hidden shadow-lg bg-white p-6">
+                <h2 class="font-bold text-xl mb-2 text-blue-700">Inspeção</h2>
+                <p class="text-gray-700 text-base">
+                    O progresso em direção às metas definidas deve ser inspecionado com frequência para garantir o sucesso da meta.
+                </p>
+            </div>
+            <div class="max-w-sm rounded-lg overflow-hidden shadow-lg bg-white p-6">
+                <h2 class="font-bold text-xl mb-2 text-blue-700">Adaptação</h2>
+                <p class="text-gray-700 text-base">
+                    Se os aspectos do processo se distanciam da meta além de limites aceitáveis, o processo deve ser ajustado para manter a direção da meta.
+                </p>
+            </div>
+        </div>
+        <div class="pt-20">
+            <section>
+                <h2 class="text-3xl font-semibold text-blue-900 pb-5">
+                    O sucesso da metodologia Scrum depende de 5 pilares principais:
+                </h2>
+                <ul class="text-xl justify-around grid gap-4">
+                    <li>
+                        <span class="font-semibold">Compromisso: </span> O time se compromete a realizar os objetivos e suportar uns aos outros 
+                    </li>
+                    <li>
+                        <span class="font-semibold">Foco: </span> O foco principal é a meta da Sprint.
+                    </li>
+                    <li>
+                        <span class="font-semibold">Abertura: </span> Os membros são abertos quanto ao trabalho e aos desafios.
+                    </li>
+                    <li>
+                        <span class="font-semibold">Respeito: </span> Os membros se respeitam e são respeitados, tornando-os independentes e capazes.
+                    </li>
+                    <li>
+                        <span class="font-semibold">Coragem: </span>  Os membros tem a coragem de fazer a coisa certa e trabalhar em problemas difícies.
+                    </li>
+                    <p class="text-xl pt-8">
+                        Quando esses valores são incorporados pelo time Scrum, os pilares:  Transparência, inspeção e adaptação, ganham vida gerando confiança.
+                    </p>
+                    </div>
+
+
+                <!--SegundaSessaoTxt-->
+
+                    <section>
+                        <div class="flex-auto flex flex-col w-full justify-center items-center pt-20">
+                            <div class="flex-none flex flex-col justify-center mb-8">
+                                <h1 class="flex-none text-5xl text-blue-900 font-bold">Eventos Scrum</h1>
+                            </div>
+                        </div>
+                    <ul class="text-xl justify-around grid gap-4">
+                        <li>
+                            <div class="max-w-full rounded-lg overflow-hidden shadow-lg bg-white p-6">
+                                <span class="font-semibold">Sprint: </span> A Sprint é o coração do Scrum, onde as ideias são transformadas em valor. São eventos de duração fixa de um mês ou menos, uma nova sprint começa imediatamente após a conclusão da sprint anterior. Todo trabalho para atingir a meta do produto acontece dentro das sprints. Sprints permitem previsibilidade garantindo a inspeção e adaptação na direção da meta do produto, cada sprint pode ser considerada um projeto curto.
+
+                                Uma sprint pode ser cancelada se a meta da sprint se tornar obsoleta, somente o Product Owner tem autoridade para cancelar a sprint.
+                            </div>
+                        </li>
+                        <li>
+                            <div class="max-w-full rounded-lg overflow-hidden shadow-lg bg-white p-6">
+                                <span class="font-semibold">Sprint Planning: </span> Aqui é planejado o trabalho que será realizado na Sprint pelo Scrum Team. Essa reunião tem um time-boxed de máximo 8 horas para uma sprint de um mês de duração. O Scrum Master garante que o evento ocorra dentro do time-boxed e que todos os participantes entendam o seu propósito.
+                            </div>
+                        </li>
+                        <li>
+                            <div class="max-w-full rounded-lg overflow-hidden shadow-lg bg-white p-6">
+                                <span class="font-semibold">Daily Scrum: </span> Como uma breve reunião da equipe, o Daily Scrum tem a função de alinhar o que está sendo feito, compreender a situação do projeto por todos integrantes através da inspeção, e 
+                                se necessário, usar da adaptação para a melhora da Sprint Backlog.
+                            </div>
+                        </li>
+                        <li>
+                            <div class="max-w-full rounded-lg overflow-hidden shadow-lg bg-white p-6">
+                                <span class="font-semibold">Sprint Review: </span> A Sprint Review nada mais é que uma revisão do resultado da Sprint, determinando o será adaptado para o futuro. No processo da Sprint Review, o Scrum Team apresentará os resultados para os principais stakeholders, deixando claro as mudanças e os atos na Sprint. Sendo um evento que pode levar a mudança de outros, como modificações no Product Backlog, pois é na Sprint Review que clientes e interessados no produto podem dar sugestões de como deverá seguir o andamento do produto.
+                            </div>
+                        </li>
+                        <li>
+                            <div class="max-w-full rounded-lg overflow-hidden shadow-lg bg-white p-6">
+                                <span class="font-semibold">Sprint Retrospective: </span>  A função da Sprint Retrospective é avaliar a eficiência do trabalho da equipe para identificar e corrigir os impedimentos e problemas, e intensificar as qualidades e pontos fortes. Através de uma inspeção da última Sprint, é examinado os indivíduos, interações, processos, ferramentas e a definição do produto. Um time que utiliza da Sprint Restropective, adiciona ferramentas e métodos em futuras Sprints, facilitando futuros processos.
+                            </div>
+                        </li>
+                    </section>
+                <!--thirdtxtsection-->
+                    <section>
+                        <div class="flex-auto flex flex-col w-full justify-center items-center pt-20">
+                            <div class="flex-none flex flex-col justify-center mb-8">
+                                <h1 class="flex-none text-5xl text-blue-900 font-bold">Artefatos Scrum</h1>
+                            </div>
+                        </div>
+                    <ul class="text-xl justify-around grid gap-4">
+                        <li>
+                            <div class="max-w-full rounded-lg overflow-hidden shadow-lg bg-white p-6">
+                                <span class="font-semibold">Product Backlog: </span> Product Backlog é uma lista de base contendo necessidades para criação e melhoria do produto. Inicialmente sendo elaborada entre o P.O e o cliente, logo após chegando nas mãos dos Developers. Um método muito eficiente aplicado no Product Backlog, se chama MVP (Minimum Viable Product), método de entrega com base na parte de mais valor do produto.
+                            </div>
+                        </li>
+                        <li>
+                            <div class="max-w-full rounded-lg overflow-hidden shadow-lg bg-white p-6">
+                                <span class="font-semibold">Minimun Viable Product (MVP): </span>As primeiras entregas ao stakeholder, obrigatoriamente são aquelas que possuem mais valor para serem utilizadas. Por exemplo, em um projeto cujo o produto a ser desenvolvido é uma cama, a primeira entrega na Sprint deverá ser o colchão, pois com essa primeira parte do produto, o cliente já tem funcionalidade com o que foi entregue. A efetuação de entregas nas Sprints, baseadas no MVP, torna o projeto mais simples e mais satisfatório ao cliente.
+                            </div>
+                        </li>
+                        <li>
+                            <div class="max-w-full rounded-lg overflow-hidden shadow-lg bg-white p-6">
+                                <span class="font-semibold">Sprint Backlog: </span> Atentar-se com prazo de entregas, se programar com metas estabelecidas entre a equipe e o cliente, é o que define a Sprint Backlog. Uma forma de auxilio ao time de Developers, é um fluxograma de processo controlado pelo Master, baseado em tarefas com situações de: Iniciado, em progresso e completo.
+                            </div>
+                        </li>
+                        <li>
+                            <div class="max-w-full rounded-lg overflow-hidden shadow-lg bg-white p-6">
+                                <span class="font-semibold">Sprint Review: </span> A Sprint Review nada mais é que uma revisão do resultado da Sprint, determinando o será adaptado para o futuro. No processo da Sprint Review, o Scrum Team apresentará os resultados para os principais stakeholders, deixando claro as mudanças e os atos na Sprint. Sendo um evento que pode levar a mudança de outros, como modificações no Product Backlog, pois é na Sprint Review que clientes e interessados no produto podem dar sugestões de como deverá seguir o andamento do produto.
+                            </div>
+                        </li>
+                        <li>
+                            <div class="max-w-full rounded-lg overflow-hidden shadow-lg bg-white p-6">
+                                <span class="font-semibold">Incremento: </span>O incremento é um elemento adicionado nas Sprint para direção da meta do produto, funcionando obrigatoriamente com outros incrementos já incluídos de forma coesa. Os incrementos serão exibidos de forma mais clara nas Sprint Reviews, sendo analisados e podem ser cogitados em seres mantidos em futuros produtos.
+                            </div>
+                        </li>
+                    </section>
+        </div>
+        </div>
+    </main>
+
+<!-- Rodapé da página -->
+<footer class="flex-none flex flex-col px-28 py-7 mt-auto w-full bg-slate-300">
+    <div class="w-full flex justify-between px-10 gap-32">
+        <div class="flex-1 flex flex-col">
+            <a href="" class="mb-2 text-2xl font-Archivo font-bold">Scrum360</a>
+            <p class="text-justify text-sm">O Scrum360 é uma plataforma educacional interativa, idealizada para estudantes e profissionais que desejam dominar a metodologia Scrum.</p>
+        </div>
+        <div class="flex-auto grid grid-cols-4 gap-6">
+            <div class="flex flex-col">
+                <h2 class="mb-6 text-sm font-semibold text-slate-900 uppercase">Informações</h2>
+                <ul class="text-gray-500 font-medium">
+                    <li class="mb-4">
+                        <a href="#ínicio" class="hover:underline">Ínicio</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="" class="hover:underline">Sobre nós</a>
+                    </li>
+                    <li>
+                        <a href="" class="hover:underline">Desenvolvedores</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Recursos</h2>
+                <ul class="text-gray-500 font-medium">
+                    <li class="mb-4">
+                        <a href="" class="hover:underline"> Comece Aqui</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="" class="hover:underline">Módulos</a>
+                    </li>
+                    <li>
+                        <a href="" class="hover:underline">Perguntas Frequentes</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="mb-4 text-sm font-semibold text-gray-900 uppercase">Contatos</h2>
+                <div class="mb-4 p-2 rounded-md bg-slate-400">
+                    <div class="flex flex-col">
+                        <h5 class="mb-2 text-sm font-bold tracking-tight text-slate-900">LinkedIn</h5>
+                        <p class="mb-3 font-normal text-sm text-gray-700"></p>
+                    </div>
+                </div>
+                <div class="p-2 rounded-md bg-slate-400">
+                    <div class="flex flex-col">
+                        <h5 class="mb-2 text-sm font-bold tracking-tight text-slate-900">Email/Telefone</h5>
+                        <p class="mb-3 font-normal text-sm text-gray-700"></p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2 class="mb-4 text-sm font-semibold flex justify-center text-gray-900 uppercase">Documentação</h2>
+                <a href="https://github.com/davihelisson/FATEC-API-Under_Devs" class="flex flex-col justify-center p-2 h-32 rounded-md bg-slate-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                        <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+    <hr class="my-8 border-gray-600" />
+    <div class="flex justify-center">
+        <span class="text-sm text-gray-500">
+            © 2024 <a href="" class="hover:underline">Underdevs</a>. All Rights Reserved.
+        </span>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+</body>
+</html>

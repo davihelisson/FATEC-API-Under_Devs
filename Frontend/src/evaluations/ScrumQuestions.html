@@ -6,6 +6,7 @@
     <title>Scrum Questions</title>
     <link rel="stylesheet" type="text/css" href="../style.css">
     <link rel="stylesheet" type="text/css" href="./questions.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <!-- Cabeçalho da página -->
@@ -16,7 +17,7 @@
     </header>
     <main>
         <h1 class="frm-title">Questões Gerais sobre Scrum</h1>
-        <form action="../" method="post">
+        <form action="#" method="post">
             <!-- OBSERVAÇÃO IMPORTANTE
             Esse esqueleto possui muitas questões. Observe o padrão do label e do id.
             nem todos estão ajustados, cada label for "xn" tem que corresponder a um input id "xn" 
@@ -97,10 +98,17 @@
             </div>
             <!-- FIM DO FORMÚLÁRIO -->
             
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">ks
+            <input type="button" onclick="ScrumQuestions()" value="Enviar">
+            <input type="reset" value="Limpar">
         </form>
+        
     </main>
+    
+    <!-- DIV PROVISÓRIA COM OS RESULTADOS -->
+    <section id="result-panel" name="Resultados da Avaliação" hidden class="results">
+        <span>Acertos:</span><span id="result">0</span>    
+    </section>
+    <!-- FIM DOS RESULTADOS -->
 
     <!-- Rodapé da página -->
     <footer>

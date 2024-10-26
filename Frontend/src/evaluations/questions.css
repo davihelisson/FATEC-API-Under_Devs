@@ -41,3 +41,12 @@ input[type="reset"] {
 input[type="radio"]{
     margin-right: 10px;
 }
+
+.results{
+    padding: 10px;
+    margin: 20px;
+    font-size: 2vw;
+    font-family: monospace;
+    color: rgb(6, 112, 112);
+    text-align: center;
+}

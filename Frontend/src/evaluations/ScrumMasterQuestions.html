@@ -97,10 +97,16 @@
             </div>
             <!-- FIM DO FORMÚLÁRIO -->
             
-            <input type="submit" value="Enviar">
+            <input type="button" onclick="ScrumQuestions()" value="Enviar">
             <input type="reset" value="Limpar">
         </form>
     </main>
+
+    <!-- DIV PROVISÓRIA COM OS RESULTADOS -->
+    <section id="result-panel" name="Resultados da Avaliação" hidden class="results">
+        <span>Acertos:</span><span id="result">0</span>      
+    </section>
+    <!-- FIM DOS RESULTADOS -->
 
     <!-- Rodapé da página -->
     <footer>

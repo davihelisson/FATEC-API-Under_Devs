@@ -90,16 +90,16 @@ function PoQuestions (){
 }
 function ScrumMasterQuestions (){
     let contador = 0;
-    const quest1 = document.getElementById('a2');
+    const quest1 = document.getElementById('a1');
     const quest2 = document.getElementById('b2');
-    const quest3 = document.getElementById('c2');
-    const quest4 = document.getElementById('d2');
-    const quest5 = document.getElementById('e3');
-    const quest6 = document.getElementById('f3');
+    const quest3 = document.getElementById('c4');
+    const quest4 = document.getElementById('d1');
+    const quest5 = document.getElementById('e2');
+    const quest6 = document.getElementById('f2');
     const quest7 = document.getElementById('g3');
     const quest8 = document.getElementById('h3');
-    const quest9 = document.getElementById('i3');
-    const quest10 = document.getElementById('j3');
+    const quest9 = document.getElementById('i2');
+    const quest10 = document.getElementById('j2');
     if(quest1.checked){
         contador += 1;
     }
@@ -135,16 +135,16 @@ function ScrumMasterQuestions (){
 }
 function DevTeamQuestions (){
     let contador = 0;
-    const quest1 = document.getElementById('a3');
-    const quest2 = document.getElementById('b3');
+    const quest1 = document.getElementById('a2');
+    const quest2 = document.getElementById('b1');
     const quest3 = document.getElementById('c3');
-    const quest4 = document.getElementById('d3');
+    const quest4 = document.getElementById('d2');
     const quest5 = document.getElementById('e3');
-    const quest6 = document.getElementById('f3');
-    const quest7 = document.getElementById('g3');
+    const quest6 = document.getElementById('f2');
+    const quest7 = document.getElementById('g4');
     const quest8 = document.getElementById('h3');
     const quest9 = document.getElementById('i3');
-    const quest10 = document.getElementById('j3');
+    const quest10 = document.getElementById('j2');
     if(quest1.checked){
         contador += 1;
     }

@@ -1,10 +1,11 @@
 /* Precisa ser validade pelo time CSS. */
 .frm-title{
     margin: 20px;
+    text-align: center;
 }
 
 form{
-    margin: 5%;
+    margin: 0px 5% 5% 5%;
 }
 
 p{

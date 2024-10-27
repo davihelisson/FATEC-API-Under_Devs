@@ -16,7 +16,13 @@ O Scrum360 tem como objetivo apresentar a metodologia Scrum, visando:
 * Ensinar o que são metodologias ágeis;
 * Organizar e estruturar as informações sobre Scrum;
 * Avaliar o conhecimento da metodologia Scrum;
-* Desenvolver habilidades técnicas.
+* Desenvolver as habilidades técnicas do usuário.
+
+## 🚀 MVP (Minimum Viable Product)
+Nossas metas de entregas para cada sprint:
+- [x] Sprint 1 - Página de Conteúdos;
+- [x] Sprint 2 - Páginas de Avaliação Parcial;
+- [ ] Sprint 3 - Login de Usuário.
 
 ## 📖 TASKS E PLANEJAMENTO DE PROJETO
 <a href="https://projeto01-api-fatec.atlassian.net/jira/software/projects/AF0/boards/2/timeline?shared=&atlOrigin=eyJpIjoiMzIwNzc2ZmMxNTIyNDA1NmIzNDM5ZjQ4MjgzYTdiYjgiLCJwIjoiaiJ9"><img src="https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=Jira&logoColor=white"></a>

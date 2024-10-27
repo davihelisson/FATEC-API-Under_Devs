@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Scrum360</title>
     <link href="./output.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
 </head>
@@ -27,7 +27,7 @@
                             Sobre
                         </li>
                     </a>
-                    
+
                     <li class="px-2 flex flex-row hover:bg-slate-900 hover:text-white ">
                         <button id="dropdownDelayButton" data-dropdown-toggle="dropdownDelay" data-dropdown-delay="200" data-dropdown-trigger="hover" class="flex items-center " type="button">
                             <p>Módulos</p>
@@ -35,21 +35,21 @@
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
                             </svg>
                         </button>
-                            
+
                     <!-- Dropdown menu -->
-                        <div id="dropdownDelay" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDelayButton">
+                        <div id="dropdownDelay" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-lg w-44">
+                            <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownDelayButton">
                               <li>
-                                <a href="./ScrumTail.html" class="block px-4 py-2 hover:bg-gray-100 hover:text-gray-700 dark:hover:bg-gray-600 dark:hover:text-white">Scrum</a>
+                                <a href="./ScrumTail.html" class="block px-4 py-2 hover:text-gray-100 hover:bg-slate-900">Scrum</a>
                               </li>
                               <li>
-                                <a href="./ProductOwner.html" class="block px-4 py-2 hover:bg-gray-100 hover:text-gray-700 dark:hover:bg-gray-600 dark:hover:text-white">Product Owner</a>
+                                <a href="./ProductOwner.html" class="block px-4 py-2 hover:text-gray-100 hover:bg-slate-900">Product Owner</a>
                               </li>
                               <li>
-                                <a href="./ScrumMaster.html" class="block px-4 py-2 hover:bg-gray-100 hover:text-gray-700 dark:hover:bg-gray-600 dark:hover:text-white">Scrum Master</a>
+                                <a href="./ScrumMaster.html" class="block px-4 py-2 hover:text-gray-100 hover:bg-slate-900">Scrum Master</a>
                               </li>
                               <li>
-                                <a href="./DevTeamTail.html" class="block px-4 py-2 hover:bg-gray-100 hover:text-gray-700 dark:hover:bg-gray-600 dark:hover:text-white">Dev Team</a>
+                                <a href="./DevTeamTail.html" class="block px-4 py-2 hover:text-gray-100 hover:bg-slate-900">Dev Team</a>
                               </li>
                             </ul>
                         </div>
@@ -65,14 +65,14 @@
     </nav>
 
 <!-- Hero -->
-    <section class="flex-none flex items-center justify-center bg-no-repeat bg-cover bg-center h-[45rem] bg-[linear-gradient(to_top_right,rgba(0,0,0,1),rgba(0,0,0,0.2)),url('/src/assets/imgs/home-hero.jpg')]">
+    <section class="flex-none flex items-center justify-center bg-no-repeat bg-cover bg-center h-[45rem] bg-[linear-gradient(to_top_right,rgba(0,0,0,1),rgba(0,0,0,0.2)),url('./assets/imgs/home-hero.jpg')]">
         <div class="flex flex-col items-center justify-center w-[60vw] text-white text-center">
             <h1 class="text-8xl font-bold">
                 Tenha <b class="text-gradient font-bold">Dominio</b> na Metódologia <b class="text-gradient font-bold">Scrum</b>
             </h1>
             <p class="mt-4 text-lg font-light text-gray-200">Tudo o que você precisa saber sobre Scrum para desenvolver projetos com agilidade.</p>
             <div class="flex flex-row justify-evenly w-full pt-8 mx-6 lg:justify-center lg:gap-6">
-                <a href="" class="px-4 py-2 rounded-lg font-medium text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br">Comece Aqui</a>
+                <a href="./ScrumTail.html" class="px-4 py-2 rounded-lg font-medium text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br">Comece Aqui</a>
                 <a href="" class="px-4 py-2 rounded-lg text-white border flex gap-2 items-center">
                     Saiba Mais
                     <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
@@ -98,7 +98,7 @@
             </div>
             <div class="flex-none flex items-center">                
                 <svg class="w-[30rem] h-[30rem]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-                    <img src="/src/assets/imgs/Team goals-rafiki.svg" alt="" class="">
+                    <img src="./assets/imgs/Team goals-rafiki.svg" alt="" class="">
                 </svg>
             </div>
         </div>
@@ -171,10 +171,10 @@
                     <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Recursos</h2>
                     <ul class="text-gray-500 font-medium">
                         <li class="mb-4">
-                            <a href="" class="hover:underline"> Comece Aqui</a>
+                            <a href="./ScrumTail.html" class="hover:underline">Comece Aqui</a>
                         </li>
                         <li class="mb-4">
-                            <a href="" class="hover:underline">Módulos</a>
+                            <a href="./Modulos.html" class="hover:underline">Módulos</a>
                         </li>
                         <li>
                             <a href="" class="hover:underline">Perguntas Frequentes</a>
@@ -216,6 +216,7 @@
         </div>
     </footer>
 
+<!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
 </body>
 </html>

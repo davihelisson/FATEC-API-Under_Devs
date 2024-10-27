@@ -6,14 +6,9 @@
     <title>O que é Scrum Master? - Scrum360</title>
     <link href="./output.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }        
-    </style>
 </head>
-<body class="flex flex-col min-w-fit min-h-screen box-border max-w-screen-xl w-screen">
-    <!-- Cabeçalho da página -->
+<body class="flex flex-col min-w-fit">
+<!-- Cabeçalho da página -->
     <nav class="flex-auto bg-slate-100 w-screen sticky z-20 top-0 start-0 text-slate-900 shadow-xl border-b border-slate-400">
         <div class="flex py-4 px-7 items-center justify-between">
             <div class="flex-auto flex justify-evenly">
@@ -32,7 +27,7 @@
                             Sobre
                         </li>
                     </a>
-                    
+
                     <li class="px-2 flex flex-row hover:bg-slate-900 hover:text-white ">
                         <button id="dropdownDelayButton" data-dropdown-toggle="dropdownDelay" data-dropdown-delay="200" data-dropdown-trigger="hover" class="flex items-center " type="button">
                             <p>Módulos</p>
@@ -40,22 +35,22 @@
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
                             </svg>
                         </button>
-                            
+
                     <!-- Dropdown menu -->
-                        <div id="dropdownDelay" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDelayButton">
-                            <li>
-                                <a href="./ScrumTail.html" class="block px-4 py-2 hover:bg-gray-100 hover:text-gray-700 dark:hover:bg-gray-600 dark:hover:text-white">Scrum</a>
-                            </li>
-                            <li>
-                                <a href="./ProductOwner.html" class="block px-4 py-2 hover:bg-gray-100 hover:text-gray-700 dark:hover:bg-gray-600 dark:hover:text-white">Product Owner</a>
-                            </li>
-                            <li>
-                                <a href="./ScrumMaster.html" class="block px-4 py-2 hover:bg-gray-100 hover:text-gray-700 dark:hover:bg-gray-600 dark:hover:text-white">Scrum Master</a>
-                            </li>
-                            <li>
-                                <a href="./DevTeamTail.html" class="block px-4 py-2 hover:bg-gray-100 hover:text-gray-700 dark:hover:bg-gray-600 dark:hover:text-white">Dev Team</a>
-                            </li>
+                        <div id="dropdownDelay" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-lg w-44">
+                            <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownDelayButton">
+                              <li>
+                                <a href="./ScrumTail.html" class="block px-4 py-2 hover:text-gray-100 hover:bg-slate-900">Scrum</a>
+                              </li>
+                              <li>
+                                <a href="./ProductOwner.html" class="block px-4 py-2 hover:text-gray-100 hover:bg-slate-900">Product Owner</a>
+                              </li>
+                              <li>
+                                <a href="./ScrumMaster.html" class="block px-4 py-2 hover:text-gray-100 hover:bg-slate-900">Scrum Master</a>
+                              </li>
+                              <li>
+                                <a href="./DevTeamTail.html" class="block px-4 py-2 hover:text-gray-100 hover:bg-slate-900">Dev Team</a>
+                              </li>
                             </ul>
                         </div>
                     </li>
@@ -70,18 +65,15 @@
     </nav>
   
 <!-- Banner -->
-    <section class="flex-none flex items-center justify-center bg-no-repeat bg-cover bg-center h-[45rem]" style="background-image: linear-gradient(to top right, rgba(0,0,0,1), rgba(0,0,0,0.2)), url('/src/assets/imgs/imgSM.jpg');">
+    <section class="flex-none flex items-center justify-center bg-no-repeat bg-cover bg-center h-[45rem]" style="background-image: linear-gradient(to top right, rgba(0,0,0,1), rgba(0,0,0,0.2)), url('./assets/imgs/imgSM.jpg');">
         <!-- Conteúdo -->   
         <div class="flex flex-col items-center justify-center w-[60vw] text-white text-center">
             <h1 class="text-8xl font-bold">
-                O que é o <b class="text-gradient font-bold">Scrum</b> <b class="text-gradient font-bold">Master</b>
+                O que é o <b class="text-gradient font-bold">Scrum Master?</b>
             </h1>
             <p class="mt-4 text-lg font-light text-gray-200">Um guia completo sobre a função do Scrum Master na equipe.</p>
             <div class="flex flex-row justify-evenly w-full pt-8 mx-6 lg:justify-center lg:gap-6">
                 <a href="#section1" class="px-4 py-2 rounded-lg font-medium text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br">Comece Aqui</a>
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"></path>
-                    </svg>
-                </a>
             </div>
         </div>    
     </section>
@@ -163,7 +155,7 @@
         </div>
     </main>
 
-    <!-- Rodapé da página -->
+<!-- Rodapé da página -->
     <footer class="flex-none flex flex-col px-28 py-7 mt-auto w-full bg-slate-300">
         <div class="w-full flex justify-between px-10 gap-32">
             <div class="flex-1 flex flex-col">
@@ -175,7 +167,7 @@
                     <h2 class="mb-6 text-sm font-semibold text-slate-900 uppercase">Informações</h2>
                     <ul class="text-gray-500 font-medium">
                         <li class="mb-4">
-                            <a href="" class="hover:underline">Ínicio</a>
+                            <a href="./index.html" class="hover:underline">Ínicio</a>
                         </li>
                         <li class="mb-4">
                             <a href="" class="hover:underline">Sobre nós</a>
@@ -189,10 +181,10 @@
                     <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Recursos</h2>
                     <ul class="text-gray-500 font-medium">
                         <li class="mb-4">
-                            <a href="" class="hover:underline"> Comece Aqui</a>
+                            <a href="./ScrumTail.html" class="hover:underline">Comece Aqui</a>
                         </li>
                         <li class="mb-4">
-                            <a href="" class="hover:underline">Módulos</a>
+                            <a href="./Modulos.html" class="hover:underline">Módulos</a>
                         </li>
                         <li>
                             <a href="" class="hover:underline">Perguntas Frequentes</a>
@@ -203,14 +195,16 @@
                     <h2 class="mb-4 text-sm font-semibold text-gray-900 uppercase">Contatos</h2>
                     <div class="mb-4 p-2 rounded-md bg-slate-400">
                         <div class="flex flex-col">
-                            <h5 class="mb-2 text-sm font-bold tracking-tight text-slate-900">LinkedIn</h5>
-                            <p class="mb-3 font-normal text-sm text-gray-700"></p>
+                            <h5 class="text-sm font-bold tracking-tight text-slate-900">LinkedIn</h5>
+                            <a href="https://www.linkedin.com/in/gustavo-toneli-de-oliveira-b46756228/details/projects/?profileUrn=urn%3Ali%3Afsd_profile%3AACoAADkQV-YB4iyzzH7xb65zTJFDpduVptqhpWU" class="font-normal text-sm text-gray-900 hover:underline">
+                                Equipe Underdevs
+                            </a>
                         </div>
                     </div>
                     <div class="p-2 rounded-md bg-slate-400">
                         <div class="flex flex-col">
-                            <h5 class="mb-2 text-sm font-bold tracking-tight text-slate-900">Email/Telefone</h5>
-                            <p class="mb-3 font-normal text-sm text-gray-700"></p>
+                            <h5 class="text-sm font-bold tracking-tight text-slate-900">Email/Telefone</h5>
+                            <p class="font-normal text-sm text-gray-900">placeholder@UD.com.br</p>
                         </div>
                     </div>
                 </div>
@@ -227,11 +221,12 @@
         <hr class="my-8 border-gray-600" />
         <div class="flex justify-center">
             <span class="text-sm text-gray-500">
-                © 2024 <a href="" class="hover:underline">Underdevs</a>. All Rights Reserved.
+                © 2024 <a href="https://github.com/davihelisson/FATEC-API-Under_Devs" class="hover:underline">Underdevs</a>. All Rights Reserved.
             </span>
         </div>
     </footer>
 
+<!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
 </body>
 </html>

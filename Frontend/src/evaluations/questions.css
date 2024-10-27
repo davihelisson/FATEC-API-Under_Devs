@@ -1,10 +1,11 @@
-/* Precisa ser validade pelo time CSS. */
+/* Css personalizado para as páginas de avaliação parcial. */
 .frm-title{
     margin: 20px;
+    text-align: center;
 }
 
 form{
-    margin: 5%;
+    margin: 0px 5% 5% 5%;
 }
 
 p{
@@ -22,18 +23,19 @@ p{
     margin-bottom: 20px;
 }
 
-input[type="submit"],
+input[type="button"],
 input[type="reset"] {
     color: white;
     background-color: rgb(3, 81, 81);
     border: solid 1px black;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 10px;
     cursor: pointer;
     margin-top: 10px;
+    margin-right: 15px;
 }
 
-input[type="submit"],
+input[type="button"],
 input[type="reset"] {
     background-color: rgb(6, 112, 112);
 }
@@ -45,8 +47,7 @@ input[type="radio"]{
 .results{
     padding: 10px;
     margin: 20px;
-    font-size: 2vw;
-    font-family: monospace;
+    font-size: 30px;
     color: rgb(6, 112, 112);
     text-align: center;
 }

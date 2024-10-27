@@ -11,7 +11,6 @@
 </head>
 <body>
     <!-- Cabeçalho da página -->
-<<<<<<< HEAD
     <nav class="flex-auto bg-slate-100 w-screen sticky z-20 top-0 start-0 text-slate-900 shadow-xl border-b border-slate-400">
         <div class="flex py-4 px-7 items-center justify-between">
             <div class="flex-auto flex justify-evenly">
@@ -30,22 +29,6 @@
                             Sobre
                         </li>
                     </a>
-=======
-    <header>
-        <div class="logo">
-            <a href="Index.html">Scrum 360</a>
-        </div>
-    </header>
-    <main>
-        <h1 class="frm-title">Questões sobre o Scrum Master</h1>
-        <form action="../" method="post">
-            <!-- OBSERVAÇÃO IMPORTANTE
-            Esse esqueleto possui muitas questões. Observe o padrão do label e do id.
-            nem todos estão ajustados, cada label for "xn" tem que corresponder a um input id "xn" 
-            onde o x é uma letra do alfabeto e o n é um número
-            caso sejam 5 alternativas adicione mais uma linha seguinto o padrão de nomes.
-            Ao final se sobrarem questions vazias é só apagar as questions que estão sobrando.
->>>>>>> 58245b9d62f40e07d622b4da6c02cce6216d1ccc
 
                     <li class="px-2 flex flex-row hover:bg-slate-900 hover:text-white ">
                         <button id="dropdownDelayButton" data-dropdown-toggle="dropdownDelay" data-dropdown-delay="200" data-dropdown-trigger="hover" class="flex items-center " type="button">
@@ -159,8 +142,8 @@
             </div>
             <!-- FIM DO FORMÚLÁRIO -->
             
-            <input type="button" onclick="ScrumQuestions()" value="Enviar">
-            <input type="reset" value="Limpar">
+            <input type="button" onclick="ScrumQuestions()" value="Verificar" class="check_btn">
+            <input type="reset" onclick="hiddenBox()" value="Limpar">
         </form>
     </main>
 

@@ -1,3 +1,7 @@
+// Script para a verificação dos acertos.
+function hiddenBox(){
+    document.getElementById('result-panel').hidden = true;
+}
 function ScrumQuestions (){
     let contador = 0;
     const quest1 = document.getElementById('a3');

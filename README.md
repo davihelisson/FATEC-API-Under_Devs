@@ -24,6 +24,10 @@ Nossas metas de entregas para cada sprint:
 - [x] Sprint 2 - Páginas de Avaliação Parcial;
 - [ ] Sprint 3 - Login de Usuário.
 
+## 💄 GIF DO PROJETO FUNCIONANDO
+
+<img src="./Documentação/img/application.gif">
+
 ## 📖 TASKS E PLANEJAMENTO DE PROJETO
 <a href="https://projeto01-api-fatec.atlassian.net/jira/software/projects/AF0/boards/2/timeline?shared=&atlOrigin=eyJpIjoiMzIwNzc2ZmMxNTIyNDA1NmIzNDM5ZjQ4MjgzYTdiYjgiLCJwIjoiaiJ9"><img src="https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=Jira&logoColor=white"></a>
 <a href="https://www.figma.com/design/UcGuZAffRlBHQrcopBdduK/Untitled?node-id=0-1&node-type=&t=3qDyE4opH8avjwFO-0"><img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white"></a>

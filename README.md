@@ -55,6 +55,10 @@ Confira abaixo a demonstração das páginas de conteúdo e um dos questionário
 - [ ] Nome e avaliação sobre a tela de resultados
 - [ ] Exame final
 
+## Burndown Chart - Sprint 2  
+
+<img src="./Documentação/img/burning_down.png">  
+
 ## 💻 TECNOLOGIAS EMPREGADAS
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![Tailwind](https://img.shields.io/badge/Tailwind-0F172A?style=for-the-badge&logo=tailwind-css&logoColor=38B2AC)
 

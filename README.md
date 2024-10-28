@@ -9,7 +9,7 @@ Repositório destinado ao projeto Scrum360 desenvolvido pelos membros da equipe 
 - [Requisitos do Cliente](https://github.com/davihelisson/FATEC-API-Under_Devs/blob/main/Documenta%C3%A7%C3%A3o/3.%20Requisitos.md)
 - [User Stories](https://github.com/davihelisson/FATEC-API-Under_Devs/blob/main/Documenta%C3%A7%C3%A3o/4.%20User%20Stories.md)
 - [Conteúdo SCRUM](https://github.com/davihelisson/FATEC-API-Under_Devs/blob/main/Documenta%C3%A7%C3%A3o/5.%20Conteudo%20SCRUM.md)
-- [Backlog do Produto](https://github.com/davihelisson/FATEC-API-Under_Devs/blob/main/Documentação/6.%20Backlog.pdf)
+- [Backlog do Produto](https://github.com/davihelisson/FATEC-API-Under_Devs/blob/main/Documenta%C3%A7%C3%A3o/Backlog.sprint%202.pdf)
 
 ## 🎯 OBJETIVOS DO PROJETO
 O Scrum360 tem como objetivo apresentar a metodologia Scrum, visando:
@@ -24,7 +24,9 @@ Nossas metas de entregas para cada sprint:
 - [x] Sprint 2 - Páginas de Avaliação Parcial;
 - [ ] Sprint 3 - Login de Usuário.
 
-## 💄 GIF DO PROJETO FUNCIONANDO
+## 💄 FUNCIONALIDADE DO PROJETO
+
+Confira abaixo a demonstração das páginas de conteúdo e um dos questionários parciais de avaliação.  
 
 <img src="./Documentação/img/application.gif">
 
@@ -32,6 +34,26 @@ Nossas metas de entregas para cada sprint:
 <a href="https://projeto01-api-fatec.atlassian.net/jira/software/projects/AF0/boards/2/timeline?shared=&atlOrigin=eyJpIjoiMzIwNzc2ZmMxNTIyNDA1NmIzNDM5ZjQ4MjgzYTdiYjgiLCJwIjoiaiJ9"><img src="https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=Jira&logoColor=white"></a>
 <a href="https://www.figma.com/design/UcGuZAffRlBHQrcopBdduK/Untitled?node-id=0-1&node-type=&t=3qDyE4opH8avjwFO-0"><img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white"></a>
 <a href="https://www.notion.so/Conte-dos-API-SCRUM-Course-107b60cf341880178769f2137125aa11?pvs=4"><img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white"></a>
+
+## 📜 BACKLOG DO PRODUTO
+
+### Sprint 1  
+- [x] Página Home intuitiva e de fácil entendimento
+- [x] Página de módulos
+- [x] Páginas de conteúdo
+- [x] Sessão de resumo
+
+### Sprint 2
+- [x] Avaliação parcial para colocar o conhecimento em prática
+- [x] Sumário para guiar entre as páginas do site
+- [x] Exemplos reais da aplicação do conhecimento na prática
+- [x] Avaliação parcial para cada capítulo
+
+### Sprint 3
+- [ ] Sistema de login para salvar o progresso
+- [ ] Visualização do desempenho em cada teste
+- [ ] Nome e avaliação sobre a tela de resultados
+- [ ] Exame final
 
 ## 💻 TECNOLOGIAS EMPREGADAS
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![Tailwind](https://img.shields.io/badge/Tailwind-0F172A?style=for-the-badge&logo=tailwind-css&logoColor=38B2AC)

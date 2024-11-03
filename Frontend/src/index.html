@@ -7,60 +7,84 @@
     <link href="./output.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
 </head>
-<body class="flex flex-col min-w-fit overflow-x-hidden">
+<body class="flex flex-col min-h-screen w-full overflow-x-hidden">
 <!-- Cabeçalho da página -->
-    <nav class="flex-auto bg-slate-100 w-screen sticky z-20 top-0 start-0 text-slate-900 shadow-xl border-b border-slate-400">
-        <div class="flex py-4 px-7 items-center justify-between">
-            <div class="flex-auto flex justify-evenly">
+    <nav class="flex-auto bg-slate-100 w-full text-slate-900 shadow-xl border-b border-slate-400">
+        <div class="flex py-4 px-5 items-center justify-between">
+            <div class="flex-auto md:flex justify-evenly">
                 <a href="" class="text-2xl font-Archivo font-bold">Scrum360</a>
                 <div class="h-30 w-0.5 bg-slate-900"></div>
             </div>
-            <div class="flex-auto">
-                <ul class="flex flex-row gap-4 justify-around">
+
+            <!-- Menu Hambúrguer -->
+            <button data-collapse-toggle="mobile-menu" type="button" class="md:hidden inline-flex items-center p-2 text-slate-900 hover:bg-slate-900 hover:text-white focus:outline-none" aria-controls="mobile-menu" aria-expanded="false">
+                <span class="sr-only">Open</span>
+                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+
+            <!-- Menu Desktop -->
+            <div class="hidden md:flex-auto md:flex md:items-center md:justify-center sm:flex-auto">
+                <ul class="flex flex-row gap-16 justify-around">
                     <a href="./index.html">
-                        <li class="h-14 w-20 px-2 flex items-center justify-center hover:bg-slate-900 hover:text-white">
-                            Home
-                        </li>
+                        <li class="h-14 w-20 px-2 flex items-center justify-center hover:bg-slate-900 hover:text-white">Home</li>
                     </a>
                     <a href="#">
-                        <li class="h-14 w-20 px-2 flex items-center justify-center hover:bg-slate-900 hover:text-white">
-                            Sobre
-                        </li>
+                        <li class="h-14 w-20 px-2 flex items-center justify-center hover:bg-slate-900 hover:text-white">Sobre</li>
                     </a>
-
-                    <li class="px-2 flex flex-row hover:bg-slate-900 hover:text-white ">
-                        <button id="dropdownDelayButton" data-dropdown-toggle="dropdownDelay" data-dropdown-delay="200" data-dropdown-trigger="hover" class="flex items-center " type="button">
+                    <li class="px-2 flex flex-row hover:bg-slate-900 hover:text-white">
+                        <button id="dropdownDelayButton" data-dropdown-toggle="dropdownDelay" data-dropdown-delay="200" data-dropdown-trigger="hover" class="flex items-center" type="button">
                             <a href="./Modulos.html">Módulos</a>
                             <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
                             </svg>
                         </button>
 
-                    <!-- Dropdown menu -->
+                        <!-- Dropdown menu -->
                         <div id="dropdownDelay" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-lg w-44">
                             <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownDelayButton">
-                              <li>
-                                <a href="./ScrumTail.html" class="block px-4 py-2 hover:text-gray-100 hover:bg-slate-900">Scrum</a>
-                              </li>
-                              <li>
-                                <a href="./ProductOwner.html" class="block px-4 py-2 hover:text-gray-100 hover:bg-slate-900">Product Owner</a>
-                              </li>
-                              <li>
-                                <a href="./ScrumMaster.html" class="block px-4 py-2 hover:text-gray-100 hover:bg-slate-900">Scrum Master</a>
-                              </li>
-                              <li>
-                                <a href="./DevTeamTail.html" class="block px-4 py-2 hover:text-gray-100 hover:bg-slate-900">Dev Team</a>
-                              </li>
+                                <li>
+                                    <a href="./ScrumTail.html" class="block px-4 py-2 hover:text-gray-100 hover:bg-slate-900">Scrum</a>
+                                </li>
+                                <li>
+                                    <a href="./ProductOwner.html" class="block px-4 py-2 hover:text-gray-100 hover:bg-slate-900">Product Owner</a>
+                                </li>
+                                <li>
+                                    <a href="./ScrumMaster.html" class="block px-4 py-2 hover:text-gray-100 hover:bg-slate-900">Scrum Master</a>
+                                </li>
+                                <li>
+                                    <a href="./DevTeamTail.html" class="block px-4 py-2 hover:text-gray-100 hover:bg-slate-900">Dev Team</a>
+                                </li>
                             </ul>
                         </div>
                     </li>
                 </ul>
             </div>
-            <div class="flex-1 flex items-center justify-center">
+
+            <div class="hidden md:flex flex-1 items-center justify-center">
                 <a href="" class="flex justify-center px-4 py-2 rounded-lg text-white bg-slate-900">
                     Conheça o Time
                 </a>
             </div>
+        </div>
+
+        <!-- Menu Mobile -->
+        <div class="hidden md:hidden" id="mobile-menu">
+            <ul class="flex flex-col gap-2 p-4 bg-slate-100">
+                <a href="./index.html">
+                    <li class="h-14 w-full px-6 flex items-center hover:bg-slate-900 hover:text-white">Home</li>
+                </a>
+                <a href="#">
+                    <li class="h-14 w-full px-6 flex items-center hover:bg-slate-900 hover:text-white">Sobre</li>
+                </a>
+                <a href="./Modulos.html">
+                    <li class="h-14 w-full px-6 flex items-center hover:bg-slate-900 hover:text-white">Módulos</li>
+                </a>
+                <a href="" class="mt-2 flex justify-center px-4 py-2 rounded-lg text-white bg-slate-900 hover:bg-slate-700">
+                    Conheça o Time
+                </a>
+            </ul>
         </div>
     </nav>
 
@@ -146,13 +170,14 @@
     </main>
 
 <!-- Rodapé da página -->
-    <footer class="flex-none flex flex-col px-28 py-7 mt-auto w-full bg-slate-300">
-        <div class="w-full flex justify-between px-10 gap-32">
-            <div class="flex-1 flex flex-col">
+    <footer class="flex-none flex flex-col lg:px-28 py-7 mt-auto w-full bg-slate-300">
+        <div class="w-full lg:flex lg:flex-row justify-between px-10 gap-32">
+            <div class="hidden flex-1 lg:flex flex-col">
                 <a href="" class="mb-2 text-2xl font-Archivo font-bold">Scrum360</a>
                 <p class="text-justify text-sm">O Scrum360 é uma plataforma educacional interativa, idealizada para estudantes e profissionais que desejam dominar a metodologia Scrum.</p>
             </div>
-            <div class="flex-auto grid grid-cols-4 gap-6">
+            <a href="" class="text-2xl font-Archivo font-bold lg:hidden">Scrum360</a>
+            <div class="flex-auto grid grid-cols-1 lg:grid-cols-4 gap-6">
                 <div class="flex flex-col">
                     <h2 class="mb-6 text-sm font-semibold text-slate-900 uppercase">Informações</h2>
                     <ul class="text-gray-500 font-medium">

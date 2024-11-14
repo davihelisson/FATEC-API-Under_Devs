@@ -3,6 +3,9 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
+# main routes
+# these routes redirect to the main pages
+
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -27,7 +30,8 @@ def ScrumTail():
 def ScrumMaster():
     return render_template('ScrumTail.html')
 
-# Submodulos routes
+# module routes
+# these routes redirect to the scrum modules
 
 @app.route('/DevTeamQuestions')
 def DevTeam():

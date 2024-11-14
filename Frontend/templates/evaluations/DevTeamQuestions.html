@@ -1,6 +1,9 @@
 {% extends 'base.html' %}
 
 {% block title %}Questões DevTeam{% endblock %}
+{% block head %}
+  {{ super() }} <link rel="stylesheet" href="{{ url_for('static', filename='/questions.css') }}">
+{% endblock %}
 
 {% block content %}
     <main>

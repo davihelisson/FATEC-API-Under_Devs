@@ -1,0 +1,53 @@
+/* Css personalizado para as páginas de avaliação parcial. */
+.frm-title{
+    margin: 20px;
+    text-align: center;
+}
+
+form{
+    margin: 0px 5% 5% 5%;
+}
+
+p{
+    margin: 10px;
+}
+
+.qtitle{
+    font-size: large;
+    font-weight: 600;
+}
+
+.question{
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="button"],
+input[type="reset"] {
+    color: white;
+    background-color: rgb(3, 81, 81);
+    border: solid 1px black;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 15px;
+}
+
+input[type="button"],
+input[type="reset"] {
+    background-color: rgb(6, 112, 112);
+}
+
+input[type="radio"]{
+    margin-right: 10px;
+}
+
+.results{
+    padding: 10px;
+    margin: 20px;
+    font-size: 30px;
+    color: rgb(6, 112, 112);
+    text-align: center;
+}

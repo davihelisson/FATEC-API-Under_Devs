@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevTeam Questions</title>
+    <link rel="stylesheet" href="./questions.css">
+    <link rel="stylesheet" href="../output.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css">
+</head>
+<body>
+    <!-- Cabeçalho da página -->
+    <nav class="flex-auto bg-slate-100 w-screen sticky z-20 top-0 start-0 text-slate-900 shadow-xl border-b border-slate-400">
+        <div class="flex py-4 px-7 items-center justify-between">
+            <div class="flex-auto flex justify-evenly">
+                <a href="" class="text-2xl font-Archivo font-bold">Scrum360</a>
+                <div class="h-30 w-0.5 bg-slate-900"></div>
+            </div>
+            <div class="flex-auto">
+                <ul class="flex flex-row gap-4 justify-around">
+                    <a href="../index.html">
+                        <li class="h-14 w-20 px-2 flex items-center justify-center hover:bg-slate-900 hover:text-white">
+                            Home
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="h-14 w-20 px-2 flex items-center justify-center hover:bg-slate-900 hover:text-white">
+                            Sobre
+                        </li>
+                    </a>
+
+                    <li class="px-2 flex flex-row hover:bg-slate-900 hover:text-white ">
+                        <button id="dropdownDelayButton" data-dropdown-toggle="dropdownDelay" data-dropdown-delay="200" data-dropdown-trigger="hover" class="flex items-center " type="button">
+                            <a href="../Modulos.html">Módulos</a>
+                            <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                            </svg>
+                        </button>
+
+                    <!-- Dropdown menu -->
+                        <div id="dropdownDelay" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-lg w-44">
+                            <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownDelayButton">
+                            <li>
+                                <a href="../ScrumTail.html" class="block px-4 py-2 hover:text-gray-100 hover:bg-slate-900">Scrum</a>
+                            </li>
+                            <li>
+                                <a href="../ProductOwner.html" class="block px-4 py-2 hover:text-gray-100 hover:bg-slate-900">Product Owner</a>
+                            </li>
+                            <li>
+                                <a href="../ScrumMaster.html" class="block px-4 py-2 hover:text-gray-100 hover:bg-slate-900">Scrum Master</a>
+                            </li>
+                            <li>
+                                <a href="../DevTeamTail.html" class="block px-4 py-2 hover:text-gray-100 hover:bg-slate-900">Dev Team</a>
+                            </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex-1 flex items-center justify-center">
+                <a href="" class="flex justify-center px-4 py-2 rounded-lg text-white bg-slate-900">
+                    Conheça o Time
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <h1 class="text-3xl text-slate-900 font-bold frm-title">Questões sobre o DevTeam</h1>
+        <form action="#" method="post">
+            <div class="question">
+                <p class="qtitle">Qual é o principal papel do Development Team no Scrum?</p>
+                <p><input type="radio" name="choice1" id="a1"><label for="a1">Definir os objetivos do projeto</label></p>
+                <p><input type="radio" name="choice1" id="a2"><label for="a2">Desenvolver incrementos de produto que estejam prontos para entrega</label></p>
+                <p><input type="radio" name="choice1" id="a3"><label for="a3">Coordenar os stakeholders</label></p>
+                <p><input type="radio" name="choice1" id="a4"><label for="a4">Supervisionar o Product Owner</label></p>
+            </div>
+            <div class="question">
+                <p class="qtitle">Quantas pessoas normalmente compõem o Development Team no Scrum?</p>
+                <p><input type="radio" name="choice2" id="b1"><label for="b1">Entre 3 e 9 pessoas</label></p>
+                <p><input type="radio" name="choice2" id="b2"><label for="b2">Apenas 1 pessoa</label></p>
+                <p><input type="radio" name="choice2" id="b3"><label for="b3">Entre 10 e 15 pessoas</label></p>
+                <p><input type="radio" name="choice2" id="b4"><label for="b4">Qualquer número de pessoas</label></p>
+            </div>
+            <div class="question">
+                <p class="qtitle">Quem é responsável por estimar o esforço necessário para completar as tarefas do Sprint?</p>
+                <p><input type="radio" name="choice2" id="c1"><label for="c1">O Scrum Master</label></p>
+                <p><input type="radio" name="choice2" id="c2"><label for="c2">O Product Owner</label></p>
+                <p><input type="radio" name="choice2" id="c3"><label for="c3">O Development Team</label></p>
+                <p><input type="radio" name="choice2" id="c4"><label for="c4">O gerente do projeto</label></p>
+            </div>
+            <div class="question">
+                <p class="qtitle">O que o Development Team deve entregar ao final de cada Sprint?</p>
+                <p><input type="radio" name="choice3" id="d1"><label for="d1">Um documento de planejamento</label></p>
+                <p><input type="radio" name="choice3" id="d2"><label for="d2">Um incremento de produto pronto e funcional</label></p>
+                <p><input type="radio" name="choice3" id="d3"><label for="d3">Um protótipo básico do produto</label></p>
+                <p><input type="radio" name="choice3" id="d4"><label for="d4">Um relatório de progresso</label></p>
+            </div>
+            <div class="question">
+                <p class="qtitle">Quem é responsável por definir como o trabalho será realizado durante o Sprint?</p>
+                <p><input type="radio" name="choice4" id="e1"><label for="e1">O Scrum Master</label></p>
+                <p><input type="radio" name="choice4" id="e2"><label for="e2">O Product Owner</label></p>
+                <p><input type="radio" name="choice4" id="e3"><label for="e3">O Development Team</label></p>
+                <p><input type="radio" name="choice4" id="e4"><label for="e4">O gerente de TI</label></p>
+            </div>
+            <div class="question">
+                <p class="qtitle">Qual é uma das principais características do Development Team no Scrum?</p>
+                <p><input type="radio" name="choice5" id="f1"><label for="f1">Hierarquia rígida entre os membros</label></p>
+                <p><input type="radio" name="choice5" id="f2"><label for="f2">Auto-organização e colaboração</label></p>
+                <p><input type="radio" name="choice5" id="f3"><label for="f3">Dependência do Product Owner para tomar decisões técnicas</label></p>
+                <p><input type="radio" name="choice5" id="f4"><label for="f4">Rotatividade constante de membros</label></p>
+            </div>
+            <div class="question">
+                <p class="qtitle">Quem pode alterar a composição do Development Team durante o Sprint?</p>
+                <p><input type="radio" name="choice6" id="g1"><label for="g1">O Scrum Master</label></p>
+                <p><input type="radio" name="choice6" id="g2"><label for="g2">O Product Owner</label></p>
+                <p><input type="radio" name="choice6" id="g3"><label for="g3">O CEO da empresa</label></p>
+                <p><input type="radio" name="choice6" id="g4"><label for="g4">Ninguém, a equipe permanece a mesma durante o Sprint</label></p>
+            </div>
+            <div class="question">
+                <p class="qtitle">Como o Development Team escolhe quais itens do Product Backlog serão trabalhados durante o Sprint?</p>
+                <p><input type="radio" name="choice7" id="h1"><label for="h1">O Product Owner decide sozinho</label></p>
+                <p><input type="radio" name="choice7" id="h2"><label for="h2">É decidido em conjunto com o Scrum Master</label></p>
+                <p><input type="radio" name="choice7" id="h3"><label for="h3">O Development Team escolhe durante o Sprint Planning</label></p>
+                <p><input type="radio" name="choice7" id="h4"><label for="h4">São escolhidos aleatoriamente</label></p>
+            </div>
+            <div class="question">
+                <p class="qtitle">Quem tem autoridade para dividir as tarefas dentro do Development Team?</p>
+                <p><input type="radio" name="choice8" id="i1"><label for="i1">O Scrum Master</label></p>
+                <p><input type="radio" name="choice8" id="i2"><label for="i2">O gerente de desenvolvimento</label></p>
+                <p><input type="radio" name="choice8" id="i3"><label for="i3">O próprio Development Team</label></p>
+                <p><input type="radio" name="choice8" id="i4"><label for="i4">O Product Owner</label></p>
+            </div>
+            <div class="question">
+                <p class="qtitle">O que o Development Team faz durante a reunião diária (Daily Scrum)?</p>
+                <p><input type="radio" name="choice9" id="j1"><label for="j1">Revêr o desempenho financeiro do projeto</label></p>
+                <p><input type="radio" name="choice9" id="j2"><label for="j2">Planeja as tarefas do dia e discute impedimentos</label></p>
+                <p><input type="radio" name="choice9" id="j3"><label for="j3">Decide o que será feito no próximo Sprint</label></p>
+                <p><input type="radio" name="choice9" id="j4"><label for="j4">Revisa o Product Backlog</label></p>
+            </div>
+            <!-- FIM DO FORMÚLÁRIO -->
+            
+            <input type="button" onclick="DevTeamQuestions()" value="Verificar">
+            <input type="reset" onclick="hiddenBox()" value="Limpar">
+        </form>
+    </main>
+
+    <!-- DIV PROVISÓRIA COM OS RESULTADOS -->
+    <section id="result-panel" name="Resultados da Avaliação" hidden class="results">
+        <span>Acertos:</span><span id="result">0</span>    
+    </section>
+    <!-- FIM DOS RESULTADOS -->
+
+    <!-- Rodapé da página -->
+    <footer class="flex-none flex flex-col px-28 py-7 mt-auto w-full bg-slate-300">
+        <div class="w-full flex justify-between px-10 gap-32">
+            <div class="flex-1 flex flex-col">
+                <a href="" class="mb-2 text-2xl font-Archivo font-bold">Scrum360</a>
+                <p class="text-justify text-sm">O Scrum360 é uma plataforma educacional interativa, idealizada para estudantes e profissionais que desejam dominar a metodologia Scrum.</p>
+            </div>
+            <div class="flex-auto grid grid-cols-4 gap-6">
+                <div class="flex flex-col">
+                    <h2 class="mb-6 text-sm font-semibold text-slate-900 uppercase">Informações</h2>
+                    <ul class="text-gray-500 font-medium">
+                        <li class="mb-4">
+                            <a href="../" class="hover:underline">Início</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="" class="hover:underline">Sobre nós</a>
+                        </li>
+                        <li>
+                            <a href="" class="hover:underline">Desenvolvedores</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Recursos</h2>
+                    <ul class="text-gray-500 font-medium">
+                        <li class="mb-4">
+                            <a href="../ScrumTail.html" class="hover:underline">Comece Aqui</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="../Modulos.html" class="hover:underline">Módulos</a>
+                        </li>
+                        <li>
+                            <a href="" class="hover:underline">Perguntas Frequentes</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="mb-4 text-sm font-semibold text-gray-900 uppercase">Contatos</h2>
+                    <div class="mb-4 p-2 rounded-md bg-slate-400">
+                        <div class="flex flex-col">
+                            <h5 class="text-sm font-bold tracking-tight text-slate-900">LinkedIn</h5>
+                            <a href="https://www.linkedin.com/in/gustavo-toneli-de-oliveira-b46756228/details/projects/?profileUrn=urn%3Ali%3Afsd_profile%3AACoAADkQV-YB4iyzzH7xb65zTJFDpduVptqhpWU" class="font-normal text-sm text-gray-900 hover:underline">
+                                Equipe Underdevs
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-2 rounded-md bg-slate-400">
+                        <div class="flex flex-col">
+                            <h5 class="text-sm font-bold tracking-tight text-slate-900">Email/Telefone</h5>
+                            <p class="font-normal text-sm text-gray-900">placeholder@UD.com.br</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="mb-4 text-sm font-semibold flex justify-center text-gray-900 uppercase">Documentação</h2>
+                    <a href="https://github.com/davihelisson/FATEC-API-Under_Devs" class="flex flex-col justify-center p-2 h-32 rounded-md bg-slate-400" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                            <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr class="my-8 border-gray-600" />
+        <div class="flex justify-center">
+            <span class="text-sm text-gray-500">
+                © 2024 <a href="https://github.com/davihelisson/FATEC-API-Under_Devs" class="hover:underline" target="_blank">Underdevs</a>. All Rights Reserved.
+            </span>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <script src="./script.js"></script>
+    
+</body>
+</html>

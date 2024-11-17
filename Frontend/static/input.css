@@ -30,6 +30,10 @@ li {
     List-style-position: inside;
 }
 
+.homeBg {
+    background-image: linear-gradient(to_top_right,rgba(0,0,0,1),rgba(0,0,0,0.2)),url('./img/home-hero.jpg')
+}
+
 .modules-pattern {
     background-size: cover;
     background-position: center center;

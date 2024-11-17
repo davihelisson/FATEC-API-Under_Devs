@@ -89,16 +89,18 @@
     </nav>
 
 <!-- Hero -->
-    <section class="flex-none flex items-center justify-center bg-no-repeat bg-cover bg-center h-[45rem] bg-[linear-gradient(to_top_right,rgba(0,0,0,1),rgba(0,0,0,0.2)),url('./assets/imgs/home-hero.jpg')]">
-    <!-- <section class="flex-none flex items-center justify-center bg-no-repeat bg-cover bg-center h-[45rem] bg-[linear-gradient(to_top_right,rgba(0,0,0,1),rgba(0,0,0,0.2)),url('{{ url_for('static', filename='img/home-hero.jpg') }}')]"> -->
-        <div class="flex flex-col items-center justify-center w-[60vw] text-white text-center">
-            <h1 class="text-8xl font-bold">
+    <section class="flex-none flex items-center justify-center bg-no-repeat bg-cover bg-center min-[100px]:py-12 md:py-0 md:h-[40rem]" style="background-image: linear-gradient(to top right, rgba(0,0,0,1), rgba(0,0,0,0.2)), url('{{ url_for('static', filename='img/home-hero.jpg') }}');">
+        <div class="flex flex-col items-center justify-center text-white text-center">
+            <h1 class="text-4xl inline-block md:hidden font-bold">
                 Tenha <b class="text-gradient font-bold">Dominio</b> na Metódologia <b class="text-gradient font-bold">Scrum</b>
             </h1>
-            <p class="mt-4 text-lg font-light text-gray-200">Tudo o que você precisa saber sobre Scrum para desenvolver projetos com agilidade.</p>
-            <div class="flex flex-row justify-evenly w-full pt-8 mx-6 lg:justify-center lg:gap-6">
-                <a href="/ScrumTail" class="px-4 py-2 rounded-lg font-medium text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br">Comece Aqui</a>
-                <a href="" class="px-4 py-2 rounded-lg text-white border flex gap-2 items-center">
+            <h1 class="text-8xl hidden md:inline font-bold px-40">
+                Tenha <b class="text-gradient font-bold">Dominio</b> na Metódologia <b class="text-gradient font-bold">Scrum</b>
+            </h1>
+            <p class="mt-4 hidden text-base md:flex md:text-lg lg:text-xl font-light text-gray-200">Tudo o que você precisa saber sobre Scrum para desenvolver projetos com agilidade.</p>
+            <div class="flex flex-col md:flex-row justify-evenly w-44 md:w-full pt-8 mx-6 md:justify-center md:gap-6">
+                <a href="/ScrumTail" class="px-4 py-2 rounded-lg font-medium text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br mb-4 md:mb-0">Comece Aqui</a>
+                <a href="" class="px-4 py-2 rounded-lg text-white border flex gap-2 items-center justify-center">
                     Saiba Mais
                     <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"></path>
@@ -109,30 +111,30 @@
     </section>
 
 <!-- Contéudo principal -->
-    <main class="flex-auto flex flex-col items-center justify-center w-full px-24 gap-0 mb-24 lg:py-0 lg:gap-4">
-        <div class="flex-auto flex justify-between items-center w-full gap-32 px-16 lg:flex-nowrap md:flex-wrap">
+    <main class="container mx-auto flex flex-col items-center justify-center px-10 md:px-8 lg:px-16 py-12 lg:py-0 gap-8">
+        <div class="flex flex-col md:flex-row justify-between items-center w-full min-[768px]:mx-auto gap-8">
             <div class="flex-auto">
                 <h2 class="text-xl font-semibold text-blue-600">Sobre o Scrum</h2>
-                <h1 class="text-5xl text-slate-900 font-bold mb-4">O que é o metódo Scrum?</h1>
-                <p class="text-black text-xl mb-8">
+                <h1 class="text-3xl md:text-4xl lg:text-5xl text-slate-900 font-bold mb-4">O que é o metódo Scrum?</h1>
+                <p class="text-black text-base md:text-lg lg:text-xl mb-8 text-justify">
                     A metodologia Scrum é uma estrutura ágil usada para gerenciar projetos, especialmente em desenvolvimento de software, mas pode ser aplicada a diversos tipos de projetos. Ela promove colaboração, adaptação contínua e entrega incremental do produto, ajudando as equipes a serem mais flexíveis e produtivas.
                 </p>
-                <a href="" class="px-8 py-6 rounded-lg font-medium text-white bg-blue-600">
+                <a href="" class="hidden md:inline px-6 py-3 lg:px-8 lg:py-4 rounded-lg font-medium text-white bg-blue-600">
                     Conheça mais!
                 </a>
             </div>
             <div class="flex-none flex items-center">                
-                <svg class="w-[30rem] h-[30rem]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                <svg class="min-[100px]:w-[24rem] min-[100px]:h-[24rem] min-[768px]:w-[32rem] min-[768px]:h-[32rem]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
                     <image href="{{ url_for('static', filename='img/Team goals-rafiki.svg') }}" alt="Team Goals" width="100" height="100" />
-                  </svg>
+                </svg>
             </div>
         </div>
-        <div class="flex-auto flex flex-col w-full justify-center items-center px-16">
-            <div class="flex-none flex flex-col justify-center mb-8">
-                <h2 class="flex-none text-xl px-0.5 font-semibold text-blue-600">Mas...</h2>
-                <h1 class="flex-none text-5xl text-slate-900 font-bold">Por que aprender?</h1>
+        <div class="flex flex-col w-full min-[768px]:mx-auto mb-12">
+            <div class="flex flex-col md:justify-center mb-8 md:text-center">
+                <h2 class="text-xl font-semibold text-blue-600">Mas...</h2>
+                <h1 class="text-3xl md:text-4xl lg:text-5xl text-slate-900 font-bold">Por que aprender?</h1>
             </div>
-            <div class="flex-none grid grid-cols-3 gap-16 w-full">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
                 <div class="inline">
                     <h2 class="text-3xl font-semibold text-gray-900 mb-3 flex items-center justify-center w-full gap-2">
                         <svg class="w-6 h-6 text-gray-900" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
@@ -142,17 +144,6 @@
                     </h2>
                     <p class="text-xl text-black text-justify">
                         Chega de perdas e retrabalho! O Scrum divide projetos em etapas menores e coloca o foco no que importa, garantindo entregas rápidas e contínuas. Além disso, ele permite ajustes no caminho, facilitando a adaptação a mudanças sem comprometer prazos ou qualidade. Mais agilidade, menos dor de cabeça!
-                    </p>
-                </div>
-                <div class="inline">
-                    <h2 class="text-3xl font-semibold text-gray-900 mb-3 flex items-center justify-center w-full gap-2">
-                        <svg class="w-6 h-6 text-gray-900" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4.5V19a1 1 0 0 0 1 1h15M7 14l4-4 4 4 5-5m0 0h-3.207M20 9v3.207"/>
-                        </svg>
-                        Competitivo
-                    </h2>
-                    <p class="text-xl text-black text-justify">
-                        Empresas de sucesso buscam cada vez mais equipes ágeis e eficientes. Aprender essa metodologia coloca você à frente no mercado e faz toda a diferença em projetos desafiadores. Afinal, quem não quer ser reconhecido por entregar resultados e resolver problemas de forma estratégica?
                     </p>
                 </div>
                 <div class="inline">
@@ -166,19 +157,30 @@
                         O Scrum vai além do mundo corporativo: ele se adapta a diferentes setores e até à sua vida pessoal. Quer organizar melhor sua rotina, planejar projetos em equipe ou até preparar um evento especial? Essa metodologia é tão versátil que funciona em qualquer cenário, sempre trazendo mais clareza e eficiência.
                     </p>
                 </div>
+                <div class="inline">
+                    <h2 class="text-3xl font-semibold text-gray-900 mb-3 flex items-center justify-center w-full gap-2">
+                        <svg class="w-6 h-6 text-gray-900" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4.5V19a1 1 0 0 0 1 1h15M7 14l4-4 4 4 5-5m0 0h-3.207M20 9v3.207"/>
+                        </svg>
+                        Colaborativo
+                    </h2>
+                    <p class="text-xl text-black text-justify">
+                        A metodologia Scrum incentiva a colaboração entre os membros da equipe e as partes interessadas. Com reuniões diárias e revisões regulares, todos estão alinhados e trabalhando juntos para alcançar os objetivos do projeto.
+                    </p>
+                </div>
             </div>
         </div>
     </main>
 
 <!-- Rodapé da página -->
-    <footer class="flex-none flex flex-col lg:px-28 py-7 mt-auto w-full bg-slate-300">
-        <div class="w-full lg:flex lg:flex-row justify-between px-10 gap-32">
-            <div class="hidden flex-1 lg:flex flex-col">
+    <footer class="flex-none flex flex-col md:px-28 py-7 mt-auto w-full bg-slate-300">
+        <div class="w-full md:flex md:flex-row justify-between px-10 gap-32">
+            <div class="hidden flex-1 md:flex flex-col">
                 <a href="" class="mb-2 text-2xl font-Archivo font-bold">Scrum360</a>
                 <p class="text-justify text-sm">O Scrum360 é uma plataforma educacional interativa, idealizada para estudantes e profissionais que desejam dominar a metodologia Scrum.</p>
             </div>
-            <a href="" class="text-2xl font-Archivo font-bold lg:hidden">Scrum360</a>
-            <div class="flex-auto grid grid-cols-1 lg:grid-cols-4 gap-6">
+            <a href="" class="text-2xl font-Archivo font-bold md:hidden">Scrum360</a>
+            <div class="flex-auto grid grid-cols-1 md:grid-cols-4 gap-6">
                 <div class="flex flex-col">
                     <h2 class="mb-6 text-sm font-semibold text-slate-900 uppercase">Informações</h2>
                     <ul class="text-gray-500 font-medium">

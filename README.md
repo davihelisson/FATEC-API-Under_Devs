@@ -22,7 +22,7 @@ O Scrum360 tem como objetivo apresentar a metodologia Scrum, visando:
 Nossas metas de entregas para cada sprint:
 - [x] Sprint 1 - Página de Conteúdos;
 - [x] Sprint 2 - Páginas de Avaliação Parcial;
-- [ ] Sprint 3 - Login de Usuário.
+- [ ] Sprint 3 - Página de Avaliação Final;
 
 ## 💄 FUNCIONALIDADE DO PROJETO
 
@@ -50,8 +50,7 @@ Confira abaixo a demonstração das páginas de conteúdo e um dos questionário
 - [x] Avaliação parcial para cada capítulo
 
 ### Sprint 3
-- [ ] Sistema de login para salvar o progresso
-- [ ] Visualização do desempenho em cada teste
+- [x] Visualização do desempenho em cada teste
 - [ ] Nome e avaliação sobre a tela de resultados
 - [ ] Exame final
 

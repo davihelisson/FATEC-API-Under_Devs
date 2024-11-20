@@ -788,10 +788,6 @@ video {
   width: 1.5rem;
 }
 
-.w-\[60vw\]{
-  width: 60vw;
-}
-
 .w-full{
   width: 100%;
 }
@@ -884,10 +880,8 @@ video {
   gap: 2rem;
 }
 
-.space-x-3 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0.75rem * var(--tw-space-x-reverse));
-  margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
+.gap-5{
+  gap: 1.25rem;
 }
 
 .space-y-5 > :not([hidden]) ~ :not([hidden]){
@@ -917,6 +911,10 @@ video {
 
 .overflow-x-hidden{
   overflow-x: hidden;
+}
+
+.text-balance{
+  text-wrap: balance;
 }
 
 .rounded{
@@ -1121,18 +1119,12 @@ video {
   padding-bottom: 1.75rem;
 }
 
-.py-8{
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.py-16{
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
 .pb-5{
   padding-bottom: 1.25rem;
+}
+
+.pt-10{
+  padding-top: 2.5rem;
 }
 
 .pt-16{
@@ -1454,11 +1446,45 @@ li {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
+
+  .min-\[100px\]\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
 }
 
 @media (min-width: 640px){
   .sm\:flex-auto{
     flex: 1 1 auto;
+  }
+
+  .sm\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:px-8{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .sm\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .sm\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .sm\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .sm\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
@@ -1519,6 +1545,11 @@ li {
     gap: 1.5rem;
   }
 
+  .md\:px-16{
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
   .md\:px-28{
     padding-left: 7rem;
     padding-right: 7rem;
@@ -1534,16 +1565,6 @@ li {
     padding-bottom: 0px;
   }
 
-  .md\:py-16{
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
-
-  .md\:px-16{
-    padding-left: 4rem;
-    padding-right: 4rem;
-  }
-
   .md\:text-center{
     text-align: center;
   }
@@ -1551,6 +1572,11 @@ li {
   .md\:text-4xl{
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .md\:text-8xl{
+    font-size: 6rem;
+    line-height: 1;
   }
 
   .md\:text-lg{
@@ -1581,12 +1607,24 @@ li {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
+  .lg\:flex-row{
+    flex-direction: row;
+  }
+
   .lg\:flex-nowrap{
     flex-wrap: nowrap;
   }
 
+  .lg\:gap-32{
+    gap: 8rem;
+  }
+
   .lg\:gap-4{
     gap: 1rem;
+  }
+
+  .lg\:gap-8{
+    gap: 2rem;
   }
 
   .lg\:px-16{
@@ -1609,19 +1647,18 @@ li {
     padding-bottom: 1rem;
   }
 
-  .lg\:px-24{
-    padding-left: 6rem;
-    padding-right: 6rem;
+  .lg\:pt-20{
+    padding-top: 5rem;
   }
 
-  .lg\:px-32{
-    padding-left: 8rem;
-    padding-right: 8rem;
+  .lg\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
-  .lg\:px-20{
-    padding-left: 5rem;
-    padding-right: 5rem;
+  .lg\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .lg\:text-5xl{
@@ -1636,11 +1673,6 @@ li {
 }
 
 @media (min-width: 1280px){
-  .xl\:px-24{
-    padding-left: 6rem;
-    padding-right: 6rem;
-  }
-
   .xl\:px-32{
     padding-left: 8rem;
     padding-right: 8rem;

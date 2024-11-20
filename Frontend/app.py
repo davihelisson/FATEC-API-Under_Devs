@@ -28,7 +28,7 @@ def ScrumTail():
 
 @app.route('/ScrumMaster')
 def ScrumMaster():
-    return render_template('ScrumTail.html')
+    return render_template('ScrumMaster.html')
 
 # module routes
 # these routes redirect to the scrum modules

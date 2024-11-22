@@ -2,13 +2,13 @@
 
 {% block title %}Questões DevTeam{% endblock %}
 {% block head %}
-  {{ super() }} <link rel="stylesheet" href="{{ url_for('static', filename='/questions.css') }}">
+  {{ super() }} <link rel="stylesheet" href="{{ url_for('static', filename='questions.css') }}">
 {% endblock %}
 
 {% block content %}
-    <main>
+    <main class="container flex-auto flex flex-col items-center justify-center w-full mx-auto px-10 sm:px-8 md:px-32 gap-4 mb-24 lg:py-0 lg:gap-8">
         <h1 class="text-3xl text-slate-900 font-bold frm-title">Questões sobre o DevTeam</h1>
-        <form action="#" method="post">
+        <form class="w-full" action="#" method="post">
             <div class="question">
                 <p class="qtitle">Qual é o principal papel do Development Team no Scrum?</p>
                 <p><input type="radio" name="choice1" id="a1"><label for="a1">Definir os objetivos do projeto</label></p>

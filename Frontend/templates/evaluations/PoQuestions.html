@@ -2,11 +2,11 @@
 
 {% block title %}Questões P.O.{% endblock %}
 {% block head %}
-  {{ super() }} <link rel="stylesheet" href="{{ url_for('static', filename='/questions.css') }}">
+  {{ super() }} <link rel="stylesheet" href="{{ url_for('static', filename='questions.css') }}">
 {% endblock %}
 
 {% block content %}
-    <main>
+    <main class="container flex-auto flex flex-col items-center justify-center w-full mx-auto px-10 sm:px-8 md:px-32 gap-4 mb-24 lg:py-0 lg:gap-8">
         <h1 class="text-3xl text-slate-900 font-bold frm-title">Questões sobre o Product Owner</h1>
         <form action="#" method="post">
             <div class="question">

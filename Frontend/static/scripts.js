@@ -46,6 +46,8 @@ function ScrumQuestions (){
     }
     document.getElementById('result-panel').hidden = false;
     document.getElementById('result').innerHTML = ' ' + contador + ' de 10';
+    document.getElementById('score').value = contador;
+    document.getElementById('total').value = 10;
 }
 function PoQuestions (){
     let contador = 0;

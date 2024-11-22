@@ -1,18 +1,29 @@
 # Code for executing flask
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, session
 
 app = Flask(__name__)
+app.secret_key = 'your_secret_key'  # Chave secreta para segurança das sessões
 
 # main routes
 # these routes redirect to the main pages
 
+# app all routes
+
 @app.route('/')
 def index():
+    if 'score_scrum_generics' not in session:
+        session['score_scrum_generics'] = 0
+    if 'score_product_owner' not in session:
+        session['score_product_owner'] = 0
+    if 'score_scrum_master' not in session:
+        session['score_scrum_master'] = 0
+    if 'score_dev_team' not in session:
+        session['score_dev_team'] = 0    
     return render_template('index.html')
 
 @app.route('/modules')
 def modules():
-    return render_template('Modulos.html')
+    return render_template('Modulos.html', checked = 'checked')
 
 @app.route('/DevTeamTail')
 def devTeamTail():

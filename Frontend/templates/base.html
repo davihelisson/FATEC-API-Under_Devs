@@ -7,13 +7,14 @@
     {% block head %}{% endblock %}
     <link href="{{url_for('static', filename='output.css')}}" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="icon" href="{{url_for('static', filename='img/favicon.ico')}}" type="image/x-icon" />
 </head>
 <body class="flex flex-col min-h-screen w-full overflow-x-hidden">
 <!-- Cabeçalho da página -->
     <nav class="flex-auto bg-slate-100 w-full text-slate-900 shadow-xl border-b border-slate-400">
         <div class="flex py-4 px-5 items-center justify-between">
             <div class="flex-auto md:flex justify-evenly">
-                <a href="" class="text-2xl font-Archivo font-bold">Scrum360</a>
+                <a href="/" class="text-2xl font-Archivo font-bold">Scrum360</a>
                 <div class="h-30 w-0.5 bg-slate-900"></div>
             </div>
 
@@ -31,7 +32,7 @@
                     <a href="/">
                         <li class="h-14 w-20 px-2 flex items-center justify-center hover:bg-slate-900 hover:text-white">Home</li>
                     </a>
-                    <a href="#">
+                    <a href="/SobreNos">
                         <li class="h-14 w-20 px-2 flex items-center justify-center hover:bg-slate-900 hover:text-white">Sobre</li>
                     </a>
                     <li class="px-2 flex flex-row hover:bg-slate-900 hover:text-white">
@@ -76,7 +77,7 @@
                 <a href="/">
                     <li class="h-14 w-full px-6 flex items-center hover:bg-slate-900 hover:text-white">Home</li>
                 </a>
-                <a href="#">
+                <a href="/SobreNos">
                     <li class="h-14 w-full px-6 flex items-center hover:bg-slate-900 hover:text-white">Sobre</li>
                 </a>
                 <a href="/modules">
@@ -100,7 +101,7 @@
                 <p class="text-justify text-sm">O Scrum360 é uma plataforma educacional interativa, idealizada para estudantes e profissionais que desejam dominar a metodologia Scrum.</p>
             </div>
             <a href="" class="text-2xl font-Archivo font-bold md:hidden">Scrum360</a>
-            <div class="flex-auto grid grid-cols-1 md:grid-cols-4 gap-6">
+            <div class="flex-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div class="flex flex-col">
                     <h2 class="mb-6 text-sm font-semibold text-slate-900 uppercase">Informações</h2>
                     <ul class="text-gray-500 font-medium">

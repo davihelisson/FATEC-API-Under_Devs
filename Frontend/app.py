@@ -1,5 +1,5 @@
 # Code for executing flask
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
@@ -56,3 +56,14 @@ def FinalExam():
 @app.route('/SobreNos')
 def SobreNos():
     return render_template('SobreNos.html')
+
+# Review dos resultados das avaliações
+
+@app.route('/review', methods=['POST'])
+def ReviewScore():
+    corrects = ''
+    total = ''
+    if request.method == 'POST':
+        corrects = request.form['score']
+        total = request.form['total']
+    return render_template('/evaluations/Redirect.html', result = f'{corrects} de {total}')

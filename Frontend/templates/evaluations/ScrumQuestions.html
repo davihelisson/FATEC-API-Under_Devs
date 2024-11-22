@@ -8,7 +8,7 @@
 {% block content %}
     <main class="container flex-auto flex flex-col items-center justify-center w-full mx-auto px-10 sm:px-8 md:px-32 gap-4 mb-24 lg:py-0 lg:gap-8">
         <h1 class="text-3xl text-slate-900 font-bold frm-title">Questões Gerais sobre Scrum</h1>
-        <form action="#" method="post" class="w-full">
+        <form action="/review" method="post" class="w-full">
             <div class="question">
                 <p class="qtitle">Qual é a origem do nome "Scrum"?</p>
                 <p><input type="radio" name="choice1" id="a1"><label for="a1">Uma técnica de gerenciamento de projetos tradicional</label></p>
@@ -83,6 +83,9 @@
             
             <input type="button" onclick="ScrumQuestions()" value="Verificar">
             <input type="reset" onclick="hiddenBox()" value="Limpar">
+            <input type="hidden" value="" name="score" id="score">
+            <input type="hidden" value="" name="total" id="total">
+            <input type="submit" value="verificar">
         </form>
     </main>
     <!-- DIV PROVISÓRIA COM OS RESULTADOS -->

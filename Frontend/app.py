@@ -52,3 +52,7 @@ def Scrum():
 @app.route('/FinalExamQuestions')
 def FinalExam():
     return render_template('/evaluations/FinalExam.html')
+
+@app.route('/SobreNos')
+def SobreNos():
+    return render_template('SobreNos.html')

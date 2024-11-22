@@ -8,7 +8,7 @@
 {% block content %}
     <main class="container flex-auto flex flex-col items-center justify-center w-full mx-auto px-10 sm:px-8 md:px-32 gap-4 mb-24 lg:py-0 lg:gap-8">
         <h1 class="text-3xl text-slate-900 font-bold frm-title">Questões sobre o Scrum Master</h1>
-        <form action="#" method="post">
+        <form action="/review" method="post" class="w-full" id="frm_sq">
             <div class="question">
                 <p class="qtitle">Qual é a principal responsabilidade do Scrum Master?</p>
                 <p><input type="radio" name="choice1" id="a1"><label for="a1">Assegurar que o Scrum seja entendido e seguido corretamente</label></p>
@@ -81,14 +81,12 @@
                 <p><input type="radio" name="choice10" id="j4"><label for="j4">O Scrum Master aprova o trabalho realizado pelo time</label></p>
             </div>
             <!-- FIM DO FORMÚLÁRIO -->
-            
-            <input type="button" onclick="ScrumQuestions()" value="Verificar" class="check_btn">
+
+            <input type="hidden" value="sm" name="module">
+            <input type="hidden" value="" name="score" id="score">
+            <input type="hidden" value="" name="total" id="total">
+            <input type="button" onclick="ScrumMasterQuestions()" value="Verificar" class="check_btn">
             <input type="reset" onclick="hiddenBox()" value="Limpar">
         </form>
     </main>
-    <!-- DIV PROVISÓRIA COM OS RESULTADOS -->
-    <section id="result-panel" name="Resultados da Avaliação" hidden class="results">
-        <span>Acertos:</span><span id="result">0</span>    
-    </section>
-    <!-- FIM DOS RESULTADOS -->
 {% endblock %}

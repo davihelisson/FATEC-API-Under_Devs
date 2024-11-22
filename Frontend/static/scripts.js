@@ -2,6 +2,14 @@
 function hiddenBox(){
     document.getElementById('result-panel').hidden = true;
 }
+
+function SubmitResults(correct, total){
+    const form = document.getElementById('frm_sq');
+    document.getElementById('score').value = correct;
+    document.getElementById('total').value = total;
+    form.submit();
+}
+
 function ScrumQuestions (){
     let contador = 0;
     const quest1 = document.getElementById('a3');
@@ -44,10 +52,7 @@ function ScrumQuestions (){
     if(quest10.checked){
         contador += 1;
     }
-    document.getElementById('result-panel').hidden = false;
-    document.getElementById('result').innerHTML = ' ' + contador + ' de 10';
-    document.getElementById('score').value = contador;
-    document.getElementById('total').value = 10;
+    SubmitResults(contador, 10);
 }
 function PoQuestions (){
     let contador = 0;
@@ -91,9 +96,9 @@ function PoQuestions (){
     if(quest10.checked){
         contador += 1;
     }
-    document.getElementById('result-panel').hidden = false;
-    document.getElementById('result').innerHTML = ' ' + contador + ' de 10';
+    SubmitResults(contador, 10);
 }
+
 function ScrumMasterQuestions (){
     let contador = 0;
     const quest1 = document.getElementById('a1');
@@ -136,9 +141,9 @@ function ScrumMasterQuestions (){
     if(quest10.checked){
         contador += 1;
     }
-    document.getElementById('result-panel').hidden = false;
-    document.getElementById('result').innerHTML = ' ' + contador + ' de 10';
+    SubmitResults(contador, 10);
 }
+
 function DevTeamQuestions (){
     let contador = 0;
     const quest1 = document.getElementById('a2');
@@ -181,6 +186,5 @@ function DevTeamQuestions (){
     if(quest10.checked){
         contador += 1;
     }
-    document.getElementById('result-panel').hidden = false;
-    document.getElementById('result').innerHTML = ' ' + contador + ' de 10';
+    SubmitResults(contador, 10);
 }

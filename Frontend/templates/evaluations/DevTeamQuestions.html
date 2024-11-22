@@ -8,7 +8,7 @@
 {% block content %}
     <main class="container flex-auto flex flex-col items-center justify-center w-full mx-auto px-10 sm:px-8 md:px-32 gap-4 mb-24 lg:py-0 lg:gap-8">
         <h1 class="text-3xl text-slate-900 font-bold frm-title">Questões sobre o DevTeam</h1>
-        <form class="w-full" action="#" method="post">
+        <form action="/review" method="post" class="w-full" id="frm_sq">
             <div class="question">
                 <p class="qtitle">Qual é o principal papel do Development Team no Scrum?</p>
                 <p><input type="radio" name="choice1" id="a1"><label for="a1">Definir os objetivos do projeto</label></p>
@@ -80,15 +80,12 @@
                 <p><input type="radio" name="choice9" id="j4"><label for="j4">Revisa o Product Backlog</label></p>
             </div>
             <!-- FIM DO FORMÚLÁRIO -->
-            
+
+            <input type="hidden" value="dt" name="module">
+            <input type="hidden" value="" name="score" id="score">
+            <input type="hidden" value="" name="total" id="total">
             <input type="button" onclick="DevTeamQuestions()" value="Verificar">
             <input type="reset" onclick="hiddenBox()" value="Limpar">
         </form>
     </main>
-    <!-- DIV PROVISÓRIA COM OS RESULTADOS -->
-    <section id="result-panel" name="Resultados da Avaliação" hidden class="results">
-        <span>Acertos:</span><span id="result">0</span>    
-    </section>
-    <!-- FIM DOS RESULTADOS -->
-
 {% endblock %}

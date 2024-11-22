@@ -86,14 +86,23 @@ def SobreNos():
 @app.route('/review', methods=['POST'])
 def ReviewScore():
     total = ''
+    current = ''
     if request.method == 'POST':
         if request.form['module'] == 'sc':
             session['score_scrum_generics'] = request.form['score']
+            current = 'score_scrum_generics'
+            
         elif request.form['module'] == 'po':
             session['score_product_owner'] = request.form['score']
+            current = 'score_product_owner'
+            
         elif request.form['module'] == 'sm':
             session['score_scrum_master'] = request.form['score']
+            current = 'score_scrum_master'
+            
         elif request.form['module'] == 'dt':
             session['score_dev_team'] = request.form['score']
+            current = 'score_dev_team'
+            
         total = request.form['total']
-    return render_template('/evaluations/Redirect.html', result = f'{session['score_scrum_generics']} de {total}')
+    return render_template('/evaluations/Redirect.html', result = f'{session[current]} de {total}')

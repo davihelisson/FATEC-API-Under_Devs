@@ -6,87 +6,231 @@
 {% endblock %}
 
 {% block content %}
-    <main class="container flex-auto flex flex-col items-center justify-center w-full mx-auto px-10 sm:px-8 md:px-32 gap-4 mb-24 lg:py-0 lg:gap-8">
-        <h1 class="text-3xl text-slate-900 font-bold frm-title">Questões sobre o Scrum Master</h1>
-        <form action="/review" method="post" class="w-full" id="frm_sq">
-            <div class="question">
-                <p class="qtitle">Qual é a principal responsabilidade do Scrum Master?</p>
-                <p><input type="radio" name="choice1" id="a1"><label for="a1">Assegurar que o Scrum seja entendido e seguido corretamente</label></p>
-                <p><input type="radio" name="choice1" id="a2"><label for="a2">Gerenciar diretamente o time de desenvolvimento</label></p>
-                <p><input type="radio" name="choice1" id="a3"><label for="a3">Definir os requisitos do produto</label></p>
-                <p><input type="radio" name="choice1" id="a4"><label for="a4">Aprovar o incremento ao final do Sprint</label></p>
-            </div>
-            <div class="question">
-                <p class="qtitle">Quem o Scrum Master deve apoiar para garantir a implementação eficaz do Scrum?</p>
-                <p><input type="radio" name="choice2" id="b1"><label for="b1">Apenas o Product Owner</label></p>
-                <p><input type="radio" name="choice2" id="b2"><label for="b2">O Product Owner e o Development Team</label></p>
-                <p><input type="radio" name="choice2" id="b3"><label for="b3">Apenas os stakeholders</label></p>
-                <p><input type="radio" name="choice2" id="b4"><label for="b4">O gerente de projetos</label></p>
-            </div>
-            <div class="question">
-                <p class="qtitle">Qual é uma das funções principais do Scrum Master durante o Sprint?</p>
-                <p><input type="radio" name="choice3" id="c1"><label for="c1">Definir os objetivos do Sprint</label></p>
-                <p><input type="radio" name="choice3" id="c2"><label for="c2">Gerenciar o progresso das tarefas do time
-                </label></p>
-                <p><input type="radio" name="choice3" id="c3"><label for="c3">Priorizar o Product Backlog</label></p>
-                <p><input type="radio" name="choice3" id="c4"><label for="c4">Remover impedimentos que possam atrapalhar o Development Team</label></p>
-            </div>
-            <div class="question">
-                <p class="qtitle">Quem facilita as cerimônias do Scrum, como o Sprint Planning e a Daily Scrum?</p>
-                <p><input type="radio" name="choice4" id="d1"><label for="d1">O Scrum Master</label></p>
-                <p><input type="radio" name="choice4" id="d2"><label for="d2">O Product Owner</label></p>
-                <p><input type="radio" name="choice4" id="d3"><label for="d3">O gerente de projetos</label></p>
-                <p><input type="radio" name="choice4" id="d4"><label for="d4">O CEO</label></p>
-            </div>
-            <div class="question">
-                <p class="qtitle">O que o Scrum Master deve fazer quando o Development Team enfrenta dificuldades com uma tarefa?</p>
-                <p><input type="radio" name="choice5" id="e1"><label for="e1">Fazer o trabalho para o time</label></p>
-                <p><input type="radio" name="choice5" id="e2"><label for="e2">Remover os impedimentos e garantir que o time possa continuar</label></p>
-                <p><input type="radio" name="choice5" id="e3"><label for="e3">Pedir ao Product Owner para ajudar</label></p>
-                <p><input type="radio" name="choice5" id="e4"><label for="e4">Contratar um novo membro para o time</label></p>
-            </div>
-            <div class="question">
-                <p class="qtitle">Qual dessas habilidades é fundamental para um Scrum Master?</p>
-                <p><input type="radio" name="choice6" id="f1"><label for="f1">Conhecimento técnico avançado de programação</label></p>
-                <p><input type="radio" name="choice6" id="f2"><label for="f2">Habilidades de facilitação e liderança servidora</label></p>
-                <p><input type="radio" name="choice6" id="f3"><label for="f3">Controle rígido sobre as atividades do time</label></p>
-                <p><input type="radio" name="choice6" id="f4"><label for="f4">Autoridade para tomar decisões sobre o produto</label></p>
-            </div>
-            <div class="question">
-                <p class="qtitle">Qual é o papel do Scrum Master durante a retrospectiva do Sprint?</p>
-                <p><input type="radio" name="choice7" id="g1"><label for="g1">Tomar todas as decisões finais sobre o que precisa ser melhorado</label></p>
-                <p><input type="radio" name="choice7" id="g2"><label for="g2">Definir o proximo sprint Backlog</label></p>
-                <p><input type="radio" name="choice7" id="g3"><label for="g3">Facilitar a discussão e garantir que o time identifique melhorias</label></p>
-                <p><input type="radio" name="choice7" id="g4"><label for="g4">Supervisionar a entrega do incremento</label></p>
-            </div>
-            <div class="question">
-                <p class="qtitle">Como o Scrum Master deve agir se o Product Owner tiver dificuldades em organizar o Product Backlog?</p>
-                <p><input type="radio" name="choice8" id="h1"><label for="h1">Ignorar a situação, pois não é sua responsabilidade</label></p>
-                <p><input type="radio" name="choice8" id="h2"><label for="h2">Tomar controle total do Product Backlog</label></p>
-                <p><input type="radio" name="choice8" id="h3"><label for="h3">Ajudar o Product Owner a melhorar a organização do backlog</label></p>
-                <p><input type="radio" name="choice8" id="h4"><label for="h4">Delegar a tarefa ao time de desenvolvimento</label></p>
-            </div>
-            <div class="question">
-                <p class="qtitle">Quem é responsável por garantir que o time siga as práticas e valores do Scrum?</p>
-                <p><input type="radio" name="choice9" id="i1"><label for="i1">O Product Owner</label></p>
-                <p><input type="radio" name="choice9" id="i2"><label for="i2">O Scrum Master</label></p>
-                <p><input type="radio" name="choice9" id="i3"><label for="i3">O gerente de TI</label></p>
-                <p><input type="radio" name="choice9" id="i4"><label for="i4">Os stakeholders</label></p>
-            </div>
-            <div class="question">
-                <p class="qtitle">Qual dessas afirmações descreve corretamente o papel do Scrum Master em relação ao time?</p>
-                <p><input type="radio" name="choice10" id="j1"><label for="j1">O Scrum Master gerencia o time diretamente</label></p>
-                <p><input type="radio" name="choice10" id="j2"><label for="j2">O Scrum Master atua como líder servidora, facilitando o trabalho do time</label></p>
-                <p><input type="radio" name="choice10" id="j3"><label for="j3">O Scrum Master é responsável por priorizar as tarefas do Sprint</label></p>
-                <p><input type="radio" name="choice10" id="j4"><label for="j4">O Scrum Master aprova o trabalho realizado pelo time</label></p>
-            </div>
-            <!-- FIM DO FORMÚLÁRIO -->
+    <section class="modules-p3 py-10 lg:px-28">
+        <main class="container flex-auto flex flex-col items-center justify-center w-full mx-auto px-10 sm:px-8 md:px-32 gap-4 lg:py-0 lg:gap-8 bg-white">
+            <h1 class="flex gap-2 items-center text-3xl text-slate-900 font-bold underline frm-title">
+                <svg class="w-6 h-6 hidden md:inline" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd" d="M9 2a1 1 0 0 0-1 1H6a2 2 0 0 0-2 2v15a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-2a1 1 0 0 0-1-1H9Zm1 2h4v2h1a1 1 0 1 1 0 2H9a1 1 0 0 1 0-2h1V4Zm5.707 8.707a1 1 0 0 0-1.414-1.414L11 14.586l-1.293-1.293a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4Z" clip-rule="evenodd"/>
+                </svg>                     
+                Questões sobre o Scrum Master
+            </h1>
+            <form action="/review" method="post" class="w-full" id="frm_sq">
+                <div class="question" id="question1">
+                    <p class="qtitle">1. Qual é a principal responsabilidade do Scrum Master?</p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice1" id="a1"><label for="a1" class="hover:cursor-pointer">Assegurar que o Scrum seja entendido e seguido corretamente</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice1" id="a2"><label for="a2" class="hover:cursor-pointer">Gerenciar diretamente o time de desenvolvimento</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice1" id="a3"><label for="a3" class="hover:cursor-pointer">Definir os requisitos do produto</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice1" id="a4"><label for="a4" class="hover:cursor-pointer">Aprovar o incremento ao final do Sprint</label></p>
+                    <div class="mt-4 flex w-full justify-end items-center font-light">
+                        <button type="button" onclick="showNextQuestion(1)" class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                            Próxima
+                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/>
+                            </svg>                      
+                        </button>
+                    </div>
+                </div>
+                <div class="question" id="question2" style="display:none;">
+                    <p class="qtitle">2. Quem o Scrum Master deve apoiar para garantir a implementação eficaz do Scrum?</p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice2" id="b1"><label for="b1" class="hover:cursor-pointer">Apenas o Product Owner</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice2" id="b2"><label for="b2" class="hover:cursor-pointer">O Product Owner e o Development Team</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice2" id="b3"><label for="b3" class="hover:cursor-pointer">Apenas os stakeholders</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice2" id="b4"><label for="b4" class="hover:cursor-pointer">O gerente de projetos</label></p>
+                    <div class="mt-4 flex w-full justify-between items-center font-light">
+                        <button type="button" onclick="showPreviousQuestion(2)" class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/>
+                            </svg>
+                            Anterior          
+                        </button>
+                        <button type="button" onclick="showNextQuestion(2)" class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                            Próxima
+                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/>
+                            </svg>                      
+                        </button>
+                    </div>
+                </div>
+                <div class="question" id="question3" style="display:none;">
+                    <p class="qtitle">3. Qual é uma das funções principais do Scrum Master durante o Sprint?</p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice3" id="c1"><label for="c1" class="hover:cursor-pointer">Definir os objetivos do Sprint</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice3" id="c2"><label for="c2" class="hover:cursor-pointer">Gerenciar o progresso das tarefas do time</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice3" id="c3"><label for="c3" class="hover:cursor-pointer">Priorizar o Product Backlog</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice3" id="c4"><label for="c4" class="hover:cursor-pointer">Remover impedimentos que possam atrapalhar o Development Team</label></p>
+                    <div class="mt-4 flex w-full justify-between items-center font-light">
+                        <button type="button" onclick="showPreviousQuestion(3)" class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/>
+                            </svg>
+                            Anterior          
+                        </button>
+                        <button type="button" onclick="showNextQuestion(3)" class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                            Próxima
+                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/>
+                            </svg>                      
+                        </button>
+                    </div>
+                </div>
+                <div class="question" id="question4" style="display:none;">
+                    <p class="qtitle">4. Quem facilita as cerimônias do Scrum, como o Sprint Planning e a Daily Scrum?</p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice4" id="d1"><label for="d1" class="hover:cursor-pointer">O Scrum Master</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice4" id="d2"><label for="d2" class="hover:cursor-pointer">O Product Owner</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice4" id="d3"><label for="d3" class="hover:cursor-pointer">O gerente de projetos</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice4" id="d4"><label for="d4" class="hover:cursor-pointer">O CEO</label></p>
+                    <div class="mt-4 flex w-full justify-between items-center font-light">
+                        <button type="button" onclick="showPreviousQuestion(4)" class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/>
+                            </svg>
+                            Anterior          
+                        </button>
+                        <button type="button" onclick="showNextQuestion(4)" class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                            Próxima
+                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/>
+                            </svg>                      
+                        </button>
+                    </div>
+                </div>
+                <div class="question" id="question5" style="display:none;">
+                    <p class="qtitle">5. O que o Scrum Master deve fazer quando o Development Team enfrenta dificuldades com uma tarefa?</p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice5" id="e1"><label for="e1" class="hover:cursor-pointer">Fazer o trabalho para o time</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice5" id="e2"><label for="e2" class="hover:cursor-pointer">Remover os impedimentos e garantir que o time possa continuar</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice5" id="e3"><label for="e3" class="hover:cursor-pointer">Pedir ao Product Owner para ajudar</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice5" id="e4"><label for="e4" class="hover:cursor-pointer">Contratar um novo membro para o time</label></p>
+                    <div class="mt-4 flex w-full justify-between items-center font-light">
+                        <button type="button" onclick="showPreviousQuestion(5)" class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/>
+                            </svg>
+                            Anterior          
+                        </button>
+                        <button type="button" onclick="showNextQuestion(5)" class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                            Próxima
+                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/>
+                            </svg>                      
+                        </button>
+                    </div>
+                </div>
+                <div class="question" id="question6" style="display:none;">
+                    <p class="qtitle">6. Qual dessas habilidades é fundamental para um Scrum Master?</p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice6" id="f1"><label for="f1" class="hover:cursor-pointer">Conhecimento técnico avançado de programação</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice6" id="f2"><label for="f2" class="hover:cursor-pointer">Habilidades de facilitação e liderança servidora</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice6" id="f3"><label for="f3" class="hover:cursor-pointer">Controle rígido sobre as atividades do time</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice6" id="f4"><label for="f4" class="hover:cursor-pointer">Autoridade para tomar decisões sobre o produto</label></p>
+                    <div class="mt-4 flex w-full justify-between items-center font-light">
+                        <button type="button" onclick="showPreviousQuestion(6)" class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/>
+                            </svg>
+                            Anterior          
+                        </button>
+                        <button type="button" onclick="showNextQuestion(6)" class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                            Próxima
+                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/>
+                            </svg>                      
+                        </button>
+                    </div>
+                </div>
+                <div class="question" id="question7" style="display:none;">
+                    <p class="qtitle">7. Qual é o papel do Scrum Master durante a retrospectiva do Sprint?</p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice7" id="g1"><label for="g1" class="hover:cursor-pointer">Tomar todas as decisões finais sobre o que precisa ser melhorado</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice7" id="g2"><label for="g2" class="hover:cursor-pointer">Definir o proximo sprint Backlog</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice7" id="g3"><label for="g3" class="hover:cursor-pointer">Facilitar a discussão e garantir que o time identifique melhorias</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice7" id="g4"><label for="g4" class="hover:cursor-pointer">Supervisionar a entrega do incremento</label></p>
+                    <div class="mt-4 flex w-full justify-between items-center font-light">
+                        <button type="button" onclick="showPreviousQuestion(7)" class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/>
+                            </svg>
+                            Anterior          
+                        </button>
+                        <button type="button" onclick="showNextQuestion(7)" class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                            Próxima
+                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/>
+                            </svg>                      
+                        </button>
+                    </div>
+                </div>
+                <div class="question" id="question8" style="display:none;">
+                    <p class="qtitle">8. Como o Scrum Master deve agir se o Product Owner tiver dificuldades em organizar o Product Backlog?</p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice8" id="h1"><label for="h1" class="hover:cursor-pointer">Ignorar a situação, pois não é sua responsabilidade</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice8" id="h2"><label for="h2" class="hover:cursor-pointer">Tomar controle total do Product Backlog</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice8" id="h3"><label for="h3" class="hover:cursor-pointer">Ajudar o Product Owner a melhorar a organização do backlog</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice8" id="h4"><label for="h4" class="hover:cursor-pointer">Delegar a tarefa ao time de desenvolvimento</label></p>
+                    <div class="mt-4 flex w-full justify-between items-center font-light">
+                        <button type="button" onclick="showPreviousQuestion(8)" class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/>
+                            </svg>
+                            Anterior          
+                        </button>
+                        <button type="button" onclick="showNextQuestion(8)" class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                            Próxima
+                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/>
+                            </svg>                      
+                        </button>
+                    </div>
+                </div>
+                <div class="question" id="question9" style="display:none;">
+                    <p class="qtitle">9. Quem é responsável por garantir que o time siga as práticas e valores do Scrum?</p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice9" id="i1"><label for="i1" class="hover:cursor-pointer">O Product Owner</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice9" id="i2"><label for="i2" class="hover:cursor-pointer">O Scrum Master</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice9" id="i3"><label for="i3" class="hover:cursor-pointer">O gerente de TI</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice9" id="i4"><label for="i4" class="hover:cursor-pointer">Os stakeholders</label></p>
+                    <div class="mt-4 flex w-full justify-between items-center font-light">
+                        <button type="button" onclick="showPreviousQuestion(9)" class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/>
+                            </svg>
+                            Anterior          
+                        </button>
+                        <button type="button" onclick="showNextQuestion(9)" class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                            Próxima
+                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/>
+                            </svg>                      
+                        </button>
+                    </div>
+                </div>
+                <div class="question" id="question10" style="display:none;">
+                    <p class="qtitle">10. Qual dessas afirmações descreve corretamente o papel do Scrum Master em relação ao time?</p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice10" id="j1"><label for="j1" class="hover:cursor-pointer">O Scrum Master gerencia o time diretamente</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice10" id="j2"><label for="j2" class="hover:cursor-pointer">O Scrum Master atua como líder servidora, facilitando o trabalho do time</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice10" id="j3"><label for="j3" class="hover:cursor-pointer">O Scrum Master é responsável por priorizar as tarefas do Sprint</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice10" id="j4"><label for="j4" class="hover:cursor-pointer">O Scrum Master aprova o trabalho realizado pelo time</label></p>
+                    <div class="mt-4 flex w-full justify-between items-center font-light">
+                        <button type="button" onclick="showPreviousQuestion(10)" class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/>
+                            </svg>
+                            Anterior          
+                        </button>
+                        <button type="button" onclick="ScrumMasterQuestions()" value="Verificar" class="flex p-2 px-4 text-white bg-green-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-green-500 focus:ring-4 focus:outline-none focus:ring-green-300 gap-2">
+                            Enviar
+                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 11.917 9.724 16.5 19 7.5"/>
+                            </svg>                    
+                        </button>
+                    </div>
+                </div>
+                <!-- FIM DO FORMÚLÁRIO -->
 
-            <input type="hidden" value="sm" name="module">
-            <input type="hidden" value="" name="score" id="score">
-            <input type="hidden" value="" name="total" id="total">
-            <input type="button" onclick="ScrumMasterQuestions()" value="Verificar" class="check_btn">
-            <input type="reset" onclick="hiddenBox()" value="Limpar">
-        </form>
-    </main>
+                <input type="hidden" value="sm" name="module">
+                <input type="hidden" value="" name="score" id="score">
+                <input type="hidden" value="" name="total" id="total">
+                <button type="reset" onclick="hiddenBox()" value="Limpar" class="font-bold flex p-2 px-4 gap-2 bg-yellow-300 hover:bg-yellow-200 focus:ring-4 focus:outline-none focus:ring-yellow-100">
+                    <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.651 7.65a7.131 7.131 0 0 0-12.68 3.15M18.001 4v4h-4m-7.652 8.35a7.13 7.13 0 0 0 12.68-3.15M6 20v-4h4"/>
+                    </svg>
+                    Limpar Alternativas              
+                </button>
+            </form>
+        </main>
+    </section>
 {% endblock %}

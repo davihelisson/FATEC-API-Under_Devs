@@ -188,3 +188,13 @@ function DevTeamQuestions (){
     }
     SubmitResults(contador, 10);
 }
+
+function showNextQuestion(currentQuestion) {
+    document.getElementById('question' + currentQuestion).style.display = 'none';
+    document.getElementById('question' + (currentQuestion + 1)).style.display = 'block';
+}
+
+function showPreviousQuestion(currentQuestion) {
+    document.getElementById('question' + currentQuestion).style.display = 'none';
+    document.getElementById('question' + (currentQuestion - 1)).style.display = 'block';
+}

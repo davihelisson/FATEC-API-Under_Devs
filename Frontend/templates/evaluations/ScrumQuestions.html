@@ -6,86 +6,241 @@
 {% endblock %}
 
 {% block content %}
-    <main class="container flex-auto flex flex-col items-center justify-center w-full mx-auto px-10 sm:px-8 md:px-32 gap-4 mb-24 lg:py-0 lg:gap-8">
-        <h1 class="text-3xl text-slate-900 font-bold frm-title">Questões Gerais sobre Scrum</h1>
-        <form action="/review" method="post" class="w-full" id="frm_sq">
-            <div class="question">
-                <p class="qtitle">Qual é a origem do nome "Scrum"?</p>
-                <p><input type="radio" name="choice1" id="a1"><label for="a1">Uma técnica de gerenciamento de projetos tradicional</label></p>
-                <p><input type="radio" name="choice1" id="a2"><label for="a2">Uma jogada no futebol americano</label></p>
-                <p><input type="radio" name="choice1" id="a3"><label for="a3">Uma jogada do Rugby, em que o time se une para alcançar um objetivo</label></p>
-                <p><input type="radio" name="choice1" id="a4"><label for="a4">Um conceito de tecnologia de software</label></p>
-            </div>
-            <div class="question">
-                <p class="qtitle">Qual é o foco principal do Scrum?</p>
-                <p><input type="radio" name="choice2" id="b1"><label for="b1">Trabalhar em grandes lotes para acelerar a entrega</label></p>
-                <p><input type="radio" name="choice2" id="b2"><label for="b2">Gerar valor através de soluções adaptativas para problemas complexos</label></p>
-                <p><input type="radio" name="choice2" id="b3"><label for="b3">Controlar rigidamente os processos de desenvolvimento</label></p>
-                <p><input type="radio" name="choice2" id="b4"><label for="b4">Priorizar sempre as entregas rápidas, independentemente da qualidade</label></p>
-            </div>
-            <div class="question">
-                <p class="qtitle">Quais são os três pilares fundamentais do Scrum?</p>
-                <p><input type="radio" name="choice3" id="c1"><label for="c1">Foco, compromisso e coragem</label></p>
-                <p><input type="radio" name="choice3" id="c2"><label for="c2">Inspeção, adaptação e transparência</label></p>
-                <p><input type="radio" name="choice3" id="c3"><label for="c3">Planejamento, execução e controle</label></p>
-                <p><input type="radio" name="choice3" id="c4"><label for="c4">Abertura, respeito e coragem</label></p>
-            </div>
-            <div class="question">
-                <p class="qtitle">O que define o tamanho ideal de um Scrum Team?</p>
-                <p><input type="radio" name="choice4" id="d1"><label for="d1">Entre 10 e 15 pessoas</label></p>
-                <p><input type="radio" name="choice4" id="d2"><label for="d2">5 ou menos pessoas</label></p>
-                <p><input type="radio" name="choice4" id="d3"><label for="d3">10 ou menos pessoas</label></p>
-                <p><input type="radio" name="choice4" id="d4"><label for="d4">Qualquer número, desde que seja coordenado pelo Scrum Master</label></p>
-            </div>
-            <div class="question">
-                <p class="qtitle">Quem é responsável por cancelar uma Sprint, caso a meta se torne obsoleta?</p>
-                <p><input type="radio" name="choice5" id="e1"><label for="e1">O Scrum Master</label></p>
-                <p><input type="radio" name="choice5" id="e2"><label for="e2">O Development Team</label></p>
-                <p><input type="radio" name="choice5" id="e3"><label for="e3">O Product Owner</label></p>
-                <p><input type="radio" name="choice5" id="e4"><label for="e4">O gerente do projeto</label></p>
-            </div>
-            <div class="question">
-                <p class="qtitle">Qual é o objetivo da Sprint Planning?</p>
-                <p><input type="radio" name="choice6" id="f1"><label for="f1">Avaliar o progresso da Sprint anterior</label></p>
-                <p><input type="radio" name="choice6" id="f2"><label for="f2">Determinar quais tarefas serão realizadas na próxima Sprint e como serão realizadas</label></p>
-                <p><input type="radio" name="choice6" id="f3"><label for="f3">Rever as métricas do projeto</label></p>
-                <p><input type="radio" name="choice6" id="f4"><label for="f4">Decidir quais membros do time devem ser substituídos</label></p>
-            </div>
-            <div class="question">
-                <p class="qtitle">Qual é o propósito do Daily Scrum?</p>
-                <p><input type="radio" name="choice7" id="g1"><label for="g1">Revisar o progresso e ajustar o Sprint Backlog conforme necessário</label></p>
-                <p><input type="radio" name="choice7" id="g2"><label for="g2">Apresentar o trabalho finalizado para os stakeholders</label></p>
-                <p><input type="radio" name="choice7" id="g3"><label for="g3">Decidir se a Sprint deve ser cancelada</label></p>
-                <p><input type="radio" name="choice7" id="g4"><label for="g4">Estabelecer novos requisitos para o produto</label></p>
-            </div>
-            <div class="question">
-                <p class="qtitle">O que é o Product Backlog?</p>
-                <p><input type="radio" name="choice8" id="h1"><label for="h1">A lista de tarefas realizadas na Sprint anterior</label></p>
-                <p><input type="radio" name="choice8" id="h2"><label for="h2"> A lista de todas as funcionalidades desejadas para o produto, ordenadas por prioridade</label></p>
-                <p><input type="radio" name="choice8" id="h3"><label for="h3">O relatório de progresso diário da equipe</label></p>
-                <p><input type="radio" name="choice8" id="h4"><label for="h4">Uma lista de impedimentos que a equipe precisa resolver</label></p>
-            </div>
-            <div class="question">
-                <p class="qtitle">O que acontece durante a Sprint Review?</p>
-                <p><input type="radio" name="choice9" id="i1"><label for="i1">O time define os objetivos para a próxima Sprint</label></p>
-                <p><input type="radio" name="choice9" id="i2"><label for="i2">O progresso do Sprint atual é inspecionado, e as mudanças são discutidas com os stakeholders</label></p>
-                <p><input type="radio" name="choice9" id="i3"><label for="i3">O Product Owner cancela a Sprint se necessário</label></p>
-                <p><input type="radio" name="choice9" id="i4"><label for="i4">O time discute os problemas internos do grupo</label></p>
-            </div>
-            <div class="question">
-                <p class="qtitle">O que é um Incremento no Scrum?</p>
-                <p><input type="radio" name="choice10" id="j1"><label for="j1">A soma de todas as funcionalidades concluídas até o momento</label></p>
-                <p><input type="radio" name="choice10" id="j2"><label for="j2">Um item que não foi completado na Sprint atual</label></p>
-                <p><input type="radio" name="choice10" id="j3"><label for="j3">Um novo requisito adicionado ao Product Backlog</label></p>
-                <p><input type="radio" name="choice10" id="j4"><label for="j4">O relatório final do desenvolvimento</label></p>
-            </div>
-            <!-- FIM DO FORMÚLÁRIO -->
-            
-            <input type="hidden" value="sc" name="module">
-            <input type="hidden" value="" name="score" id="score">
-            <input type="hidden" value="" name="total" id="total">
-            <input type="button" onclick="ScrumQuestions()" value="Verificar">
-            <input type="reset" onclick="hiddenBox()" value="Limpar">
-        </form>
-    </main>
+    <section class="modules-p1 py-10 lg:px-28">
+        <main class="container flex-auto flex flex-col items-center justify-center w-full mx-auto px-10 sm:px-8 md:px-32 gap-4 lg:py-0 lg:gap-8 bg-white">
+            <h1 class="flex gap-2 items-center text-3xl text-slate-900 font-bold underline frm-title">
+                <svg class="w-6 h-6 hidden md:inline" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd" d="M9 2a1 1 0 0 0-1 1H6a2 2 0 0 0-2 2v15a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-2a1 1 0 0 0-1-1H9Zm1 2h4v2h1a1 1 0 1 1 0 2H9a1 1 0 0 1 0-2h1V4Zm5.707 8.707a1 1 0 0 0-1.414-1.414L11 14.586l-1.293-1.293a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4Z" clip-rule="evenodd"/>
+                </svg>                      
+                Questões sobre Scrum
+            </h1>
+            <form action="/review" method="post" class="w-full" id="frm_sq">
+            <!-- QUESTÃO 1 -->
+                <div class="question" id="question1">
+                    <p class="qtitle">1. Qual é a origem do nome "Scrum"?</p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice1" id="a1"><label for="a1" class="hover:cursor-pointer">Uma técnica de gerenciamento de projetos tradicional</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice1" id="a2"><label for="a2" class="hover:cursor-pointer">Uma jogada no futebol americano</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice1" id="a3"><label for="a3" class="hover:cursor-pointer">Uma jogada do Rugby, em que o time se une para alcançar um objetivo</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice1" id="a4"><label for="a4" class="hover:cursor-pointer">Um conceito de tecnologia de software</label></p>
+                    <div class="mt-4 flex w-full justify-end items-center font-light">
+                        <button type="button" onclick="showNextQuestion(1)" class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                            Próxima
+                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/>
+                            </svg>                      
+                        </button>
+                    </div>
+                </div>
+            <!-- QUESTÃO 2 -->
+                <div class="question" id="question2" style="display:none;">
+                    <p class="qtitle">2. Qual é o foco principal do Scrum?</p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice2" id="b1"><label for="b1" class="hover:cursor-pointer">Trabalhar em grandes lotes para acelerar a entrega</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice2" id="b2"><label for="b2" class="hover:cursor-pointer">Gerar valor através de soluções adaptativas para problemas complexos</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice2" id="b3"><label for="b3" class="hover:cursor-pointer">Controlar rigidamente os processos de desenvolvimento</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice2" id="b4"><label for="b4" class="hover:cursor-pointer">Priorizar sempre as entregas rápidas, independentemente da qualidade</label></p>
+                    <div class="mt-4 flex w-full justify-between items-center font-light">
+                        <button type="button" onclick="showPreviousQuestion(2)" class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/>
+                            </svg>
+                            Anterior          
+                        </button>
+                        <button type="button" onclick="showNextQuestion(2)" class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                            Próxima
+                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/>
+                            </svg>                      
+                        </button>
+                    </div>
+                </div>
+            <!-- QUESTÃO 3 -->
+                <div class="question" id="question3" style="display:none;">
+                    <p class="qtitle">3. Quais são os três pilares fundamentais do Scrum?</p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice3" id="c1"><label for="c1" class="hover:cursor-pointer">Foco, compromisso e coragem</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice3" id="c2"><label for="c2" class="hover:cursor-pointer">Inspeção, adaptação e transparência</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice3" id="c3"><label for="c3" class="hover:cursor-pointer">Planejamento, execução e controle</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice3" id="c4"><label for="c4" class="hover:cursor-pointer">Abertura, respeito e coragem</label></p>
+                    <div class="mt-4 flex w-full justify-between items-center font-light">
+                        <button type="button" onclick="showPreviousQuestion(3)" class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/>
+                            </svg>
+                            Anterior          
+                        </button>
+                        <button type="button" onclick="showNextQuestion(3)" class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                            Próxima
+                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/>
+                            </svg>                      
+                        </button>
+                    </div>
+                </div>
+            <!-- QUESTÃO 4 -->
+                <div class="question" id="question4" style="display:none;">
+                    <p class="qtitle">4. O que define o tamanho ideal de um Scrum Team?</p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice4" id="d1"><label for="d1" class="hover:cursor-pointer">Entre 10 e 15 pessoas</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice4" id="d2"><label for="d2" class="hover:cursor-pointer">5 ou menos pessoas</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice4" id="d3"><label for="d3" class="hover:cursor-pointer">10 ou menos pessoas</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice4" id="d4"><label for="d4" class="hover:cursor-pointer">Qualquer número, desde que seja coordenado pelo Scrum Master</label></p>
+                    <div class="mt-4 flex w-full justify-between items-center font-light">
+                        <button type="button" onclick="showPreviousQuestion(4)" class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/>
+                            </svg>
+                            Anterior          
+                        </button>
+                        <button type="button" onclick="showNextQuestion(4)" class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                            Próxima
+                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/>
+                            </svg>                      
+                        </button>
+                    </div>
+                </div>
+            <!-- QUESTÃO 5 -->
+                <div class="question" id="question5" style="display:none;">
+                    <p class="qtitle">5. Quem é responsável por cancelar uma Sprint, caso a meta se torne obsoleta?</p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice5" id="e1"><label for="e1" class="hover:cursor-pointer">O Scrum Master</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice5" id="e2"><label for="e2" class="hover:cursor-pointer">O Development Team</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice5" id="e3"><label for="e3" class="hover:cursor-pointer">O Product Owner</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice5" id="e4"><label for="e4" class="hover:cursor-pointer">O gerente do projeto</label></p>
+                    <div class="mt-4 flex w-full justify-between items-center font-light">
+                        <button type="button" onclick="showPreviousQuestion(5)" class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/>
+                            </svg>
+                            Anterior          
+                        </button>
+                        <button type="button" onclick="showNextQuestion(5)" class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                            Próxima
+                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/>
+                            </svg>                      
+                        </button>
+                    </div>
+                </div>
+            <!-- QUESTÃO 6 -->
+                <div class="question" id="question6" style="display:none;">
+                    <p class="qtitle">6. Qual é o objetivo da Sprint Planning?</p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice6" id="f1"><label for="f1" class="hover:cursor-pointer">Avaliar o progresso da Sprint anterior</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice6" id="f2"><label for="f2" class="hover:cursor-pointer">Determinar quais tarefas serão realizadas na próxima Sprint e como serão realizadas</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice6" id="f3"><label for="f3" class="hover:cursor-pointer">Rever as métricas do projeto</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice6" id="f4"><label for="f4" class="hover:cursor-pointer">Decidir quais membros do time devem ser substituídos</label></p>
+                    <div class="mt-4 flex w-full justify-between items-center font-light">
+                        <button type="button" onclick="showPreviousQuestion(6)" class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/>
+                            </svg>
+                            Anterior          
+                        </button>
+                        <button type="button" onclick="showNextQuestion(6)" class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                            Próxima
+                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/>
+                            </svg>                      
+                        </button>
+                    </div>
+                </div>
+            <!-- QUESTÃO 7 -->
+                <div class="question" id="question7" style="display:none;">
+                    <p class="qtitle">7. Qual é o propósito do Daily Scrum?</p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice7" id="g1"><label for="g1" class="hover:cursor-pointer">Revisar o progresso e ajustar o Sprint Backlog conforme necessário</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice7" id="g2"><label for="g2" class="hover:cursor-pointer">Apresentar o trabalho finalizado para os stakeholders</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice7" id="g3"><label for="g3" class="hover:cursor-pointer">Decidir se a Sprint deve ser cancelada</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice7" id="g4"><label for="g4" class="hover:cursor-pointer">Estabelecer novos requisitos para o produto</label></p>
+                    <div class="mt-4 flex w-full justify-between items-center font-light">
+                        <button type="button" onclick="showPreviousQuestion(7)" class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/>
+                            </svg>
+                            Anterior          
+                        </button>
+                        <button type="button" onclick="showNextQuestion(7)" class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                            Próxima
+                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/>
+                            </svg>                      
+                        </button>
+                    </div>
+                </div>
+            <!-- QUESTÃO 8 -->
+                <div class="question" id="question8" style="display:none;">
+                    <p class="qtitle">8. O que é o Product Backlog?</p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice8" id="h1"><label for="h1" class="hover:cursor-pointer">A lista de tarefas realizadas na Sprint anterior</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice8" id="h2"><label for="h2" class="hover:cursor-pointer"> A lista de todas as funcionalidades desejadas para o produto, ordenadas por prioridade</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice8" id="h3"><label for="h3" class="hover:cursor-pointer">O relatório de progresso diário da equipe</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice8" id="h4"><label for="h4" class="hover:cursor-pointer">Uma lista de impedimentos que a equipe precisa resolver</label></p>
+                    <div class="mt-4 flex w-full justify-between items-center font-light">
+                        <button type="button" onclick="showPreviousQuestion(8)" class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/>
+                            </svg>
+                            Anterior          
+                        </button>
+                        <button type="button" onclick="showNextQuestion(8)" class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                            Próxima
+                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/>
+                            </svg>                      
+                        </button>
+                    </div>
+                </div>
+            <!-- QUESTÃO 9 -->
+                <div class="question" id="question9" style="display:none;">
+                    <p class="qtitle">9. O que acontece durante a Sprint Review?</p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice9" id="i1"><label for="i1" class="hover:cursor-pointer">O time define os objetivos para a próxima Sprint</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice9" id="i2"><label for="i2" class="hover:cursor-pointer">O progresso do Sprint atual é inspecionado, e as mudanças são discutidas com os stakeholders</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice9" id="i3"><label for="i3" class="hover:cursor-pointer">O Product Owner cancela a Sprint se necessário</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice9" id="i4"><label for="i4" class="hover:cursor-pointer">O time discute os problemas internos do grupo</label></p>
+                    <div class="mt-4 flex w-full justify-between items-center font-light">
+                        <button type="button" onclick="showPreviousQuestion(9)" class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/>
+                            </svg>
+                            Anterior          
+                        </button>
+                        <button type="button" onclick="showNextQuestion(9)" class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                            Próxima
+                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/>
+                            </svg>                      
+                        </button>
+                    </div>
+                </div>
+            <!-- QUESTÃO 10 -->
+                <div class="question" id="question10" style="display:none;">
+                    <p class="qtitle">10. O que é um Incremento no Scrum?</p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice10" id="j1"><label for="j1" class="hover:cursor-pointer">A soma de todas as funcionalidades concluídas até o momento</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice10" id="j2"><label for="j2" class="hover:cursor-pointer">Um item que não foi completado na Sprint atual</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice10" id="j3"><label for="j3" class="hover:cursor-pointer">Um novo requisito adicionado ao Product Backlog</label></p>
+                    <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice10" id="j4"><label for="j4" class="hover:cursor-pointer">O relatório final do desenvolvimento</label></p>
+                    <div class="mt-4 flex w-full justify-between items-center font-light">
+                        <button type="button" onclick="showPreviousQuestion(10)" class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/>
+                            </svg>
+                            Anterior          
+                        </button>
+                        <button type="button" onclick="ScrumQuestions()" value="Verificar" class="flex p-2 px-4 text-white bg-green-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-green-500 focus:ring-4 focus:outline-none focus:ring-green-300 gap-2">
+                            Enviar
+                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 11.917 9.724 16.5 19 7.5"/>
+                            </svg>                    
+                        </button>
+                    </div>
+                </div>
+                <!-- FIM DO FORMÚLÁRIO -->
+                
+                <input type="hidden" value="sc" name="module">
+                <input type="hidden" value="" name="score" id="score">
+                <input type="hidden" value="" name="total" id="total">
+                <button type="reset" onclick="hiddenBox()" value="Limpar" class="font-bold flex p-2 px-4 gap-2 bg-yellow-300 hover:bg-yellow-200 focus:ring-4 focus:outline-none focus:ring-yellow-100">
+                    <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.651 7.65a7.131 7.131 0 0 0-12.68 3.15M18.001 4v4h-4m-7.652 8.35a7.13 7.13 0 0 0 12.68-3.15M6 20v-4h4"/>
+                    </svg>
+                    Limpar Alternativas              
+                </button>
+            </form>
+        </main>
+    </section>
 {% endblock %}

@@ -7,36 +7,46 @@ app.secret_key = 'your_secret_key'  # Chave secreta para segurança das sessões
 # main routes
 # these routes redirect to the main pages
 
-# initialize session
-def InitializeSession():
+def initialize_session():
     for variable_name in ['score_scrum_generics', 'score_product_owner', 'score_scrum_master', 'score_dev_team']:
-        # Check if the variable exists in the session
-        if variable_name not in session:
-            # If not, initialize it to 0
-            session[variable_name] = 0
-# app all routes
+        session.setdefault(variable_name, 0)
 
 @app.route('/')
 def index():
-    InitializeSession()
+    initialize_session()
     return render_template('index.html')
 
 @app.route('/modules')
 def modules():
-    chk_scrum = ''
-    chk_po = ''
-    chk_sm = ''
-    chk_dvtm = ''
-    InitializeSession()
-    if int(session['score_scrum_generics']) >= 6:
-        chk_scrum = 'checked'
-    if int(session['score_product_owner']) >= 6:
-        chk_po = 'checked'
-    if int(session['score_scrum_master']) >= 6:
-        chk_sm = 'checked'
-    if int(session['score_dev_team']) >= 6:
-        chk_dvtm = 'checked'
-    return render_template('Modulos.html', score_scrum_generics = chk_scrum, score_product_owner  = chk_po, score_scrum_master = chk_sm, score_dev_team = chk_dvtm)
+    def check_progress(score):
+        return ('checked', '') if int(score) >= 6 else ('', 'hidden')
+
+    initialize_session()
+
+    scrum_checked, scrum_show = check_progress(session['score_scrum_generics'])
+    po_checked, po_show = check_progress(session['score_product_owner'])
+    sm_checked, sm_show = check_progress(session['score_scrum_master'])
+    dt_checked, dt_show = check_progress(session['score_dev_team'])
+
+    return render_template(
+        'Modulos.html',
+        score_scrum_generics=scrum_checked,
+        score_product_owner=po_checked,
+        score_scrum_master=sm_checked,
+        score_dev_team=dt_checked,
+        sc_show=scrum_show,
+        po_show=po_show,
+        sm_show=sm_show,
+        dt_show=dt_show,
+        sc_points=session['score_scrum_generics'],
+        po_points=session['score_product_owner'],
+        sm_points=session['score_scrum_master'],
+        dt_points=session['score_dev_team'],
+        sc_total=10,
+        po_total=10,
+        sm_total=10,
+        dt_total=10,
+    )
 
 @app.route('/DevTeamTail')
 def devTeamTail():

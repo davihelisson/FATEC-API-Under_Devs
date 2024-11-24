@@ -64,6 +64,7 @@ def ScrumTail():
 def ScrumMaster():
     return render_template('ScrumMaster.html')
 
+
 # module routes
 # these routes redirect to the scrum modules
 
@@ -85,7 +86,7 @@ def Scrum():
 
 @app.route('/FinalExamQuestions')
 def FinalExam():
-    return render_template('/evaluations/FinalExam.html')
+    return render_template('/evaluations/FinalExamQuestions.html')
 
 @app.route('/SobreNos')
 def SobreNos():

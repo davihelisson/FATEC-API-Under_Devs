@@ -2,8 +2,698 @@
 
 {% block title %}Exame Final{% endblock %}
 {% block head %}
-  {{ super() }} <link rel="stylesheet" href="{{ url_for('static', filename='questions.css') }}">
+{{ super() }}
+<link rel="stylesheet" href="{{ url_for('static', filename='questions.css') }}">
 {% endblock %}
 <p>Exame final em construção!</p>
+
 {% block content %}
+<section class="modules-p2 py-10 lg:px-28">
+  <main
+    class="container flex-auto flex flex-col items-center justify-center w-full mx-auto px-10 sm:px-8 md:px-32 gap-4 lg:py-0 lg:gap-8 bg-white">
+    <h1 class="flex gap-2 items-center text-3xl text-slate-900 font-bold underline frm-title">
+      <svg class="w-6 h-6 hidden md:inline" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+        fill="currentColor" viewBox="0 0 24 24">
+        <path fill-rule="evenodd"
+          d="M9 2a1 1 0 0 0-1 1H6a2 2 0 0 0-2 2v15a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-2a1 1 0 0 0-1-1H9Zm1 2h4v2h1a1 1 0 1 1 0 2H9a1 1 0 0 1 0-2h1V4Zm5.707 8.707a1 1 0 0 0-1.414-1.414L11 14.586l-1.293-1.293a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4Z"
+          clip-rule="evenodd" />
+      </svg>
+      Exame final da Metodologia Scrum
+    </h1>
+    <form action="/review" method="post" class="w-full" id="frm_sq">
+      <!-- Primeira pergunta -->
+      <div class="question" id="question1">
+        <p class="qtitle">1. Qual o principal objetivo do Scrum Master?</p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice1" id="a1"><label
+            for="a1" class="hover:cursor-pointer">Desenvolver o produto.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice1" id="a2"><label
+            for="a2" class="hover:cursor-pointer">Tomar as decisões pelo time.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice1" id="a3"><label
+            for="a3" class="hover:cursor-pointer">Facilitar o processo Scrum e remover impedimentos.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice1" id="a4"><label
+            for="a4" class="hover:cursor-pointer">Gerenciar o orçamento do projeto.</label></p>
+        <div class="mt-4 flex w-full justify-end items-center font-light">
+          <button type="button" onclick="showNextQuestion(1)"
+            class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+            Próxima
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m9 5 7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Segunda pergunta -->
+      <div class="question" id="question2" style="display:none;">
+        <p class="qtitle">2. Quem é responsável por maximizar o valor do produto?</p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice2" id="b1"><label
+            for="b1" class="hover:cursor-pointer">Scrum Master.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice2" id="b2"><label
+            for="b2" class="hover:cursor-pointer">Product Owner.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice2" id="b3"><label
+            for="b3" class="hover:cursor-pointer">Time de desenvolvimento.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice2" id="b4"><label
+            for="b4" class="hover:cursor-pointer">Cliente.</label></p>
+        <div class="mt-4 flex w-full justify-between items-center font-light">
+          <button type="button" onclick="showPreviousQuestion(2)"
+            class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m15 19-7-7 7-7" />
+            </svg>
+            Anterior
+          </button>
+          <button type="button" onclick="showNextQuestion(2)"
+            class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+            Próxima
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m9 5 7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Terceira pergunta -->
+      <div class="question" id="question3" style="display:none;">
+        <p class="qtitle">3. Qual a principal responsabilidade do time de desenvolvimento?</p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice3" id="c1"><label
+            for="c1" class="hover:cursor-pointer">Definir a visão do produto.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice3" id="c2"><label
+            for="c2" class="hover:cursor-pointer">Gerenciar o backlog do produto.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice3" id="c3"><label
+            for="c3" class="hover:cursor-pointer">Criar o incremento do produto.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice3" id="c4"><label
+            for="c4" class="hover:cursor-pointer">Realizar a gestão de projetos.</label></p>
+        <div class="mt-4 flex w-full justify-between items-center font-light">
+          <button type="button" onclick="showPreviousQuestion(3)"
+            class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m15 19-7-7 7-7" />
+            </svg>
+            Anterior
+          </button>
+          <button type="button" onclick="showNextQuestion(3)"
+            class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+            Próxima
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m9 5 7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Quarta pergunta -->
+      <div class="question" id="question4" style="display:none;">
+        <p class="qtitle">4. O que é o Sprint Backlog?</p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice4" id="d1"><label
+            for="d1" class="hover:cursor-pointer">Uma lista de todas as tarefas do projeto.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice4" id="d2"><label
+            for="d2" class="hover:cursor-pointer">Um conjunto de itens selecionados do backlog do produto para serem
+            trabalhados em uma Sprint.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice4" id="d3"><label
+            for="d3" class="hover:cursor-pointer">Um relatório sobre o progresso do projeto.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice4" id="d4"><label
+            for="d4" class="hover:cursor-pointer">Um documento com as regras do Scrum.</label></p>
+        <div class="mt-4 flex w-full justify-between items-center font-light">
+          <button type="button" onclick="showPreviousQuestion(4)"
+            class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m15 19-7-7 7-7" />
+            </svg>
+            Anterior
+          </button>
+          <button type="button" onclick="showNextQuestion(4)"
+            class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+            Próxima
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m9 5 7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Quinta pergunta -->
+      <div class="question" id="question5" style="display:none;">
+        <p class="qtitle">5. Qual a principal função do Backlog do Produto?</p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice5" id="e1"><label
+            for="e1" class="hover:cursor-pointer">Planejar as Sprints.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice5" id="e2"><label
+            for="e2" class="hover:cursor-pointer">Ordenar as funcionalidades do produto.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice5" id="e3"><label
+            for="e3" class="hover:cursor-pointer">Documentar as decisões do time.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice5" id="e4"><label
+            for="e4" class="hover:cursor-pointer">Registrar os bugs encontrados.</label></p>
+        <div class="mt-4 flex w-full justify-between items-center font-light">
+          <button type="button" onclick="showPreviousQuestion(5)"
+            class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m15 19-7-7 7-7" />
+            </svg>
+            Anterior
+          </button>
+          <button type="button" onclick="showNextQuestion(5)"
+            class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+            Próxima
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m9 5 7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Sexta pergunta -->
+      <div class="question" id="question6" style="display:none;">
+        <p class="qtitle">6. O que representa o Incremento do Produto?</p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice6" id="f1"><label
+            for="f1" class="hover:cursor-pointer">O resultado de todas as Sprints.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice6" id="f2"><label
+            for="f2" class="hover:cursor-pointer">O resultado funcional de uma Sprint.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice6" id="f3"><label
+            for="f3" class="hover:cursor-pointer">Um documento com as métricas do projeto.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice6" id="f4"><label
+            for="f4" class="hover:cursor-pointer">Uma reunião com o cliente.</label></p>
+        <div class="mt-4 flex w-full justify-between items-center font-light">
+          <button type="button" onclick="showPreviousQuestion(6)"
+            class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m15 19-7-7 7-7" />
+            </svg>
+            Anterior
+          </button>
+          <button type="button" onclick="showNextQuestion(6)"
+            class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+            Próxima
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m9 5 7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Sétima pergunta -->
+      <div class="question" id="question7" style="display:none;">
+        <p class="qtitle">7. Qual o objetivo do Daily Scrum?</p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice7" id="g1"><label
+            for="g1" class="hover:cursor-pointer">Planejar as próximas Sprints.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice7" id="g2"><label
+            for="g2" class="hover:cursor-pointer">Sincronizar o trabalho e identificar impedimentos.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice7" id="g3"><label
+            for="g3" class="hover:cursor-pointer">Revisar o backlog do produto.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice7" id="g4"><label
+            for="g4" class="hover:cursor-pointer">Avaliar o desempenho individual dos membros do time.</label></p>
+        <div class="mt-4 flex w-full justify-between items-center font-light">
+          <button type="button" onclick="showPreviousQuestion(7)"
+            class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m15 19-7-7 7-7" />
+            </svg>
+            Anterior
+          </button>
+          <button type="button" onclick="showNextQuestion(7)"
+            class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+            Próxima
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m9 5 7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Oitava pergunta -->
+      <div class="question" id="question8" style="display:none;">
+        <p class="qtitle">8. Quando ocorre a Sprint Review?</p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice8" id="h1"><label
+            for="h1" class="hover:cursor-pointer">No início de cada Sprint.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice8" id="h2"><label
+            for="h2" class="hover:cursor-pointer">No final de cada Sprint.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice8" id="h3"><label
+            for="h3" class="hover:cursor-pointer">A cada dia da Sprint.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice8" id="h4"><label
+            for="h4" class="hover:cursor-pointer">Mensalmente.</label></p>
+        <div class="mt-4 flex w-full justify-between items-center font-light">
+          <button type="button" onclick="showPreviousQuestion(8)"
+            class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m15 19-7-7 7-7" />
+            </svg>
+            Anterior
+          </button>
+          <button type="button" onclick="showNextQuestion(8)"
+            class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+            Próxima
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m9 5 7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Nona pergunta -->
+      <div class="question" id="question9" style="display:none;">
+        <p class="qtitle">9. Qual o propósito da Sprint Retrospective?</p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice9" id="i1"><label
+            for="i1" class="hover:cursor-pointer">Celebrar as conquistas da Sprint.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice9" id="i2"><label
+            for="i2" class="hover:cursor-pointer">Identificar oportunidades de melhoria.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice9" id="i3"><label
+            for="i3" class="hover:cursor-pointer">Planejar a próxima Sprint.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice9" id="i4"><label
+            for="i4" class="hover:cursor-pointer">Avaliar o desempenho do Product Owner.</label></p>
+        <div class="mt-4 flex w-full justify-between items-center font-light">
+          <button type="button" onclick="showPreviousQuestion(9)"
+            class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m15 19-7-7 7-7" />
+            </svg>
+            Anterior
+          </button>
+          <button type="button" onclick="showNextQuestion(9)"
+            class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+            Próxima
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m9 5 7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Décima pergunta -->
+      <div class="question" id="question10" style="display:none;">
+        <p class="qtitle">10. O que significa "auto-organização" no Scrum?</p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice10" id="j1"><label
+            for="j1" class="hover:cursor-pointer">O time não precisa de um líder.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice10" id="j2"><label
+            for="j2" class="hover:cursor-pointer">O time decide como realizar o trabalho.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice10" id="j3"><label
+            for="j3" class="hover:cursor-pointer">O Scrum Master toma todas as decisões.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice10" id="j4"><label
+            for="j4" class="hover:cursor-pointer">O Product Owner define todas as tarefas.</label></p>
+        <div class="mt-4 flex w-full justify-between items-center font-light">
+          <button type="button" onclick="showPreviousQuestion(10)"
+            class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m15 19-7-7 7-7" />
+            </svg>
+            Anterior
+          </button>
+          <button type="button" onclick="showNextQuestion(10)"
+            class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+            Próxima
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m9 5 7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Décima primeira pergunta -->
+      <div class="question" id="question11" style="display:none;">
+        <p class="qtitle">11. Qual o papel da adaptação contínua no Scrum?</p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice11" id="k1"><label
+            for="k1" class="hover:cursor-pointer">Manter o processo sempre igual.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice11" id="k2"><label
+            for="k2" class="hover:cursor-pointer">Ajustar o processo com base no aprendizado.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice11" id="k3"><label
+            for="k3" class="hover:cursor-pointer">Mudar o objetivo do projeto.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice11" id="k4"><label
+            for="k4" class="hover:cursor-pointer">Aumentar a complexidade do produto.</label></p>
+        <div class="mt-4 flex w-full justify-between items-center font-light">
+          <button type="button" onclick="showPreviousQuestion(11)"
+            class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m15 19-7-7 7-7" />
+            </svg>
+            Anterior
+          </button>
+          <button type="button" onclick="showNextQuestion(11)"
+            class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+            Próxima
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m9 5 7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Décima segunda pergunta -->
+      <div class="question" id="question12" style="display:none;">
+        <p class="qtitle">12. O que é um "impedimento" no Scrum?</p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice12" id="l1"><label
+            for="l1" class="hover:cursor-pointer">Uma tarefa difícil.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice12" id="l2"><label
+            for="l2" class="hover:cursor-pointer">Qualquer coisa que impede o time de alcançar o objetivo da
+            Sprint.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice12" id="l3"><label
+            for="l3" class="hover:cursor-pointer">Um membro do time que não está colaborando.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice12" id="l4"><label
+            for="l4" class="hover:cursor-pointer">Um bug no software.</label></p>
+        <div class="mt-4 flex w-full justify-between items-center font-light">
+          <button type="button" onclick="showPreviousQuestion(12)"
+            class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m15 19-7-7 7-7" />
+            </svg>
+            Anterior
+          </button>
+          <button type="button" onclick="showNextQuestion(12)"
+            class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+            Próxima
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m9 5 7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Décima terceira pergunta -->
+      <div class="question" id="question13" style="display:none;">
+        <p class="qtitle">13. Qual a importância da transparência no Scrum?</p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice13" id="m1"><label
+            for="m1" class="hover:cursor-pointer">Facilitar a comunicação e a colaboração.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice13" id="m2"><label
+            for="m2" class="hover:cursor-pointer">Esconder os problemas do projeto.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice13" id="m3"><label
+            for="m3" class="hover:cursor-pointer">Aumentar a complexidade do processo.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice13" id="m4"><label
+            for="m4" class="hover:cursor-pointer">Reduzir a participação do time.</label></p>
+        <div class="mt-4 flex w-full justify-between items-center font-light">
+          <button type="button" onclick="showPreviousQuestion(13)"
+            class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m15 19-7-7 7-7" />
+            </svg>
+            Anterior
+          </button>
+          <button type="button" onclick="showNextQuestion(13)"
+            class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+            Próxima
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m9 5 7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Décima quarta pergunta -->
+      <div class="question" id="question14" style="display:none;">
+        <p class="qtitle">14. O que é o "valor" no Scrum?</p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice14" id="n1"><label
+            for="n1" class="hover:cursor-pointer">O preço do produto.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice14" id="n2"><label
+            for="n2" class="hover:cursor-pointer">O benefício que o produto traz para o cliente.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice14" id="n3"><label
+            for="n3" class="hover:cursor-pointer">A quantidade de trabalho realizado.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice14" id="n4"><label
+            for="n4" class="hover:cursor-pointer">A tecnologia utilizada no produto.</label></p>
+        <div class="mt-4 flex w-full justify-between items-center font-light">
+          <button type="button" onclick="showPreviousQuestion(14)"
+            class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m15 19-7-7 7-7" />
+            </svg>
+            Anterior
+          </button>
+          <button type="button" onclick="showNextQuestion(14)"
+            class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+            Próxima
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m9 5 7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Décima quinta pergunta -->
+      <div class="question" id="question15" style="display:none;">
+        <p class="qtitle">15. O Scrum é adequado para qualquer tipo de projeto?</p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice15" id="o1"><label
+            for="o1" class="hover:cursor-pointer">Sim, para todos os projetos, sem exceção.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice15" id="o2"><label
+            for="o2" class="hover:cursor-pointer">Sim, mas é mais adequado para projetos complexos e com requisitos
+            variáveis.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice15" id="o3"><label
+            for="o3" class="hover:cursor-pointer">Não, apenas para projetos de software.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice15" id="o4"><label
+            for="o4" class="hover:cursor-pointer">Não, apenas para projetos pequenos.</label></p>
+        <div class="mt-4 flex w-full justify-between items-center font-light">
+          <button type="button" onclick="showPreviousQuestion(15)"
+            class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m15 19-7-7 7-7" />
+            </svg>
+            Anterior
+          </button>
+          <button type="button" onclick="showNextQuestion(15)"
+            class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+            Próxima
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m9 5 7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Décima sexta pergunta -->
+      <div class="question" id="question16" style="display:none;">
+        <p class="qtitle">16. Quais são as principais vantagens do Scrum?</p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice16" id="p1"><label
+            for="p1" class="hover:cursor-pointer">Maior controle do gerente de projeto.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice16" id="p2"><label
+            for="p2" class="hover:cursor-pointer">Maior flexibilidade e adaptação às mudanças.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice16" id="p3"><label
+            for="p3" class="hover:cursor-pointer">Menor envolvimento do cliente.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice16" id="p4"><label
+            for="p4" class="hover:cursor-pointer">Menor risco de falha.</label></p>
+        <div class="mt-4 flex w-full justify-between items-center font-light">
+          <button type="button" onclick="showPreviousQuestion(16)"
+            class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m15 19-7-7 7-7" />
+            </svg>
+            Anterior
+          </button>
+          <button type="button" onclick="showNextQuestion(16)"
+            class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+            Próxima
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m9 5 7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Décima sétima pergunta -->
+      <div class="question" id="question17" style="display:none;">
+        <p class="qtitle">17. Quais são os principais desafios ao implementar o Scrum?</p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice17" id="q1"><label
+            for="q1" class="hover:cursor-pointer">Não há desafios, o Scrum é fácil de implementar.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice17" id="q2"><label
+            for="q2" class="hover:cursor-pointer">Resistência à mudança, falta de experiência e cultura
+            organizacional.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice17" id="q3"><label
+            for="q3" class="hover:cursor-pointer">Custo elevado.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice17" id="q4"><label
+            for="q4" class="hover:cursor-pointer">Demanda por profissionais altamente qualificados.</label></p>
+        <div class="mt-4 flex w-full justify-between items-center font-light">
+          <button type="button" onclick="showPreviousQuestion(17)"
+            class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m15 19-7-7 7-7" />
+            </svg>
+            Anterior
+          </button>
+          <button type="button" onclick="showNextQuestion(17)"
+            class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+            Próxima
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m9 5 7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Décima oitava pergunta -->
+      <div class="question" id="question18" style="display:none;">
+        <p class="qtitle">18. O que é o "Scrum of Scrums"?</p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice18" id="r1"><label
+            for="r1" class="hover:cursor-pointer">Uma reunião diária para todos os times.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice18" id="r2"><label
+            for="r2" class="hover:cursor-pointer">Uma forma de escalar o Scrum para grandes projetos.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice18" id="r3"><label
+            for="r3" class="hover:cursor-pointer">Um framework diferente do Scrum.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice18" id="r4"><label
+            for="r4" class="hover:cursor-pointer">Uma ferramenta de gestão de projetos.</label></p>
+        <div class="mt-4 flex w-full justify-between items-center font-light">
+          <button type="button" onclick="showPreviousQuestion(18)"
+            class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m15 19-7-7 7-7" />
+            </svg>
+            Anterior
+          </button>
+          <button type="button" onclick="showNextQuestion(18)"
+            class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+            Próxima
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m9 5 7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Décima nona pergunta -->
+      <div class="question" id="question19" style="display:none;">
+        <p class="qtitle">19. Como o Scrum pode ajudar a melhorar a qualidade do produto?</p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice19" id="s1"><label
+            for="s1" class="hover:cursor-pointer">Através de revisões frequentes e feedback contínuo.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice19" id="s2"><label
+            for="s2" class="hover:cursor-pointer">Aumentando a quantidade de testes.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice19" id="s3"><label
+            for="s3" class="hover:cursor-pointer">Diminuindo o tempo de desenvolvimento.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice19" id="s4"><label
+            for="s4" class="hover:cursor-pointer">Utilizando ferramentas de automação.</label></p>
+        <div class="mt-4 flex w-full justify-between items-center font-light">
+          <button type="button" onclick="showPreviousQuestion(19)"
+            class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m15 19-7-7 7-7" />
+            </svg>
+            Anterior
+          </button>
+          <button type="button" onclick="showNextQuestion(19)"
+            class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+            Próxima
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m9 5 7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Vigésima pergunta -->
+      <div class="question" id="question20" style="display:none;">
+        <p class="qtitle">20. Qual a importância da colaboração entre os membros do time Scrum?</p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice20" id="t1"><label
+            for="t1" class="hover:cursor-pointer">Para alcançar um objetivo comum e obter melhores resultados.</label>
+        </p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice20" id="t2"><label
+            for="t2" class="hover:cursor-pointer">Para evitar conflitos.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice20" id="t3"><label
+            for="t3" class="hover:cursor-pointer">Para seguir as regras do Scrum.</label></p>
+        <p class="mt-2 hover:bg-gray-100 hover:cursor-pointer"><input type="radio" name="choice20" id="t4"><label
+            for="t4" class="hover:cursor-pointer">Para agradar o cliente.</label></p>
+        <div class="mt-4 flex w-full justify-between items-center font-light">
+          <button type="button" onclick="showPreviousQuestion(20)"
+            class="flex p-2 px-4 text-white bg-blue-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m15 19-7-7 7-7" />
+            </svg>
+            Anterior
+          </button>
+          <button type="button" data-modal-target="default-modal" data-modal-toggle="default-modal"
+            class="flex p-2 px-4 text-white bg-green-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-green-500 focus:ring-4 focus:outline-none focus:ring-green-300 gap-2">
+            Enviar
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M5 11.917 9.724 16.5 19 7.5" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- FIM DO FORMÚLÁRIO -->
+
+      <input type="hidden" value="po" name="module">
+      <input type="hidden" value="" name="score" id="score">
+      <input type="hidden" value="" name="total" id="total">
+      <button type="reset" onclick="hiddenBox()" value="Limpar"
+        class="font-bold flex p-2 px-4 gap-2 bg-yellow-300 hover:bg-yellow-200 focus:ring-4 focus:outline-none focus:ring-yellow-100">
+        <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+          viewBox="0 0 24 24">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M17.651 7.65a7.131 7.131 0 0 0-12.68 3.15M18.001 4v4h-4m-7.652 8.35a7.13 7.13 0 0 0 12.68-3.15M6 20v-4h4" />
+        </svg>
+        Limpar Alternativas
+      </button>
+    </form>
+  </main>
+  <div id="default-modal"
+    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div class="bg-white p-6 rounded-lg shadow-lg">
+      <h2 class="text-xl font-bold flex gap-1 items-center">
+        <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+          viewBox="0 0 24 24">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M12 13V8m0 8h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+        </svg>
+        Confirmação
+      </h2>
+      <hr class="my-3 border-gray-600">
+      <p class="mb-4">Deseja enviar suas respostas? <u>Seu desempenho irá aparecer na página de módulos!</u></p>
+      <div class="flex justify-end">
+        <button data-modal-hide="default-modal"
+          class="mr-4 px-4 py-2 bg-gray-300 rounded hover:bg-gray-400 focus:ring-4 focus:outline-none focus:ring-gray-100">Cancelar</button>
+        <button onclick="FinalExam()" value="Verificar"
+          class="font-bold px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">Confirmar</button>
+      </div>
+    </div>
+  </div>
+</section>
+
 {% endblock %}

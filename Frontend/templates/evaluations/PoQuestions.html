@@ -211,7 +211,7 @@
                             </svg>
                             Anterior          
                         </button>
-                        <button type="button" onclick="PoQuestions()" value="Verificar" class="flex p-2 px-4 text-white bg-green-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-green-500 focus:ring-4 focus:outline-none focus:ring-green-300 gap-2">
+                        <button type="button" data-modal-target="default-modal" data-modal-toggle="default-modal" class="flex p-2 px-4 text-white bg-green-600 rounded-xl border border-blue-100 shadow hover:cursor-pointer hover:bg-green-500 focus:ring-4 focus:outline-none focus:ring-green-300 gap-2">
                             Enviar
                             <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 11.917 9.724 16.5 19 7.5"/>
@@ -232,5 +232,21 @@
                 </button>
             </form>
         </main>
+        <div id="default-modal" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-xl font-bold flex gap-1 items-center">
+                    <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 13V8m0 8h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+                    </svg>                      
+                    Confirmação
+                </h2>
+                <hr class="my-3 border-gray-600">
+                <p class="mb-4">Deseja enviar suas respostas? <u>Seu desempenho irá aparecer na página de módulos!</u></p>
+                <div class="flex justify-end">
+                    <button data-modal-hide="default-modal" class="mr-4 px-4 py-2 bg-gray-300 rounded hover:bg-gray-400 focus:ring-4 focus:outline-none focus:ring-gray-100">Cancelar</button>
+                    <button onclick="PoQuestions()" value="Verificar" class="font-bold px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300">Confirmar</button>
+                </div>
+            </div>
+        </div>
     </section>
 {% endblock %}

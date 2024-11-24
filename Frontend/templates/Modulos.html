@@ -33,9 +33,9 @@
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
                                 </svg>
                             </a>
-                            <div class="flex-none">
+                            <div class="flex-none flex items-center gap-1.5">
                                 <!-- checkbox general scrum -->
-                                <span {{ sc_show }} id="sc-progress" class="font-normal text-gray-700">{{ sc_points }} de {{ sc_total }}</span>
+                                <span {{ sc_show }} id="sc-progress" class="font-normal text-gray-700">{{ sc_points }}/{{ sc_total }}</span>
                                 <input id="chbx-scrum" disabled type="checkbox" value="" class="w-5 h-5 text-green-600 bg-gray-100 border-gray-300 rounded" {{ score_scrum_generics }}>
                             </div>
                         </div>
@@ -62,9 +62,9 @@
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
                                 </svg>
                             </a>
-                            <div class="flex-none">
+                            <div class="flex-none flex items-center gap-1.5">
                                 <!-- checkbox product owner -->
-                                <span {{ po_show }} id="po-progress" class="font-normal text-gray-700">{{ po_points }} de {{ po_total }}</span>
+                                <span {{ po_show }} id="po-progress" class="font-normal text-gray-700">{{ po_points }}/{{ po_total }}</span>
                                 <input id="chbx-product-owner" disabled type="checkbox" value="" class="w-5 h-5 text-green-600 bg-gray-100 border-gray-300 rounded" {{ score_product_owner }}>
                             </div>
                         </div>
@@ -90,9 +90,9 @@
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
                             </svg>
                         </a>
-                        <div class="flex-none">
+                        <div class="flex-none flex items-center gap-1.5">
                             <!-- checkbox scrum master -->
-                            <span {{ sm_show }} id="sm-progress" class="font-normal text-gray-700">{{ sm_points }} de {{ sm_total }}</span>
+                            <span {{ sm_show }} id="sm-progress" class="font-normal text-gray-700">{{ sm_points }}/{{ sm_total }}</span>
                             <input id="chbx-scrum-master" disabled type="checkbox" value="" class="w-5 h-5 text-green-600 bg-gray-100 border-gray-300 rounded" {{ score_scrum_master }}>
                         </div>
                     </div>
@@ -117,9 +117,9 @@
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
                             </svg>
                         </a>
-                        <div class="flex-none">
+                        <div class="flex-none flex items-center gap-1.5">
                             <!-- checkbox dev team -->
-                            <span {{ dt_show }} id="dt-progress" class="font-normal text-gray-700">{{ dt_points }} de {{ dt_total }}</span>
+                            <span {{ dt_show }} id="dt-progress" class="font-normal text-gray-700">{{ dt_points }}/{{ dt_total }}</span>
                             <input id="chbx-dev-team" disabled type="checkbox" value="" class="w-5 h-5 text-green-600 bg-gray-100 border-gray-300 rounded" {{ score_dev_team }}>
                         </div>
                     </div>

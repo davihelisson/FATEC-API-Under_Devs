@@ -27,7 +27,19 @@ def modules():
     po_checked, po_show = check_progress(session['score_product_owner'])
     sm_checked, sm_show = check_progress(session['score_scrum_master'])
     dt_checked, dt_show = check_progress(session['score_dev_team'])
-    fx_show = check_progress(session['score_final_exam'])
+    fx_show = 'hidden'
+    
+    c1 = session['score_scrum_generics'] >= 6
+    c2 = session['score_product_owner'] >= 6
+    c3 = session['score_scrum_master'] >= 6
+    c4 = session['score_dev_team'] >= 6
+
+    if c1 and c2 and c3 and c4:
+        btn_fx = ''
+        if session['score_final_exam'] > 0:
+            fx_show = ''
+    else:
+        btn_fx = 'display:none'
 
     return render_template(
         'Modulos.html',
@@ -50,7 +62,7 @@ def modules():
         sm_total=10,
         dt_total=10,
         fx_total=20,
-        btn_fx = 'hidden'
+        btn_fx = btn_fx
     )
 
 @app.route('/DevTeamTail')

@@ -29,14 +29,14 @@ def modules():
     dt_checked, dt_show = check_progress(session['score_dev_team'])
     fx_show = 'hidden'
     
-    c1 = session['score_scrum_generics'] >= 6
-    c2 = session['score_product_owner'] >= 6
-    c3 = session['score_scrum_master'] >= 6
-    c4 = session['score_dev_team'] >= 6
+    c1 = int(session['score_scrum_generics']) >= 6
+    c2 = int(session['score_product_owner']) >= 6
+    c3 = int(session['score_scrum_master']) >= 6
+    c4 = int(session['score_dev_team']) >= 6
 
     if c1 and c2 and c3 and c4:
         btn_fx = ''
-        if session['score_final_exam'] > 0:
+        if int(session['score_final_exam']) > 0:
             fx_show = ''
     else:
         btn_fx = 'display:none'

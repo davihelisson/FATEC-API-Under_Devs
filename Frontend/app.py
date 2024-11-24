@@ -8,7 +8,7 @@ app.secret_key = 'your_secret_key'  # Chave secreta para segurança das sessões
 # these routes redirect to the main pages
 
 def initialize_session():
-    for variable_name in ['score_scrum_generics', 'score_product_owner', 'score_scrum_master', 'score_dev_team']:
+    for variable_name in ['score_scrum_generics', 'score_product_owner', 'score_scrum_master', 'score_dev_team', 'score_final_exam']:
         session.setdefault(variable_name, 0)
 
 @app.route('/')
@@ -27,6 +27,7 @@ def modules():
     po_checked, po_show = check_progress(session['score_product_owner'])
     sm_checked, sm_show = check_progress(session['score_scrum_master'])
     dt_checked, dt_show = check_progress(session['score_dev_team'])
+    fx_show = check_progress(session['score_final_exam'])
 
     return render_template(
         'Modulos.html',
@@ -38,14 +39,18 @@ def modules():
         po_show=po_show,
         sm_show=sm_show,
         dt_show=dt_show,
+        fx_show=fx_show,
         sc_points=session['score_scrum_generics'],
         po_points=session['score_product_owner'],
         sm_points=session['score_scrum_master'],
         dt_points=session['score_dev_team'],
+        fx_points=session['score_final_exam'],
         sc_total=10,
         po_total=10,
         sm_total=10,
         dt_total=10,
+        fx_total=20,
+        btn_fx = 'hidden'
     )
 
 @app.route('/DevTeamTail')
@@ -114,6 +119,10 @@ def ReviewScore():
         elif request.form['module'] == 'dt':
             session['score_dev_team'] = request.form['score']
             current = 'score_dev_team'
+
+        elif request.form['module'] == 'fx':
+            session['score_final_exam'] = request.form['score']
+            current = 'score_final_exam'
             
         total = request.form['total']
     return render_template('/evaluations/Redirect.html', result = f'{session[current]} de {total}')

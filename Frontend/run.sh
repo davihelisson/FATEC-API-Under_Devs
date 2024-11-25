@@ -13,8 +13,8 @@ else
     pip install flask
 fi
 
-echo "Starting Flask server on port 80"
-flask run --debug --host=0.0.0.0 --port=80
+echo "Starting Flask server ..."
+flask run --debug --host=0.0.0.0
 
 clear
 echo "Deactivating virtual environment"

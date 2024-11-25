@@ -701,6 +701,11 @@ video {
   margin-bottom: 2rem;
 }
 
+.my-2{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
 .mb-10{
   margin-bottom: 2.5rem;
 }
@@ -783,6 +788,10 @@ video {
 
 .ml-2{
   margin-left: 0.5rem;
+}
+
+.mb-1{
+  margin-bottom: 0.25rem;
 }
 
 .block{
@@ -1872,6 +1881,10 @@ li {
     width: 24rem;
   }
 
+  .min-\[100px\]\:justify-center{
+    justify-content: center;
+  }
+
   .min-\[100px\]\:py-12{
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -2060,6 +2073,10 @@ li {
 
   .min-\[768px\]\:w-\[32rem\]{
     width: 32rem;
+  }
+
+  .min-\[768px\]\:justify-start{
+    justify-content: flex-start;
   }
 }
 

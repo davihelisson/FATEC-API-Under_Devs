@@ -3,12 +3,11 @@
 Repositório destinado ao projeto Scrum360 desenvolvido pelos membros da equipe UnderDevs.
 
 ## 📑 ÍNDICE
-- [Critérios de Permanência](https://github.com/davihelisson/FATEC-API-Under_Devs/blob/main/Documenta%C3%A7%C3%A3o/1.%20Criterios%20De%20Permanencia.md)
-- [Guia](https://github.com/davihelisson/FATEC-API-Under_Devs/blob/main/Documenta%C3%A7%C3%A3o/2.%20Guia.md)
 - [Padrão de Commits](https://github.com/iuricode/padroes-de-commits)
 - [Requisitos do Cliente](https://github.com/davihelisson/FATEC-API-Under_Devs/blob/main/Documenta%C3%A7%C3%A3o/3.%20Requisitos.md)
-- [Conteúdo SCRUM](https://github.com/davihelisson/FATEC-API-Under_Devs/blob/main/Documenta%C3%A7%C3%A3o/5.%20Conteudo%20SCRUM.md)
-- [Backlog do Produto](https://github.com/davihelisson/FATEC-API-Under_Devs/blob/main/Documenta%C3%A7%C3%A3o/4.%20Backlog.pdf)
+- [Objetivos do Projeto](https://github.com/davihelisson/FATEC-API-Under_Devs?tab=readme-ov-file#-objetivos-do-projeto)
+- [Tecnologias Utilizadas](https://github.com/davihelisson/FATEC-API-Under_Devs?tab=readme-ov-file#-tecnologias-empregadas)
+- [Desenvolvedores](https://github.com/davihelisson/FATEC-API-Under_Devs?tab=readme-ov-file#-membros-da-equipe)
 
 ## 🎯 OBJETIVOS DO PROJETO
 O Scrum360 tem como objetivo apresentar a metodologia Scrum, visando:
@@ -54,7 +53,7 @@ Confira abaixo a demonstração das páginas de conteúdo e um dos questionário
 - [x] Página de Exame Final
 
 ## 💻 TECNOLOGIAS EMPREGADAS
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![JavaSript](https://img.shields.io/badge/javascript-black?style=for-the-badge&logo=javascript) ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![Tailwind](https://img.shields.io/badge/Tailwind-0F172A?style=for-the-badge&logo=tailwind-css&logoColor=38B2AC)
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=Flask&logoColor=white) ![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white) ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![JavaSript](https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) ![Tailwind](https://img.shields.io/badge/Tailwind-0F172A?style=for-the-badge&logo=tailwind-css&logoColor=38B2AC)
 
 ## 👨‍💻 MEMBROS DA EQUIPE
 |      Nome      |    Função       |                            Github                             |                           Linkedin                           | Atribuição       |
